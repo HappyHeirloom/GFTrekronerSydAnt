@@ -33,8 +33,10 @@ export default class Navbar extends Component {
                     Forside
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="2" icon={<DesktopOutlined />}>
-                Option 2
+                <Menu.Item key="2" icon={<FileOutlined />}>
+                  <Link to="/GF">
+                    Om grundejerforeningen
+                  </Link>
                 </Menu.Item>
                 <SubMenu key="sub1" icon={<FileOutlined />} title="Dokumenter">
 
@@ -81,12 +83,20 @@ export default class Navbar extends Component {
                   </Menu.Item>
 
                 </SubMenu>
-                <SubMenu key="sub2" icon={<TeamOutlined />} title="Team">
-                <Menu.Item key="10">Team 1</Menu.Item>
-                <Menu.Item key="11">Team 2</Menu.Item>
-                </SubMenu>
+                <Menu.Item key="10" icon={<FileOutlined />}>
+                  <Link to="/bestyrelsen">
+                    Bestyrelsen
+                  </Link>
+                </Menu.Item>
+                <Menu.Item key="11" icon={<FileOutlined />}>
+                  <Link to="/kontakt">
+                    Kontakt os
+                  </Link>
+                </Menu.Item>
                 <Menu.Item key="12" icon={<FileOutlined />}>
-                Files
+                  <Link to="/ejerforeningerne">
+                    Ejerforeningerne
+                  </Link>
                 </Menu.Item>
             </Menu>
         </Sider>

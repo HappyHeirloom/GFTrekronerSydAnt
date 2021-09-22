@@ -91,7 +91,7 @@ function PdfViewer(embedURL) {
   }
 
   useEffect(() => {
-    if(loaded == false){
+    if(loaded === false){
       checkPdf(prop);    
       updateLoaded(loaded = true);
       document.title = currentPdf;
