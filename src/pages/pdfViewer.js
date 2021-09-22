@@ -1,5 +1,5 @@
 //#region Imports
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 
 // Objects
@@ -17,6 +17,7 @@ function PdfViewer(embedURL) {
   //#region React hooks and variables
   var [prop, updateURL] = useState(embedURL.embedURL);
   var [currentPdf, updateCurrentPdf] = useState(prop.name);
+  var [loaded, updateLoaded] = useState(false);
   var listOfPdf = pdfList.pdfs;
   
   //#endregion
@@ -88,6 +89,16 @@ function PdfViewer(embedURL) {
       }
     }
   }
+
+  useEffect(() => {
+    if(loaded == false){
+      checkPdf(prop);    
+      updateLoaded(loaded = true);
+      document.title = currentPdf;
+    } else {
+      document.title = currentPdf;
+    }
+  });
 
   //#endregion
 
@@ -253,5 +264,6 @@ function PdfViewer(embedURL) {
   );
   //#endregion
 }
+
 
 export default withRouter(PdfViewer);
