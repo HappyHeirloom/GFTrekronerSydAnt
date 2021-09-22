@@ -1,0 +1,40 @@
+.mainFront {
+    margin-top: -2.5rem;
+}
+
+.pdfHeader{
+    text-align: center;
+}
+
+.display{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.pdftext{
+    max-height: 25rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+    .pdfLink{
+        display: none;
+    }
+    .pdfViewer{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pdfLink{
+        display: block;
+    }
+    .pdfViewer{
+        display: none;
+    }
+}
