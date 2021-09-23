@@ -1,0 +1,7 @@
+@import "antd/dist/antd.css";
+
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 10%;
+  }
+}
