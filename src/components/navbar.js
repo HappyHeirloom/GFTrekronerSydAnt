@@ -44,40 +44,43 @@ export default class Navbar extends Component {
           </Menu.Item>
           <SubMenu key="sub1" icon={<FileOutlined />} title="Dokumenter">
             <Menu.Item key="3">
+              <Link to="/dokumenter">Alle dokumenter</Link>
+            </Menu.Item>
+            <Menu.Item key="4">
               <Link to="/doc/parkering">Parkering</Link>
             </Menu.Item>
 
-            <Menu.Item key="4">
+            <Menu.Item key="5">
               <Link to="/doc/reglement">Reglement</Link>
             </Menu.Item>
 
-            <Menu.Item key="5">
+            <Menu.Item key="6">
               <Link to="/doc/plejebeskrivelse">Plejebeskrivelse</Link>
             </Menu.Item>
 
-            <Menu.Item key="6">
+            <Menu.Item key="7">
               <Link to="/doc/resume">Resumé</Link>
             </Menu.Item>
 
-            <Menu.Item key="7">
+            <Menu.Item key="8">
               <Link to="/doc/vedtægter">Vedtægter</Link>
             </Menu.Item>
 
-            <Menu.Item key="8">
+            <Menu.Item key="9">
               <Link to="/doc/budget">Budget</Link>
             </Menu.Item>
 
-            <Menu.Item key="9">
+            <Menu.Item key="10">
               <Link to="/doc/udbudsmateriale">Udbudsmateriale</Link>
             </Menu.Item>
           </SubMenu>
-          <Menu.Item key="10" icon={<UserOutlined />}>
+          <Menu.Item key="11" icon={<UserOutlined />}>
             <Link to="/bestyrelsen">Bestyrelsen</Link>
           </Menu.Item>
-          <Menu.Item key="11" icon={<MailFilled />}>
+          <Menu.Item key="12" icon={<MailFilled />}>
             <Link to="/kontakt">Kontakt os</Link>
           </Menu.Item>
-          <Menu.Item key="12" icon={<ShopOutlined />}>
+          <Menu.Item key="13" icon={<ShopOutlined />}>
             <Link to="/ejerforeningerne">Ejerforeningerne</Link>
           </Menu.Item>
         </Menu>
