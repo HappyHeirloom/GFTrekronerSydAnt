@@ -8,8 +8,6 @@ import {
     FileOutlined,
     TeamOutlined,
     UserOutlined,
-    ShopOutlined,
-    MailFilled,
   } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -88,17 +86,17 @@ export default class Navbar extends Component {
                   </Menu.Item>
 
                 </SubMenu>
-                <Menu.Item key="10" icon={<UserOutlined />}>
+                <Menu.Item key="10" icon={<FileOutlined />}>
                   <Link to="/bestyrelsen">
                     Bestyrelsen
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="11" icon={<MailFilled />}>
+                <Menu.Item key="11" icon={<FileOutlined />}>
                   <Link to="/kontakt">
                     Kontakt os
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="12" icon={<ShopOutlined />}>
+                <Menu.Item key="12" icon={<FileOutlined />}>
                   <Link to="/ejerforeningerne">
                     Ejerforeningerne
                   </Link>

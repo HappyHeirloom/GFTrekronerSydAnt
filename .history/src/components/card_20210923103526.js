@@ -10,14 +10,7 @@ import React from "react";
 export default function PdfCard(prop) {
   //#region HTML code
   return (
-    <div>
-      <Card
-          hoverable
-          style={{ width: 240 }}
-          cover={<img alt="" src="" />}>
-            <Meta title="" description="" />
-      </Card>,
-    </div>
+    <div/>
   );
   //#endregion
 }

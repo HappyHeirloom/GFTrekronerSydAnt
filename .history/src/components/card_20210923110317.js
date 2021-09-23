@@ -7,7 +7,7 @@ import React from "react";
 
 //#endregion
 
-export default function PdfCard(prop) {
+export default class PdfCard(prop) {
   //#region HTML code
   return (
     <div>

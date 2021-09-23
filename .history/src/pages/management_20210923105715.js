@@ -1,6 +1,6 @@
 //#region Imports
 import React from "react";
-import {Card, Meta} from "../components/card";
+import Card from "../components/card";
 import { managagementObjectList } from "../objects/managementObject";
 import { withRouter, Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ function managementOverview() {
           <Link to="#">
             {/* <Card prop={managagementObjectList.managementObjects[0]}></Card> */}
             <Card>
-              <Meta title="prop.title" description="prop.description"></Meta>
+              <Meta title="{prop.title}"
             </Card>
           </Link>
         </div>

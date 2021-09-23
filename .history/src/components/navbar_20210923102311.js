@@ -88,7 +88,7 @@ export default class Navbar extends Component {
                   </Menu.Item>
 
                 </SubMenu>
-                <Menu.Item key="10" icon={<UserOutlined />}>
+                <Menu.Item key="10" icon={<FileOutlined />}>
                   <Link to="/bestyrelsen">
                     Bestyrelsen
                   </Link>

@@ -8,8 +8,6 @@ import {
     FileOutlined,
     TeamOutlined,
     UserOutlined,
-    ShopOutlined,
-    MailFilled,
   } from '@ant-design/icons';
 
 const { Sider } = Layout;
@@ -32,7 +30,7 @@ export default class Navbar extends Component {
               {/* TODO: only logo when collapsed */}
               <img src="https://usercontent.one/wp/www.gftrekronersyd.dk/wp-content/uploads/2020/12/GF_LOGO.png" height="32px" width="150px" />  
             </div>
-            <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+            <Menu theme="light" defaultSelectedKeys={['1']} mode="inline">
                 <Menu.Item key="1" icon={<PieChartOutlined />}>
                   <Link to="/">
                     Forside
@@ -88,17 +86,17 @@ export default class Navbar extends Component {
                   </Menu.Item>
 
                 </SubMenu>
-                <Menu.Item key="10" icon={<UserOutlined />}>
+                <Menu.Item key="10" icon={<FileOutlined />}>
                   <Link to="/bestyrelsen">
                     Bestyrelsen
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="11" icon={<MailFilled />}>
+                <Menu.Item key="11" icon={<FileOutlined />}>
                   <Link to="/kontakt">
                     Kontakt os
                   </Link>
                 </Menu.Item>
-                <Menu.Item key="12" icon={<ShopOutlined />}>
+                <Menu.Item key="12" icon={<FileOutlined />}>
                   <Link to="/ejerforeningerne">
                     Ejerforeningerne
                   </Link>
