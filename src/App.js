@@ -16,11 +16,18 @@ import GF from "./pages/gf";
 import EF from "./pages/ef";
 
 
+// Google analytics
+import RouteChangeTracker from './RouteChangeTracker';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-208535202-1";
+ReactGA.initialize(TRACKING_ID);
+
 const { Header, Content } = Layout;
 
 function App() {
   return (
     <div className="App">
+      <RouteChangeTracker/>
       <Layout style={{ minHeight: '100vh' }}>
         <Navbar/>
         <Layout className="site-layout">
