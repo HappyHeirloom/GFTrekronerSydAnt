@@ -3,6 +3,8 @@ import { Row, Col } from 'antd';
 import Carousel from "../components/carousel"
 import Newsfeed from '../components/newsfeed';
 
+import RecordList from '../components/tests/recordList';
+
 function FrontPage() {
     return (
         <Row gutter={[16, 16]}>
@@ -13,7 +15,7 @@ function FrontPage() {
             </Col>
             <Col xl={8} sm={24}>
                 <div className="newsFeed center">
-                    <Newsfeed/>
+                    <RecordList/>
                 </div>
             </Col>
         </Row>

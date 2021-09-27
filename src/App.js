@@ -16,6 +16,11 @@ import Contact from "./pages/contact";
 import GF from "./pages/gf";
 import EF from "./pages/ef";
 
+//TESTS MONGODB
+import Create from './components/tests/create';
+import Edit from './components/tests/edit';
+import RecordList from './components/tests/recordList';
+
 
 // Google analytics
 import RouteChangeTracker from './RouteChangeTracker';
@@ -86,6 +91,13 @@ function App() {
                 <Route path="/kontakt" component={Contact} />
                 <Route path="/GF" component={GF} />
                 <Route path="/ejerforeningerne" component={EF} />
+
+                  {/* MONGODB TESTS */}
+                <Route path="/edit/:id" component={Edit}/>
+                <Route path="/create">
+                  <Create/>
+                </Route>
+
               </Switch>
             </div>
           </Content>
