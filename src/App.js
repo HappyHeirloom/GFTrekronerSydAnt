@@ -1,12 +1,13 @@
 import React from 'react';
-import './styles/App.css';
 import { Layout } from 'antd';
 import { Switch, Route } from "react-router-dom";
+import './styles/App.css';
 
 // Objects
 import { pdfList } from "./objects/pdf";
 
 // Component and pages
+import FrontPage from './pages/frontPage';
 import pdfOverview from './pages/pdfOverview';
 import PdfViewer from "./pages/pdfViewer";
 import Navbar from './components/navbar';
@@ -37,7 +38,7 @@ function App() {
             </div>
             <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
               <Switch>
-                <Route exact path="/" />
+                <Route exact path="/" component={FrontPage}/>
                 <Route path="/dokumenter" component={pdfOverview} />
                 <Route
                 path="/doc/parkering"
