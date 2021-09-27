@@ -12,32 +12,32 @@ function pdfOverview() {
     return ( 
         <div>
             <Row gutter={[48, 48]}>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/parkering">
                         <Card prop={pdfObjectList.pdfObjects[0]}></Card>
                     </Link>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/reglement">
                         <Card prop={pdfObjectList.pdfObjects[1]}></Card>
                     </Link>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/plejebeskrivelse">
                         <Card prop={pdfObjectList.pdfObjects[2]}></Card>
                     </Link>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/resume">
                         <Card prop={pdfObjectList.pdfObjects[3]}></Card>
                     </Link>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/vedtægter">
                        <Card prop={pdfObjectList.pdfObjects[4]}></Card>
                     </Link>
                 </Col>
-                <Col span={8}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/budget">
                         <Card prop={pdfObjectList.pdfObjects[5]}></Card>
                     </Link>

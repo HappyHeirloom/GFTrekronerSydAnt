@@ -3,12 +3,19 @@ import { Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import {
-  DesktopOutlined,
-  FileOutlined,
+  HomeOutlined,
+  FileWordOutlined,
+  QuestionOutlined,
   UserOutlined,
-  ShopOutlined,
   MailFilled,
+  MoreOutlined,
 } from "@ant-design/icons";
+
+import logo from "../images/GF_LOGO.png";
+import logoMini from "../images/GF_LOGO_MINI.png";
+
+var image = logo;
+var windowWidth = window.innerWidth;
 
 const { Sider } = Layout;
 const { SubMenu } = Menu;
@@ -18,31 +25,38 @@ export default class Navbar extends Component {
     collapsed: false,
   };
 
+  checkWindowSize(){
+    const {col} =  this.state;
+    if(windowWidth < 576){
+      this.setState({col});
+      image = logoMini;
+    }
+  }
+
   onCollapse = (collapsed) => {
     console.log(collapsed);
     this.setState({ collapsed });
+    if(collapsed ? image = logoMini : image = logo);
   };
   render() {
     const { collapsed } = this.state;
     return (
-      <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse}>
+      <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse} breakpoint="sm">
         <div className="logo">
-          {/* TODO: only logo when collapsed */}
           <img
-            src="https://usercontent.one/wp/www.gftrekronersyd.dk/wp-content/uploads/2020/12/GF_LOGO.png"
-            alt="jsx-a11y/alt-text"
-            height="32px"
-            width="150px"
+            src={image}
+            alt="GF Trekroner Syd logo"
+            className="logoImage"
           />
         </div>
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
-          <Menu.Item key="1" icon={<DesktopOutlined />}>
+          <Menu.Item key="1" icon={<HomeOutlined />}>
             <Link to="/">Forside</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<FileOutlined />}>
+          <Menu.Item key="2" icon={<QuestionOutlined />}>
             <Link to="/GF">Om grundejerforeningen</Link>
           </Menu.Item>
-          <SubMenu key="sub1" icon={<FileOutlined />} title="Dokumenter">
+          <SubMenu key="sub1" icon={<FileWordOutlined />} title="Dokumenter">
             <Menu.Item key="3">
               <Link to="/dokumenter">Alle dokumenter</Link>
             </Menu.Item>
@@ -80,7 +94,7 @@ export default class Navbar extends Component {
           <Menu.Item key="12" icon={<MailFilled />}>
             <Link to="/kontakt">Kontakt os</Link>
           </Menu.Item>
-          <Menu.Item key="13" icon={<ShopOutlined />}>
+          <Menu.Item key="13" icon={<MoreOutlined />}>
             <Link to="/ejerforeningerne">Ejerforeningerne</Link>
           </Menu.Item>
         </Menu>

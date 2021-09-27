@@ -1,1 +1,13 @@
 @import '~antd/dist/antd.css';
+
+.root {
+    border-radius: 20px;
+    max-width: auto;
+    margin: auto;
+}
+
+.media {
+    height: 140px;
+    width: 320px;
+    margin: auto;
+}

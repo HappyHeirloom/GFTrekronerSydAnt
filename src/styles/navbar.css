@@ -6,6 +6,11 @@
   background: rgba(255, 255, 255, 0.027);
 }
 
+.logoImage {
+  height: 32px;
+  width: auto;
+}
+
 .site-layout .site-layout-background {
   background: #fff;
 }
