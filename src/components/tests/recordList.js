@@ -59,7 +59,6 @@ export default class RecordList extends Component {
       return (
         <Record
           record={currentrecord}
-          deleteRecord={this.deleteRecord}
           key={currentrecord._id}
         />
       );
@@ -82,6 +81,7 @@ export default class RecordList extends Component {
           </thead>
           <tbody>{this.recordList()}</tbody>
         </table>
+
       </div>
     );
   }

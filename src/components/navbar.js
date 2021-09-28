@@ -42,11 +42,13 @@ export default class Navbar extends Component {
     return (
       <Sider collapsible collapsed={collapsed} onCollapse={this.onCollapse} breakpoint="sm">
         <div className="logo">
+          <Link to="/">
           <img
             src={image}
             alt="GF Trekroner Syd logo"
             className="logoImage"
           />
+          </Link>
         </div>
         <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
           <Menu.Item key="1" icon={<HomeOutlined />}>

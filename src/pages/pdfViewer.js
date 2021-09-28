@@ -108,8 +108,8 @@ function PdfViewer(embedURL) {
       <div className="row pdfHeader">
         <h1>PDF View!</h1>
       </div>
-      <div className="row mh-100">
-        <div className="col-md-4">
+      <div className="row">
+        <div className="col">
           <div className="row">
             <div className="col">
               
@@ -117,7 +117,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => {
                     checkPdf(listOfPdf[0]);
                   }}
@@ -128,7 +128,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[1])}
                 >
                   {" "}
@@ -137,7 +137,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[2])}
                 >
                   {" "}
@@ -146,7 +146,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[3])}
                 >
                   {" "}
@@ -155,7 +155,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[8])}
                 >
                   {" "}
@@ -164,7 +164,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[9])}
                 >
                   {" "}
@@ -173,7 +173,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   onClick={() => checkPdf(listOfPdf[14])}
                 >
                   {" "}
@@ -187,7 +187,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   id="21"
                   onClick={() => checkYear(prop, 21)}
                 >
@@ -196,7 +196,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   id="20"
                   onClick={() => checkYear(prop, 20)}
                 >
@@ -205,7 +205,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   id="19"
                   onClick={() => checkYear(prop, 19)}
                 >
@@ -214,7 +214,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   id="18"
                   onClick={() => checkYear(prop, 18)}
                 >
@@ -223,7 +223,7 @@ function PdfViewer(embedURL) {
                 <button
                   variant="contained"
                   size="large"
-                  className="button p-2 m-1 w-100"
+                  className="button"
                   id="17"
                   onClick={() => checkYear(prop, 17)}
                 >
