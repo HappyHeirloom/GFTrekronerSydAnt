@@ -1,8 +1,8 @@
 import React from 'react'
 import { Row, Col } from 'antd';
 import Carousel from "../components/carousel"
-import Newsfeed from '../components/newsfeed';
 
+import NewsList from '../components/tests/newsList';
 import RecordList from '../components/tests/recordList';
 
 function FrontPage() {
@@ -15,7 +15,7 @@ function FrontPage() {
             </Col>
             <Col xl={8} sm={24}>
                 <div className="newsFeed center">
-                    <RecordList/>
+                    <NewsList/>
                 </div>
             </Col>
         </Row>

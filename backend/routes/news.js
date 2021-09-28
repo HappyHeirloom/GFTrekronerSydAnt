@@ -3,7 +3,7 @@ const express = require("express");
 // recordRoutes is an instance of the express router.
 // We use it to define our routes.
 // The router will be added as a middleware and will take control of requests starting with path /record.
-const recordRoutes = express.Router();
+const newsRoutes = express.Router();
 
 // This will help us connect to the database
 const dbo = require("../db/conn");
@@ -13,10 +13,10 @@ const ObjectId = require("mongodb").ObjectId;
 
 
 // This section will help you get a list of all the records.
-recordRoutes.route("/record").get(function (req, res) {
-  let db_connect = dbo.getDb("employees");
+newsRoutes.route("/news").get(function (req, res) {
+  let db_connect = dbo.getDb("news");
   db_connect
-    .collection("records")
+    .collection("news")
     .find({})
     .toArray(function (err, result) {
       if (err) throw err;
@@ -25,11 +25,11 @@ recordRoutes.route("/record").get(function (req, res) {
 });
 
 // This section will help you get a single record by id
-recordRoutes.route("/record/:id").get(function (req, res) {
+newsRoutes.route("/news/:id").get(function (req, res) {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId( req.params.id )};
   db_connect
-      .collection("records")
+      .collection("news")
       .findOne(myquery, function (err, result) {
         if (err) throw err;
         res.json(result);
@@ -37,32 +37,34 @@ recordRoutes.route("/record/:id").get(function (req, res) {
 });
 
 // This section will help you create a new record.
-recordRoutes.route("/record/add").post(function (req, response) {
+newsRoutes.route("/news/add").post(function (req, response) {
   let db_connect = dbo.getDb();
   let myobj = {
-    person_name: req.body.person_name,
-    person_position: req.body.person_position,
-    person_level: req.body.person_level,
+    title: req.body.title,
+    image: req.body.image,
+    tag: req.body.tag,
+    message: req.body.tag,
   };
-  db_connect.collection("records").insertOne(myobj, function (err, res) {
+  db_connect.collection("news").insertOne(myobj, function (err, res) {
     if (err) throw err;
     response.json(res);
   });
 });
 
 // This section will help you update a record by id.
-recordRoutes.route("/update/:id").post(function (req, response) {
+newsRoutes.route("/update/:id").post(function (req, response) {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId( req.params.id )};
   let newvalues = {
     $set: {
-      person_name: req.body.person_name,
-      person_position: req.body.person_position,
-      person_level: req.body.person_level,
+      title: req.body.title,
+      image: req.body.image,
+      tag: req.body.tag,
+      message: req.body.tag,
     },
   };
   db_connect
-    .collection("records")
+    .collection("news")
     .updateOne(myquery, newvalues, function (err, res) {
       if (err) throw err;
       console.log("1 document updated");
@@ -71,14 +73,14 @@ recordRoutes.route("/update/:id").post(function (req, response) {
 });
 
 // This section will help you delete a record
-recordRoutes.route("/:id").delete((req, response) => {
+newsRoutes.route("/:id").delete((req, response) => {
   let db_connect = dbo.getDb();
   let myquery = { _id: ObjectId( req.params.id )};
-  db_connect.collection("records").deleteOne(myquery, function (err, obj) {
+  db_connect.collection("news").deleteOne(myquery, function (err, obj) {
     if (err) throw err;
     console.log("1 document deleted");
     response.status(obj);
   });
 });
 
-module.exports = recordRoutes;
+module.exports = newsRoutes;

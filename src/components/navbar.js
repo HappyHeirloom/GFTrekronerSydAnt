@@ -8,7 +8,7 @@ import {
   QuestionOutlined,
   UserOutlined,
   MailFilled,
-  MoreOutlined,
+  ApartmentOutlined,
 } from "@ant-design/icons";
 
 import logo from "../images/GF_LOGO.png";
@@ -95,7 +95,7 @@ export default class Navbar extends Component {
           <Menu.Item key="12" icon={<MailFilled />}>
             <Link to="/kontakt">Kontakt os</Link>
           </Menu.Item>
-          <Menu.Item key="13" icon={<MoreOutlined />}>
+          <Menu.Item key="13" icon={<ApartmentOutlined />}>
             <Link to="/ejerforeningerne">Ejerforeningerne</Link>
           </Menu.Item>
         </Menu>

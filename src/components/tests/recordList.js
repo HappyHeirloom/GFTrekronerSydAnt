@@ -2,6 +2,7 @@ import React, { Component } from "react";
 // This will require to npm install axios
 import axios from 'axios';
 import { Link } from "react-router-dom";
+import { Table } from 'antd';
 
 const Record = (props) => (
   <tr>
@@ -70,7 +71,7 @@ export default class RecordList extends Component {
     return (
       <div>
         <h3>Record List</h3>
-        <table className="table table-striped" style={{ marginTop: 20 }}>
+        {/* <table className="table table-striped" style={{ marginTop: 20 }}>
           <thead>
             <tr>
               <th>Name</th>
@@ -80,7 +81,8 @@ export default class RecordList extends Component {
             </tr>
           </thead>
           <tbody>{this.recordList()}</tbody>
-        </table>
+        </table> */}
+        
 
       </div>
     );

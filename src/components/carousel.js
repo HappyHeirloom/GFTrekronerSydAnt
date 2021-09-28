@@ -16,7 +16,7 @@ var imageWidth = windowsWidth / 2;
 
 
 const centerStuff = {
-    height: imageWidth / 1.2,
+    height: imageWidth / 1.4,
     width: imageWidth,
     margin: "auto"
 }
