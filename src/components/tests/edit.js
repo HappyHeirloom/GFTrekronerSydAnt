@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Form, Input, Button, Select } from 'antd';
-import { FormInstance } from 'antd/es/form';
 
 // This will require to npm install axios
 import axios from 'axios';

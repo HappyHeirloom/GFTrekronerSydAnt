@@ -9,8 +9,8 @@ import { Carousel } from 'antd';
 //     background: '#364d79',
 //   };
 
-var windowsHeight = window.innerHeight;
-var imageHeight = windowsHeight / 3;
+// var windowsHeight = window.innerHeight;
+// var imageHeight = windowsHeight / 3;
 var windowsWidth = window.innerWidth;
 var imageWidth = windowsWidth / 2;
 

@@ -19,7 +19,7 @@ import EF from "./pages/ef";
 //TESTS MONGODB
 import Create from './components/tests/create';
 import Edit from './components/tests/edit';
-import RecordList from './components/tests/recordList';
+import AdminNewsfeed from './components/tests/adminNewsList';
 
 
 // Google analytics
@@ -97,6 +97,7 @@ function App() {
                 <Route path="/create">
                   <Create/>
                 </Route>
+                <Route path="/adminnewsfeed" component={AdminNewsfeed}/>
 
               </Switch>
             </div>

@@ -3,7 +3,6 @@ import { Row, Col } from 'antd';
 import Carousel from "../components/carousel"
 
 import NewsList from '../components/tests/newsList';
-import RecordList from '../components/tests/recordList';
 
 function FrontPage() {
     return (
