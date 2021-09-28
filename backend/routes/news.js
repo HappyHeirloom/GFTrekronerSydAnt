@@ -43,7 +43,7 @@ newsRoutes.route("/news/add").post(function (req, response) {
     title: req.body.title,
     image: req.body.image,
     tag: req.body.tag,
-    message: req.body.tag,
+    message: req.body.message,
   };
   db_connect.collection("news").insertOne(myobj, function (err, res) {
     if (err) throw err;
@@ -60,7 +60,7 @@ newsRoutes.route("/update/:id").post(function (req, response) {
       title: req.body.title,
       image: req.body.image,
       tag: req.body.tag,
-      message: req.body.tag,
+      message: req.body.message,
     },
   };
   db_connect

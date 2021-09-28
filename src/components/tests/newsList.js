@@ -1,10 +1,9 @@
 import React, { Component } from "react";
+
 // This will require to npm install axios
 import axios from 'axios';
-import { Link } from "react-router-dom";
-import { Table } from 'antd';
+
 import { Card, Avatar } from 'antd';
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
 const { Meta } = Card;
 
