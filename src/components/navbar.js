@@ -98,6 +98,14 @@ export default class Navbar extends Component {
           <Menu.Item key="13" icon={<ApartmentOutlined />}>
             <Link to="/ejerforeningerne">Ejerforeningerne</Link>
           </Menu.Item>
+
+          {/* TEST FOR ADMIN */}
+          <Menu.Item key="14" icon={<ApartmentOutlined />}>
+            <Link to="/create">Lav en nyhed</Link>
+          </Menu.Item>
+          <Menu.Item key="15" icon={<ApartmentOutlined />}>
+            <Link to="/adminnewsfeed">Se admin side</Link>
+          </Menu.Item>
         </Menu>
       </Sider>
     );
