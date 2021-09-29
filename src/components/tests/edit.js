@@ -40,7 +40,7 @@ class Edit extends Component {
 
     componentDidMount() {
         axios
-          .get("http://localhost:5000/news/" + this.props.match.params.id)
+          .get("https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id)
           .then((response) => {
             this.setState({
                 title: response.data.title,
@@ -92,7 +92,7 @@ class Edit extends Component {
 
         axios
         .post(
-          "http://localhost:5000/update/" + this.props.match.params.id,
+          "https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id,
           newEditedNews
         )
         .then((res) => console.log(res.data));

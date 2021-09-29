@@ -31,7 +31,7 @@ export default class newsList extends Component {
         
     componentDidMount() {
         axios
-            .get("http://localhost:5000/news/")
+            .get("https://gftrekronersydrestapi.azurewebsites.net/api/news")
             .then((response) => {
                 this.setState({ news: response.data });
             })
@@ -41,12 +41,12 @@ export default class newsList extends Component {
         }
 
     deleteNews(id) {
-        axios.delete("http://localhost:5000/" + id).then((response) => {
+        axios.delete("https://gftrekronersydrestapi.azurewebsites.net/api/news/" + id).then((response) => {
             console.log(response.data);
         });
     
         this.setState({
-            news: this.state.news.filter((el) => el._id !== id),
+            news: this.state.news.filter((el) => el.id !== id),
         });
         }
 
@@ -55,7 +55,7 @@ export default class newsList extends Component {
             return (
                 <News
                     news={currentnews}
-                    key={currentnews._id}
+                    key={currentnews.id}
                 />
             );
         });
