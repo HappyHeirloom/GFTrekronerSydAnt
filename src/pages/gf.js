@@ -1,7 +1,7 @@
 //#region Imports
 import React from "react"
 import { withRouter, Link } from "react-router-dom";
-import changeLanguage from "../components/lang";
+import changeLanguage from "../components/languageComponent";
 import {gfText} from '../components/objectText/gfText';
 
 //#endregion
@@ -9,12 +9,10 @@ import {gfText} from '../components/objectText/gfText';
 function Gf() {
   var text = "";
   var number = 0;
-  if(changeLanguage() ? text = gfText.gfText_EN  : text = gfText.gfText_DK);
-  console.log(changeLanguage());
+  if(changeLanguage() ? text = gfText.gfText_EN  : text = gfText.gfText_DK);  
 
   function raiseNumber(){
     number++;
-    console.log(number);
   }
 
   //#region HTML code

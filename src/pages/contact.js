@@ -5,11 +5,18 @@ import { withRouter } from 'react-router-dom'
 
 import EmailForm from "../components/emailForm";
 
+import changeLanguage from "../components/languageComponent";
+import {kontaktText} from '../components/objectText/kontaktText';
+
+
 import "../styles/App.css";
 
 //#endregion
 
 function Contact() {
+  var text = "";
+  if(changeLanguage() ? text = kontaktText.kontaktText_EN  : text = kontaktText.kontaktText_DK);  
+
   //#region React hooks
 
   //#endregion
@@ -25,20 +32,10 @@ function Contact() {
       <div className="col-6 my-auto">
         <div className="text-center">
           <h1 className="mb-5">
-            Kontakt os
+            {text[0].header}
           </h1>
           <p>
-            G/F Trekroner syd er en grundejerforening, hvor vi befinder os i
-            Roskilde kommune. Bestyrelsen i grundejerforeningen varetager dine
-            rettigheder, og er med til at løse problemerne i området. G/F varetager
-            en bred vifte af opgaver for medlemmerne i grundejerforening. For at
-            kunne give vores forbrugere i området den bedste ydelse, er det vigtigt
-            at vide, at vi ikke svarer på private henvendelser, men hvor vi er
-            fokuserede på, at levere den bedste ydelse, og besvare vores medlemmer,
-            så hurtigst vi kan. Har du ikke fået svar på dit spørgsmål, vil vi gerne
-            henvende dig til vores FAQ. Klik på linket nedenunder, derimod hvis det
-            ikke gav dig en klar melding, skal du henvende dig til din ejerforening,
-            hvor de kan vejlede dig.
+            {text[0].text}
           </p>
         </div>
       </div>
