@@ -13,8 +13,8 @@ const OneNews = (props) => (
     <Card
         style={{ width: 300 }}
         actions={[
-            <Link to={"/edit/" + props.news.id}>Rediger</Link>,
-            <Link onClick={ () => {props.deleteOneNews(props.news.id)} } to="/adminnewsfeed" > Slet </Link>
+            <Link to={"/edit/" + props.news.id}>Edit</Link>,
+            <Link onClick={ () => {props.deleteOneNews(props.news.id)} } to="/adminnewsfeed" > delete </Link>
           ]}
     >
         <Meta

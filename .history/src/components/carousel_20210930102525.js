@@ -1,6 +1,16 @@
 import React from 'react';
 import { Carousel } from 'antd';
 
+// const contentStyle = {
+//     height: 'auto',
+//     color: '#fff',
+//     lineHeight: '160px',
+//     textAlign: 'center',
+//     background: '#364d79',
+//   };
+
+// var windowsHeight = window.innerHeight;
+// var imageHeight = windowsHeight / 3;
 var windowsWidth = window.innerWidth;
 var imageWidth = windowsWidth / 2;
 

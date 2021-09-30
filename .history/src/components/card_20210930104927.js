@@ -2,6 +2,9 @@
 import React from "react";
 import "../styles/card.css";
 
+// import { Card } from 'antd';
+
+// const { Meta } = Card;
 
 
 // Material UI

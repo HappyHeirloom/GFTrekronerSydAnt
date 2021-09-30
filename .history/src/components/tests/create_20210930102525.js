@@ -3,7 +3,6 @@ import { Form, Input, Button, Select } from 'antd';
 
 // This will require to npm install axios
 import axios from 'axios';
-import { withRouter } from "react-router";
 
 
 //#region form antd
@@ -18,7 +17,7 @@ const tailLayout = {
 };
 //#endregion
 
-class Edit extends Component {
+export default class Create extends Component {
     formRef = React.createRef();
     // This is the constructor that stores the data.
     constructor(props) {
@@ -38,21 +37,6 @@ class Edit extends Component {
         };
     }
 
-    componentDidMount() {
-        axios
-          .get("https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id)
-          .then((response) => {
-            this.setState({
-                title: response.data.title,
-                image: response.data.image,
-                tag: response.data.tag,
-                message: response.data.message,
-            });
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      }
 
     //#region Functions
     // These methods will update the state properties.
@@ -83,7 +67,7 @@ class Edit extends Component {
     // This function will handle the submission.
     onSubmit() {
         // When post request is sent to the create url, axios will add a new record(newperson) to the database.
-        const newEditedNews = {
+        const newNews = {
             title: this.state.title,
             image: this.state.image,
             tag: this.state.tag,
@@ -91,14 +75,17 @@ class Edit extends Component {
         };
 
         axios
-        .post(
-          "https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id,
-          newEditedNews
-        )
-        .then((res) => console.log(res.data));
-  
-        this.props.history.push("/");
+            .post("https://gftrekronersydrestapi.azurewebsites.net/api/news", newNews)
+            .then((res) => console.log(res.data));
 
+        // We will empty the state after posting the data to the database
+        this.setState({
+            title: "",
+            image: "",
+            tag: "",
+            message: "",
+        });
+        this.formRef.current.resetFields();
     }
 
     //#endregion
@@ -107,11 +94,11 @@ class Edit extends Component {
     render() {
         return (
             <div>
-                <h3>Opdatér nyhed</h3>
+                <h3>Opret en nyhed</h3>
                 <Form {...layout} ref={this.formRef} name="control-ref" onFinish={this.onSubmit}>
                     <Form.Item name="title" label="Titel" rules={[{ required: true }]}>
                         <Input 
-                        placeholder={this.state.title}
+                        placeholder="Indtast en titel"
                         value={this.state.title}
                         onChange={this.onChangeTitle}
                         />
@@ -119,7 +106,7 @@ class Edit extends Component {
 
                     <Form.Item name="picture" label="Billede" rules={[{ required: true }]}>
                         <Select
-                            placeholder={this.state.image}
+                            placeholder="Select a type of image for the news block"
                             onChange={this.onChangeImage}
                             allowClear
                         >
@@ -131,7 +118,7 @@ class Edit extends Component {
 
                     <Form.Item name="tag" label="Farve" rules={[{ required: true }]}>
                         <Select
-                            placeholder={this.state.tag}
+                            placeholder="Select a color for the news block"
                             onChange={this.onChangeTag}
                             allowClear
                         >
@@ -143,7 +130,7 @@ class Edit extends Component {
 
                     <Form.Item name="message" label="Tekst" rules={[{ required: true }]}>
                         <Input
-                        placeholder={this.state.message}
+                        placeholder="Indtast din nyhedstekst"
                         value={this.state.message}
                         onChange={this.onChangeMessage}
                         />
@@ -151,10 +138,10 @@ class Edit extends Component {
 
                     <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
-                        Tilføj
+                        Submit
                     </Button>
                     <Button htmlType="button" onClick={this.onReset}>
-                        Nulstil
+                        Reset
                     </Button>
                     </Form.Item>
                 </Form>
@@ -162,5 +149,3 @@ class Edit extends Component {
         )
     }
 }
-
-export default withRouter(Edit);

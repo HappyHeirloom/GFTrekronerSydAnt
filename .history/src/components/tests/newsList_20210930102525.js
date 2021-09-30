@@ -4,18 +4,12 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 import { Card, Avatar } from 'antd';
-import { Link } from "react-router-dom";
 
-//oneNews = 1 news, news = more
 const { Meta } = Card;
 
-const OneNews = (props) => (
+const News = (props) => (
     <Card
-        style={{ width: 300 }}
-        actions={[
-            <Link to={"/edit/" + props.news.id}>Rediger</Link>,
-            <Link onClick={ () => {props.deleteOneNews(props.news.id)} } to="/adminnewsfeed" > Slet </Link>
-          ]}
+        style={{ width: 300, color: props.news.tag }}
     >
         <Meta
             avatar={
@@ -25,16 +19,15 @@ const OneNews = (props) => (
             title={props.news.title}
             description={props.news.message}
         />
-
     </Card>
   );
 
 export default class newsList extends Component {
     constructor(props) {
         super(props);
-        this.deleteNews = this.deleteOneNews.bind(this);
+        this.deleteRecord = this.deleteNews.bind(this);
         this.state = { news: [] };
-    }
+        }
         
     componentDidMount() {
         axios
@@ -47,7 +40,7 @@ export default class newsList extends Component {
             });
         }
 
-    deleteOneNews(id) {
+    deleteNews(id) {
         axios.delete("https://gftrekronersydrestapi.azurewebsites.net/api/news/" + id).then((response) => {
             console.log(response.data);
         });
@@ -58,12 +51,11 @@ export default class newsList extends Component {
         }
 
     newsList() {
-        return this.state.news.map((currentonenews) => {
+        return this.state.news.map((currentnews) => {
             return (
-                <OneNews
-                    news={currentonenews}
-                    key={currentonenews.id}
-                    deleteOneNews={this.deleteNews}
+                <News
+                    news={currentnews}
+                    key={currentnews.id}
                 />
             );
         });
@@ -73,7 +65,7 @@ export default class newsList extends Component {
     render() {
         return (
             <div>
-                <h3> Overblik over nyheder </h3>
+                <h3> NEWSFEED </h3>
                 {this.newsList()}
             </div>
         );

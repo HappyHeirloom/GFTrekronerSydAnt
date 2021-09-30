@@ -151,10 +151,10 @@ class Edit extends Component {
 
                     <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
-                        Tilføj
+                        Submit
                     </Button>
                     <Button htmlType="button" onClick={this.onReset}>
-                        Nulstil
+                        Reset
                     </Button>
                     </Form.Item>
                 </Form>
