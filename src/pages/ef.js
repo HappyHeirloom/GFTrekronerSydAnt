@@ -5,6 +5,7 @@ import { efObjectList } from "../objects/efObjects";
 import { withRouter } from "react-router-dom";
 import { Row, Col } from "antd";
 import "../styles/ef.css";
+import changeLanguage from "../components/lang";
 
 //#endregion
 
@@ -137,6 +138,8 @@ function efOverview() {
           </div>
         </Col>
       </Row>
+
+      <button onClick={() => changeLanguage(true)}>change lan</button>
     </div>
   );
   //#endregion

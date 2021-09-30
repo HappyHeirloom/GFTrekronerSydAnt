@@ -1,6 +1,8 @@
 //#region Imports
 import React from "react"
 import { withRouter, Link } from "react-router-dom";
+import changeLanguage from "../components/lang";
+import lang_en from "../components/lang";
 
 //#endregion
 
@@ -54,6 +56,8 @@ function Gf() {
           <strong className="text-center"> På knappen kan du se alle ejerforeningerne</strong>
       <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> Klik her </Link></button>
         </div>
+
+        <button onClick={() => console.log(changeLanguage(false))}>change lan</button>
     </div>
 
   );
