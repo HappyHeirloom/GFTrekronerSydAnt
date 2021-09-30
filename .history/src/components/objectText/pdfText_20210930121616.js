@@ -215,18 +215,18 @@ export var pdfText = {
      },
      {
       name: "ParkeringTextrow4_EN",
-      header: "Parking in G/F Trekroner south: For Residents",
-      text: "Practical information to know that in a few  dwellings parking cards issued by the APCOA,  which  authorises   parking without restrictions throughout the area, are granted in the area where parking signs with a time limit of 30 minutes are erected. The parking card must be placed visible on the windshield and the card is active for one year, then the card must be renewed. Parking area Ahornlunden 1-9 space number 3962. The daily card used in Ahornlunden is only valid on the site in Ahornlunden1-9 place number 3962. In Ahornlunden it is allowed to park 1 hour with properly set P disc",
+      header: "Parking in G/F Trekroner south: For Beboere",
+      text: "The agreement on checking the compliance of parking rules has been concluded between trekroner south and ONEPARK / APCOA. Parking regulations in G/F Trekroner south there are two different parking regulations in the area. Those with black parking signs that give you a permit for 2 hours of parking are reserved for daytime occupations between 08:00 and 20:00, which appear on the signs. At that time it is allowed to park 2 hours with properly set P-disc. However, in the areas with parking signs that allow 30 minutes of parking, areas where parking cards are provided, which give permission to park, are without restrictions. Below, guest parking cards are also provided to guests who are visiting, with the correct date written on. The area numbers shown in the signs are: 9471 Pear and Poppellunden, 9383 Acacielunden. Parking rules for both parking areas. ",
      },
      {
       name: "ParkeringTextrow5_EN",
-      header: "Parking in G/F Trekroner south: For guests in the area:",
-      text: "Guest cards can be printed from the owners' association's website for use by guests. The guest parking card must be given parking date, and only one date per card, and is valid only for that date. The guest parking cards are valid for parking in areas with 30 minutes of limited parking.",
+      header: "Parking in G/F Trekroner south: For gæsterne i området:",
+      text: "Der kan printes gæstekort ud fra ejerforeningens hjemmeside til brug for gæsterne. Gæsteparkeringskortet skal påføres parkeringsdato, og kun én dato pr kort, og er gældende kun for den dato. Gæsteparkeringskortene er gældende for parkering i områder med 30 minutters tidsbegrænset parkering.",
      },
      {
       name: "PlejebeskrivelseTextrow1_EN",
-      header: "Care description for the common area for G/F Trekroner south and the station building",
-      text: "The following is a guide to operation, the green areas on the millarea ofTrekroner South. The Annex    describes each elementthat occurs inthe area, where it is a guide to how the area should be maintained. The elements of the pendant are divided throughout the Common Area for Trekroner South as well as for the area around the Station Building. Trekroner south consists of 6 apartment blocks with associated green common area, where between the apartment blocks there are green areas with, among other things, overdrive and afforestation. In addition, the area can be seen in the commercial buildings with associated squares located in the area. For all parking spaces in the area, it is used as forest parking. The entire Common Area of Trekroner South has a strong natural habitat and aims at an operation that promotes frugal species and nature-based development. Utility lawns are found in gardens, parks and residential areas, and can be used for stays, play and ball games. Utility lawns typically have high durability and utility value.",
+      header: "Plejebeskrivelse for fælleområdet for Trekroner syd samt stationsbygningen:",
+      text: "Følgende er en vejledning af drift, de grønne områder på fællesområdet for Trekroner Syd. I bilaget er der en beskrivelse af hvert element, der opstår i området, hvor det er en vejledning til, hvordan området skal vedligeholdes. Elementerne i vedledningen er opdelt over hele Fællesområdet for Trekroner Syd samt for området omkring Stationsbygningen. Trekroner syd består af 6 boligblokke med tilhørende grønt fællesareal, hvor imellem boligblokkene er der grønne arealer med blandt andet overdrev og skovplantning. Derudover kan der ses på området de erhvervsbygninger med tilhørende torve, der befinder sig i området. For samtlige parkeringspladser på området, er det anvendt som skovparkering. Hele Fællesområdet for Trekroner Syd har et stærkt naturpræg og sigter mod en drift, der fremmer nøjsomme arter og den naturbaserede udvikling. Brugsplæner findes i haver, parker og boligområder, og kan anvendes til ophold, leg og boldspil. Brugsplæner har typisk stor slidstyrke og brugsværdi.",
      },
 
   ],

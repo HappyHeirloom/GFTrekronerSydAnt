@@ -221,12 +221,12 @@ export var pdfText = {
      {
       name: "ParkeringTextrow5_EN",
       header: "Parking in G/F Trekroner south: For guests in the area:",
-      text: "Guest cards can be printed from the owners' association's website for use by guests. The guest parking card must be given parking date, and only one date per card, and is valid only for that date. The guest parking cards are valid for parking in areas with 30 minutes of limited parking.",
+      text: "Der kan printes gæstekort ud fra ejerforeningens hjemmeside til brug for gæsterne. Gæsteparkeringskortet skal påføres parkeringsdato, og kun én dato pr kort, og er gældende kun for den dato. Gæsteparkeringskortene er gældende for parkering i områder med 30 minutters tidsbegrænset parkering.",
      },
      {
       name: "PlejebeskrivelseTextrow1_EN",
-      header: "Care description for the common area for G/F Trekroner south and the station building",
-      text: "The following is a guide to operation, the green areas on the millarea ofTrekroner South. The Annex    describes each elementthat occurs inthe area, where it is a guide to how the area should be maintained. The elements of the pendant are divided throughout the Common Area for Trekroner South as well as for the area around the Station Building. Trekroner south consists of 6 apartment blocks with associated green common area, where between the apartment blocks there are green areas with, among other things, overdrive and afforestation. In addition, the area can be seen in the commercial buildings with associated squares located in the area. For all parking spaces in the area, it is used as forest parking. The entire Common Area of Trekroner South has a strong natural habitat and aims at an operation that promotes frugal species and nature-based development. Utility lawns are found in gardens, parks and residential areas, and can be used for stays, play and ball games. Utility lawns typically have high durability and utility value.",
+      header: "Plejebeskrivelse for fælleområdet for Trekroner syd samt stationsbygningen:",
+      text: "Følgende er en vejledning af drift, de grønne områder på fællesområdet for Trekroner Syd. I bilaget er der en beskrivelse af hvert element, der opstår i området, hvor det er en vejledning til, hvordan området skal vedligeholdes. Elementerne i vedledningen er opdelt over hele Fællesområdet for Trekroner Syd samt for området omkring Stationsbygningen. Trekroner syd består af 6 boligblokke med tilhørende grønt fællesareal, hvor imellem boligblokkene er der grønne arealer med blandt andet overdrev og skovplantning. Derudover kan der ses på området de erhvervsbygninger med tilhørende torve, der befinder sig i området. For samtlige parkeringspladser på området, er det anvendt som skovparkering. Hele Fællesområdet for Trekroner Syd har et stærkt naturpræg og sigter mod en drift, der fremmer nøjsomme arter og den naturbaserede udvikling. Brugsplæner findes i haver, parker og boligområder, og kan anvendes til ophold, leg og boldspil. Brugsplæner har typisk stor slidstyrke og brugsværdi.",
      },
 
   ],
