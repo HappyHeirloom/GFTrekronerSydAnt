@@ -138,8 +138,6 @@ function efOverview() {
           </div>
         </Col>
       </Row>
-
-      <button onClick={() => changeLanguage(true)}>change lan</button>
     </div>
   );
   //#endregion

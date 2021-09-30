@@ -15,6 +15,7 @@ import Management from "./pages/management";
 import Contact from "./pages/contact";
 import GF from "./pages/gf";
 import EF from "./pages/ef";
+import Gfheader from './components/gfheader';
 
 //TESTS MONGODB
 import Create from './components/tests/create';
@@ -37,7 +38,9 @@ function App() {
       <Layout style={{ minHeight: '100vh' }}>
         <Navbar/>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0 }} />
+          <Header className="site-layout-background" style={{ padding: 0, lineHeight: 1 }}>
+            <Gfheader></Gfheader>
+          </Header>
           <Content style={{ margin: '0 16px' }}>
             <div style={{ margin: '16px 0' }}>
             </div>
