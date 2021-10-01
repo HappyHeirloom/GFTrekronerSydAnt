@@ -1,5 +1,15 @@
 import { pdftext } from "./pdftext";
+import changeLanguage from "../components/languageComponent";
 var pdfstexts = pdftext.pdfstext;
+
+var lang = "DK";
+var number = 0;
+
+if(changeLanguage() ? lang = "EN" : lang = "DK"); 
+
+function raiseNumber(){
+  number++;
+}
 
 export var pdfList = {
   pdfs: [
@@ -7,15 +17,21 @@ export var pdfList = {
       name: "Parking",
       embedURL:
         "https://usercontent.one/wp/www.gftrekronersyd.dk/wp-content/uploads/2020/12/P-bestemmelser-Grundejerforeningen-Trekroner-syd-August-19.pdf",
-      text: pdfstexts[0].Text,
-      header: pdfstexts[0].header
+      text_dk: pdfstexts[number].Text_DK,
+      text_en: pdfstexts[number].Text_EN,
+      header_dk: pdfstexts[number].header_DK,
+      header_en: pdfstexts[number].header_EN,
+      raiseNumber: raiseNumber(),
     },
     {
       name: "Rules",
       embedURL:
         "https://usercontent.one/wp/www.gftrekronersyd.dk/wp-content/uploads/2020/12/Ordensregler_Trekroner_Syd_compressed.pdf",
-      text: pdfstexts[1].Text,
-      header: pdfstexts[1].header
+        text_dk: pdfstexts[number].Text_DK,
+        text_en: pdfstexts[number].Text_EN,
+        header_dk: pdfstexts[number].header_DK,
+        header_en: pdfstexts[number].header_EN,
+        raiseNumber: console.log(number),
     },
     {
       name: "AreaCaretaking",

@@ -1,6 +1,8 @@
 //#region Imports
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
+import changeLanguage from "../components/languageComponent";
+
 
 // Objects
 import { pdfList } from "../objects/pdf";
@@ -20,6 +22,10 @@ function PdfViewer(embedURL) {
   var [loaded, updateLoaded] = useState(false);
   var listOfPdf = pdfList.pdfs;
   
+  var text = "";
+  var header = "";
+  if(changeLanguage() ? text = prop.text_en  : text = prop.text_dk);
+  if(changeLanguage() ? header = prop.header_en  : header = prop.header_dk);
   //#endregion
 
   //#region Functions
@@ -235,10 +241,10 @@ function PdfViewer(embedURL) {
           <div className="row p-3">
             <div id="pdftextdiv" className="p-3">
               <h4>
-                {prop.header}
+                {header}
               </h4>
               <div className="pdftext p-1">
-                {prop.text}
+                {text}
               </div>
               
             </div>

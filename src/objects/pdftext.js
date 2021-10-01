@@ -1,88 +1,110 @@
+import {pdfText} from '../components/objectText/pdfText';
+
+var number = 0;
+var oldNum = 0;
+var spareNum = 0;
+
+var text_dk = pdfText.pdfText_DK;
+var text_en = pdfText.pdfText_EN;
+
+
+function resetNumber(){
+  oldNum = number;
+  number = spareNum;
+  spareNum = oldNum
+}
+
+function raiseNumber(){
+  number++;
+}
+function setNumber(){
+  number = oldNum;
+}
+
+
 export var pdftext = {
   pdfstext: [
     {
       name: "Parking",
-      header: "Parkering i G/F Trekroner syd",
-      Text: (
-        <p>
-          Parkering i G/F Trekroner syd Overholdes af parkeringsreglerne: For at
-          kunne sikre at beboerne en parkering, så tæt på boligen som muligt, er
-          der indført parkeringsregler for alle boliger i områderne, men det
-          sikrer ikke at man får en fast P-plads, når bilen skal parkeres, det
-          sikre at man har retten til at parkerer i området over 30 minutter
-          uden sanktion. Regler gælder i disse områder: Pærelunden,
-          Poppellunden, Akacielunden, I2 bygningen samt Ahornlunden 1-9 og 11 –
-          13 – 15. Aftalen omkring kontrol af parkeringsreglernes overholdelse
-          er aftale indgået mellem Grundejerforeningen Trekroner Syd og ONEPARK
-          / APCOA. Parkeringsbestemmelser i G/F Trekroner syd findes der to
-          forskellige parkeringsbestemmelser i Området. Dem med sorte P-skilte
-          der giver dig en tilladelse på 2 timers parkering er forbeholdt
-          erhverv i dagtimerne mellem kl 08:00 og kl 20:00, som fremgår på
-          skiltene. I nævnte tidspunkt er det tilladt at parkere 2 timer med
-          korrekt indstillet P-skive. Derimod i de Områder med P-skilte der
-          tillader 30 minutters parkering, er områder hvor det udleverede
-          P-kort, som giver tilladelse til at parkere, uden restriktioner,
-          herunder også gæsteparkeringskortene til gæsterne, som er på besøg,
-          med korrekt dato påskrevet. Områdenumrene der fremgår af skiltene er:
-          9471 Pære og Poppellunden, 9383 Akacielunden. Parkeringsregler for
-          begge parkeringsarealer. G/F Trekroner understreger at det ikke
-          tilladt at Parkering på brandveje. Parkering foregår ved at man holder
-          inden for afmærkede båse. I området vil der også være Parkering med
-          handicap, hvor det kun er tilladt med synligt handicap skilt.
-          Overholdes parkeringsbestemmelserne ikke, kan ONEPARK pålægge
-          kontrolgebyr. Taksten for kontrolgebyret er kr. 795,- inkl. moms pr.
-          kontrolgebyr. Taksten for kontrolgebyret er kr. 1500,- inkl. moms pr.
-          kontrolgebyr, på handicappladser uden gyldigt handicapskilt. Inden
-          ONEPARK udskriver kontrolgebyr, observeres køretøjet i minimum 3
-          minutter. For beboer i området: Praktisk information at vide, at i de
-          enkelte boliger tildeles parkeringskort udstedt af APCOA, hvor den
-          giver tilladelse til at man får retten til at parkere uden
-          restriktioner i hele området, i det område, hvor der er opstillet
-          parkeringsskilte med en tidsbegrænset på 30 minutter. Parkeringskortet
-          skal placeres synlig på forruden, og kortet er aktivt i et år,
-          derefter skal kortet fornyes. Parkeringsområdet Ahornlunden 1-9 plads
-          nummer 3962. Dagskortet, der anvendes i Ahornlunden, er kun gældende
-          på pladsen i Ahornlunden 1-9 plads nummer 3962. I Ahornlunden er det
-          tilladt at parkere 1 time med korrekt indstillet P skive. For gæsterne
-          i området: Der kan der printes gæstekort ud fra ejerforeningens
-          hjemmeside til brug for gæster. Gæsteparkeringskortet skal påføres
-          parkeringsdato, og kun én dato pr kort, og er gældende kun for denne
-          dato. Gæsteparkeringskortene er gældende for parkering i områder med
-          30 minutters tidsbegrænset parkering.
-        </p>
+      header_DK: text_dk[number].header,
+      header_EN: text_en[number].header,
+      Text_DK: (
+        <div>
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            <h3>{text_dk[number].header}</h3>
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            <h3>{text_dk[number].header}</h3>
+            {text_dk[number].text}
+            {resetNumber()}
+        </div>
       ),
+      Text_EN: (
+        <div>
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            <h3>{text_en[number].header}</h3>
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            <h3>{text_en[number].header}</h3>
+            {text_en[number].text}
+            {resetNumber()}
+        </div>
+      ),
+      setNumber: setNumber(),
     },
     {
       name: "Rules",
-      header: "Reglement",
-      Text: (
-        <p id="RulesText">
-          Tilhørende referat er en ordensregel. G/F Trekroner beskæftiger sig i
-          området uden for bygning (p-pladser, veje, torve, stier, grønne
-          arealer og legepladser). Ønsker at skabe en god atmosfære mellem
-          beboerne og de ansatte ved løbende vedligeholdelse, renholdelse og
-          snerydning i området. Nuværende regelsæt er med til at skabe området
-          pænt og attraktivt, så udendørsaktiviteterne kan nydes. budskabet med
-          ordensregler skyldes at både beboerne og de ansatte viser respekt og
-          omtanke overfor alle, så alle kan overholde de simple regler. Vigtigt
-          information for forretningerne i området. Det er tilladt at fremvise
-          salgsfremmende opstilling udenfor forrentning i åbningstiderne, det
-          skal dog understreges at det ikke er tilladt foran Akacielunden 1-7.
-          Der må ikke spærres foran fortove eller torve. Udeservering i området
-          er tilladt, hvis bordene og stolene ikke fastgjort. Kan placeres i
-          åbningstiderne uden for forretningen til brug for udeservering, dog
-          ikke foran Akacielunden 1-7. Det er dog ikke tilladt at have
-          permanente vareopstilling eller foretage ændringer på
-          grundejerforeningens arealer. Hundeluftning skal ske ved at hundene
-          skal holdes i snor i G/F Trekroner syd området, og at hundelufteren
-          skal straks fjerne eventuelle efterlandskaber. Det er vigtigt at vi
-          vedligeholder området og at man ikke efterlader paller eller
-          storskrald i området. G/F Trekroner syd viser forståelse for at der
-          bliver opbevaret emballage eller leverancer på fællesarealerne og at
-          det er kun nødvendigt, men i en kortvarige tid, men der skal
-          understreges at forrentninger er forpligtet til holde arealet pænt.
-        </p>
+      header_DK: text_dk[number].header,
+      header_EN: text_en[number].header,
+      Text_DK: (
+        <div>
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_dk[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_dk[number].text}
+            {resetNumber()}
+        </div>
       ),
+      Text_EN: (
+        <div>
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_en[number].text}
+            <br/>
+            {raiseNumber()}
+            {text_en[number].text}
+            {resetNumber()}
+        </div>
+      ),
+      setNumber: setNumber(),
     },
     {
       name: "Plejebeskrivelse",
