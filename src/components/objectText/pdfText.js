@@ -1,112 +1,112 @@
 export var pdfText = {
   pdfText_DK: [
-    {
+    { // 0
       name: "ParkeringTextrow1_DK",
       header: "Parkering i G/F Trekroner syd",
       text: "For at kunne sikre at beboerne finder en parkering, så tæt på boligen som muligt, er der indført parkeringsregler for alle boliger i områderne, men det sikrer ikke at man får en fast P-plads, når bilen skal parkeres, det sikre at man har retten til at parkerer i området over 30 minutter uden sanktion. Regler gælder i disse områder: Pærelunden, Poppellunden, Akacielunden, I2 bygningen samt Ahornlunden 1-9 og 11 – 13 – 15.",
     },
-    {
+    {  // 1
       name: "ParkeringTextrow2_DK",
       header: "Parkering i G/F Trekroner syd",
       text: "Aftalen omkring kontrol af parkeringsreglernes overholdelse er aftale indgået mellem Grundejerforeningen Trekroner Syd og ONEPARK / APCOA. Parkeringsbestemmelser i G/F Trekroner syd findes der to forskellige parkeringsbestemmelser i Området. Dem med sorte P-skilte der giver dig en tilladelse på 2 timers parkering er forbeholdt erhverv i dagtimerne mellem kl 08:00 og kl 20:00, som fremgår på skiltene. I nævnte tidspunkt er det tilladt at parkere 2 timer med korrekt indstillet P-skive. Derimod i de Områder med P-skilte der tillader 30 minutters parkering, er områder hvor der udleveres P-kort, som giver tilladelse til at parkere, uden restriktioner. Herunder bliver der også tildelt gæsteparkeringskort til gæsterne, som er på besøg, med korrekt dato påskrevet. Områdenumrene der fremgår af skiltene er: 9471 Pære og Poppellunden, 9383 Akacielunden. Parkeringsregler for begge parkeringsarealer. ",
     },
-    {
+    { // 2
       name: "ParkeringTextrow3_DK",
       header: "Parkering i G/F Trekroner syd",
       text: "G/F Trekroner understreger at det ikke tilladt at Parkerer sin bil på brandveje. Parkering foregår ved at man holder inden for de afmærkede p-båser.  I området vil der også være Parkering til de handicap, hvor det kun er tilladt med synligt handicapskilt. Overholdes parkeringsbestemmelserne ikke, kan ONEPARK pålægge kontrolgebyr. Taksten for kontrolgebyret er kr. 795,- inkl. moms pr. kontrolgebyr. Taksten for kontrolgebyret er kr. 1500,- inkl. moms pr. kontrolgebyr, på handicappladser uden gyldigt handicapskilt. Inden ONEPARK udskriver kontrolgebyr, observeres køretøjet i minimum 3 minutter.",
     },
-    {
+    { // 3
       name: "ParkeringTextrow4_DK",
       header: "Parkering i G/F Trekroner syd: For Beboere",
       text: "Praktisk information at vide, at i nogle enkelte boliger tildeles parkeringskort udstedt af APCOA, som giver tilladelse til at parkere uden restriktioner i hele området, i det område, hvor der er opstillet parkeringsskilte med en tidsbegrænset på 30 minutter. Parkeringskortet skal placeres synlig på forruden, og kortet er aktivt i et år, derefter skal kortet fornyes. Parkeringsområdet Ahornlunden 1-9 plads nummer 3962. Dagskortet, der anvendes i Ahornlunden, er kun gældende på pladsen i Ahornlunden 1-9 plads nummer 3962. I Ahornlunden er det tilladt at parkere 1 time med korrekt indstillet P skive.",
     },
-    {
+    { // 4
       name: "ParkeringTextrow5_DK",
       header: "Parkering i G/F Trekroner syd: For gæsterne i området:",
       text: "Der kan printes gæstekort ud fra ejerforeningens hjemmeside til brug for gæsterne. Gæsteparkeringskortet skal påføres parkeringsdato, og kun én dato pr kort, og er gældende kun for den dato. Gæsteparkeringskortene er gældende for parkering i områder med 30 minutters tidsbegrænset parkering.",
     },
-    {
+    { // 5
       name: "ReglementTextrow1_DK",
       header: "Reglement:",
       text: "Tilhørende referat er en ordensregel. G/F Trekroner beskæftiger sig i området uden for bygning (p-pladser, veje, torve, stier, grønne arealer og legepladser). Ønsker at skabe en god atmosfære mellem beboerne og de ansatte ved løbende vedligeholdelse, renholdelse og snerydning i området. ",
     },
-    {
+    { // 6
       name: "ReglementTextrow2_DK",
       header: "Reglement:",
       text: "'Nuværende regelsæt er med til at holde området pænt og attraktivt, så udendørsaktiviteterne kan nydes. Budskabet med ordensregler skyldes at både beboerne og de ansatte viser respekt og omtanke overfor alle, så alle kan overholde de simple regler.'",
     },
-    {
+    { // 7
       name: "ReglementTextrow3_DK",
       header: "Reglement:",
       text: "Vigtig information for forretningerne i området. Det er tilladt at fremvise salgsfremmende opstilling udenfor forrentningen i åbningstiderne, der skal dog understreges, at det ikke er tilladt foran Akacielunden 1-7. Der må ikke spærres foran fortove eller torve.  Udeservering i området er tilladt, hvis bordene og stolene ikke er fastgjort. Kan placeres i åbningstiderne uden for forretningen til brug for udeservering, dog ikke foran Akacielunden 1-7. Det er dog ikke tilladt at have permanent vareopstilling eller foretage ændringer på grundejerforeningens arealer.",
     },
-    {
+    { // 8
       name: "ReglementTextrow4_DK",
       header: "Reglement:",
       text: "Hundeluftning skal ske ved at hundene skal holdes i snor i G/F Trekroner syd området, og at hundelufteren skal straks fjerne eventuelle efterlandskaber. Det er vigtigt, at vi vedligeholder området, og man ikke efterlader paller eller storskrald i området. G/F Trekroner syd viser ",
     },
-    {
+    { // 9
      name: "PlejebeskrivelseTextrow1_DK",
      header: "Plejebeskrivelse for fælleområdet for Trekroner syd samt stationsbygningen:",
      text: "Følgende er en vejledning af drift, de grønne områder på fællesområdet for Trekroner Syd. I bilaget er der en beskrivelse af hvert element, der opstår i området, hvor det er en vejledning til, hvordan området skal vedligeholdes. Elementerne i vedledningen er opdelt over hele Fællesområdet for Trekroner Syd samt for området omkring Stationsbygningen. Trekroner syd består af 6 boligblokke med tilhørende grønt fællesareal, hvor imellem boligblokkene er der grønne arealer med blandt andet overdrev og skovplantning. Derudover kan der ses på området de erhvervsbygninger med tilhørende torve, der befinder sig i området. For samtlige parkeringspladser på området, er det anvendt som skovparkering. Hele Fællesområdet for Trekroner Syd har et stærkt naturpræg og sigter mod en drift, der fremmer nøjsomme arter og den naturbaserede udvikling. Brugsplæner findes i haver, parker og boligområder, og kan anvendes til ophold, leg og boldspil. Brugsplæner har typisk stor slidstyrke og brugsværdi.",
     },
-    {
+    { // 10
      name: "GeneralforsamlingTextrow1_DK",
      header: "Referat af ordinær generalforsamling i Grundejerforening Trekroner syd:",
      text: "Ordinær generalforsamling bliver afholdt en gang om året, hvor alle selskabets aktionærer er forpligtet til at deltage, og vil have stemmeret ved de beslutninger der bliver vedtaget. Det gør at medlemmerne har ret til at stille spørgsmål til ledelsen. Bestyrelsen har ret til at afvise forslaget til generalforsamling, hvor der kun kan stilles ændringsforslag til det bestemte emne, der skal stemmes om. Referat til en generalforsamling er de væsentlige punkter, som der bliver drøftet mellem medlemmerne.  På forhånd skal bestyrelsen i G/F Trekroner syd udarbejde en dagsorden til medlemmerne.",
     },
-    {
+    { // 11
       name: "VedtægterTextrow1_DK",
       header: "Vedtægter: Kommunikation ",
       text: "Såfremt medlemmerne er tilmeldt en elektronisk postkasse ”e-boks”, hvor de har oplyst sin e-mail til bestyrelsen eller selv kommunikerer med bestyrelsen via e-mail, foregår al korrespondance mellem medlemmer og bestyrelsen per e-mail samt ved filer vedhæftet eller tilknyttet e-mail i form af link til hjemmesiden eller andres hjemmesider. Korrespondance skal forstås ved ” indkaldelser til generalforsamlinger med bilag i henhold til vedtægterne (årsregnskaber, budgetter, forslag, m.v.), opkrævninger, påkrav af enhver art (herunder påkrav om betaling af restancer til foreningen og inkassopåkrav)”.",
     },
-    {
+    { // 12
       name: "VedtægterTextrow2_DK",
       header: "Vedtægter: Foreningens område og medlemmer:",
       text: "Ved hjælp af Roskilde kommunes lokalplan er grundejerforenings område fastlagt ” lokalplan nr. 422”. Medlemmerne i G/F Trekroner syd er knyttet til lokalplan nr. 422 § 12, stk. 1 og lokalplan nr. 544 § 10, til enhver tid værende ejere af ejendomme, som befinder sig i G/F Trekroner syd området. Medlemmerne er forpligtet til enhver tid at være tilknyttet til G/F Trekroner og respektere grundejerforeningens vedtægter.",
     },
-    {
+    { // 13
       name: "VedtægterTextrow3_DK",
       header: "Vedtægter: G/F Trekroner syd formål og opgaver",
       text: "Hele formålet er at G/F Trekroner syd er at varetage medlemmernes fælles interesse i forbindelse til de fællesarealer der hører under grundejerforeningens område. Grundejerforeningen er forpligtet til at drive, renholde, vedligeholde og forny enhver areal uden for de enkelte sokkeludstykkede bebyggelser, kun hvis placering fremgår af det med grønt markerede områder, som der kan ses i pdf-filen vedtægter bilag 2.",
     },
-    {
+    { // 14
       name: "VedtægterTextrow4_DK",
       header: "Vedtægter: Grundejerforeningens overtagelse af interne veje, stier, parkeringsanlæg, grønne arealer mv.",
       text: "Hele formålet er at G/F Trekroner syd er at varetage medlemmernes fælles interesse i forbindelse til de fællesarealer der hører under grundejerforeningens område. Grundejerforeningen er forpligtet til at drive, renholde, vedligeholde og forny enhver areal uden for de enkelte sokkeludstykkede bebyggelser, kun hvis placering fremgår af det med grønt markerede områder, som der kan ses i pdf-filen vedtægter bilag 2.",
     },
-    {
+    { // 15
       name: "VedtægterTextrow5_DK",
       header: "Vedtægter: Medlemmernes forhold til grundejerforeningen:",
       text: "Hvert år fastholder G/F Trekroner syd den ordinær generalforsamling, hvor der samlet skal opkræves for det kommende regnskabsår, ved hjælp af for udarbejdning af det godkendte budget. Bidrag betales halvårligt forud efter påkrav.",
     },
-    {
+    { // 16
       name: "VedtægterTextrow6_DK",
       header: "Vedtægter: Generalforsamling:",
       text: "Hvert år fastholder G/F Trekroner syd den ordinær generalforsamling, hvor der samlet skal opkræves for det kommende regnskabsår, ved hjælp af for udarbejdning af det godkendte budget. Bidrag betales halvårligt forud efter påkrav.",
       listvedtægter:["Valg af dirigent", "Bestyrelsens beretning", "Aflæggelse af årsrapport underskrevet af revisor og bestyrelsen til godkendelse", "Forelæggelse af drifts-/likviditetsbudget til godkendelse samt beslutning om størrelsen af aconto bidrag og eller indskud for det kommende år", "Forslag fra bestyrelsen", "Forslag fra medlemmer", "Valg af bestyrelsesmedlemmer samt eventuelle suppleanter", "Valg af administrator", "Valg af revisor", "Eventuelt"],
     },
-    {
+    { // 17
       name: "VedtægterTextrow7_DK",
       header: "Vedtægter: Stemmeret og vedtægtsændring",
       text: "Ved beslutninger og valg af almindelige sager vedtæges ved simpelt flertal. Alt afstemning kan ske ved håndsoprækning, men der skal indskrives en skriftlig rapport, hvis bestyrelsen eller mindst to medlemmer af forening kræver det. For at vedtægtsændring skal ske er det vigtigt at mindst halvdelen af medlemmerne afgiver stemme, og at beslutningen tages med mindst 2/3 af de afgivende stemmer. Ved ændring af G/F Trekroner syd vedtægter, der pålægger ejerne væsentlige og nye økonomiske forpligtelser, kræver enstemmighed.",
     },
-    {
+    { // 18
       name: "VedtægterTextrow8_DK",
       header: "Vedtægter: Protokol",
       text: "Fra generalformsamling de beslutninger og de behandlede sager indføres i forenings forhandlingsprotokol, hvor der underskrives af dirigenten og de tilstedeværende bestyrelsesmedlemmer.",
     },
-    {
+    { // 19
       name: "VedtægterTextrow9_DK",
       header: "Vedtægter: Regnskab og revision samt administration:",
       text: "Der bliver udpeget et medlem fra bestyrelsen til kasserer. Kassererens arbejdsområdet, er den udvalgte person får foreningens indtægter, og udbetaler alle af formanden godkendte udgifter. Godkendelsen skal foregå skriftligt. Kassereren skal blandt andet underskrive alle kvitteringer, hvor kassebeholdning skal fremstå i en bank eller på giro. Det er vigtigt at kontoen er klausuleret således der kun kan hæves på kontoen i forhold til tegningsregler.",
     },
-    {
+    { // 20
       name: "BudgetTextrow1_DK",
       header: "Budget Oversigt:",
       text: "Budget er en liste over de indtægter og udgifter, som skal udarbejdes hver måned. I bilagene kan der ses en udarbejdelse de seneste 5 år. Årstallene fra 2017-2021. Grunden til man udarbejder et budget skyldes, at man kan danne sig et overblik over hvad pengene bliver brugt til. Det bliver også nemmere at navigerer rundt i, hvis man er usikker på hvad pengene bliver brugt til. Det kan hurtigt ses, hvis der er disharmoni mellem budget og de faktiske tal. Det som indgår i et resultatbudget, er indtægter og udgifter, hvor man har fokus på omsætning fordelt på ydelse, og kigger på de variable omkostninger og faste omkostninger.",
      }, 
-     {
+     { // 21
       name: "UdbudsmaterialeTextrow1_DK",
       header: "Udbudsmateriale",
       text: "Bemærk venligst følgende: Hovedstien fra Torvet til broen over Trekroner Centervej er udenfor entreprisen, den drøftes af Roskilde Kommune.  Kloakker, brønde mv. tilses og drøftes af et eksternt firma. Løse søm og skruer kan registreres af leverandøren, men udføres af driftsherrens personale. Affald, oprydning og rengøring hører under entreprisen.",
