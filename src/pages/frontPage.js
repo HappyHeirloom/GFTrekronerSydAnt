@@ -12,7 +12,7 @@ function FrontPage() {
                     <Carousel/>
                 </div>
             </Col>
-            <Col xl={8} sm={24}>
+            <Col xl={16} sm={24}>
                 <div className="newsFeed center">
                     <NewsList/>
                 </div>

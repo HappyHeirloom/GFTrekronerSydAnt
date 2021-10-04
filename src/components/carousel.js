@@ -1,5 +1,10 @@
 import React from 'react';
 import { Carousel } from 'antd';
+import pic1 from "../images/pic1.jpg"
+import pic2 from "../images/pic2.jpg"
+import pic3 from "../images/pic3.jpg"
+import pic4 from "../images/pic4.jpg"
+
 
 var windowsWidth = window.innerWidth;
 var imageWidth = windowsWidth / 2;
@@ -16,28 +21,28 @@ export default function carousel() {
         <Carousel autoplay speed="1000">
             <div>
                 <img
-                    src="https://cdn.pixabay.com/photo/2021/08/25/20/42/field-6574455_960_720.jpg"
+                    src={pic1}
                     style={centerStuff}
                     alt=""
                 />
             </div>
             <div>
                 <img
-                    src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg"
+                    src={pic2}
                     style={centerStuff}
                     alt=""
                 /> 
             </div>
             <div>
                 <img
-                    src="https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_960_720.jpg"
+                    src={pic3}
                     style={centerStuff}
                     alt=""
                 />
             </div>
             <div>
                 <img
-                    src="https://cdn.pixabay.com/photo/2012/08/06/00/53/bridge-53769_960_720.jpg"
+                    src={pic4}
                     style={centerStuff}
                     alt=""
                 />
