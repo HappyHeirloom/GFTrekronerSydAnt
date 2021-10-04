@@ -9,7 +9,7 @@ const { Meta } = Card;
 
 const News = (props) => (
     <Card
-        style={{ width: 300, color: props.news.tag }}
+        style={{ width: "auto", color: props.news.tag }}
     >
         <Meta
             avatar={

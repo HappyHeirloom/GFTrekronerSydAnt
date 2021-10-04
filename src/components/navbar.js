@@ -106,6 +106,9 @@ export default class Navbar extends Component {
           <Menu.Item key="15" icon={<ApartmentOutlined />}>
             <Link to="/adminnewsfeed">Se admin side</Link>
           </Menu.Item>
+          <Menu.Item key="16" icon={<UserOutlined/>}>
+            <Link to="/FAQ">FAQ</Link>
+          </Menu.Item>
         </Menu>
       </Sider>
     );

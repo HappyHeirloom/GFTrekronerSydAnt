@@ -99,6 +99,8 @@ function PdfViewer(embedURL) {
   useEffect(() => {
     if(loaded === false){
       checkPdf(prop);    
+
+      //eslint-disable-next-line
       updateLoaded(loaded = true);
       document.title = currentPdf;
     } else {

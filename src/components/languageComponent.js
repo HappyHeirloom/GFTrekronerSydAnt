@@ -1,4 +1,5 @@
 var lang_en = false;
+ //eslint-disable-next-line
 var currentSite = window.location.pathname;
 
 function getCurrentSite(){
