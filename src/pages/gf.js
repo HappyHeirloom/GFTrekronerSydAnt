@@ -22,14 +22,14 @@ function Gf() {
       <div className="">
         <div className="row p-2">
           <div className="col-md-6">
-            <h5>{text[number].header}</h5>
+            <h3>{text[number].header}</h3>
             <p>
               {text[number].text}
             </p>
             {raiseNumber()}
           </div>
           <div className="col-md-6">
-            <h5>{text[number].header}</h5>
+            <h3>{text[number].header}</h3>
             <p>
               {text[number].text}
             </p>
@@ -38,14 +38,14 @@ function Gf() {
         </div>
         <div className="row p-2">
           <div className="col-md-6">
-            <h5>{text[number].header}</h5>
+            <h3>{text[number].header}</h3>
             <p>
               {text[number].text}
             </p>
             {raiseNumber()}
           </div>
           <div className="col-md-6">
-            <h5>{text[number].header}</h5>
+            <h3>{text[number].header}</h3>
             <p>
               {text[number].text}
             </p>

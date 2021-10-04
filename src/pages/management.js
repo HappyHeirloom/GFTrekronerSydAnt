@@ -17,9 +17,9 @@ function managementOverview() {
   if(changeLanguage() ? text = managementText.managementText_EN  : text = managementText.managementText_DK);  
   return (
     <div className="" id="">
-      <h3>
+      <h2>
         {text[0].header}
-      </h3>
+      </h2>
       <p>
         {text[0].text}
       </p>

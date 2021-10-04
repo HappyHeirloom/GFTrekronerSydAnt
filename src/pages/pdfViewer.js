@@ -250,6 +250,9 @@ function PdfViewer(embedURL) {
             </div>
             </div>
         </div>
+
+
+        {/* Alle buttons og buttonstext ligger under /objectText/miscText.js */}
         <div className="col-md-8">
           <div className="container pdfViewer" id="pdfViewer">
             <iframe title="PDF" src={prop.embedURL} width="100%" height="800" />

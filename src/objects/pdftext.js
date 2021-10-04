@@ -212,7 +212,7 @@ export var pdftext = {
       ),
       Text_EN: (
         <div>
-            {text_dk[number].text}
+            {text_en[number].text}
             <br/>
             {raiseNumber()}
             <h3>{text_en[number].header}</h3>

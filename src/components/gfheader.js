@@ -8,7 +8,7 @@ function gfheader() {
     <div>
       <h1>GF Trekroner Syd</h1>
       <button  onClick={() => changeLanguage(true)}>
-        <Link to={getCurrentSite()}>Change language</Link>
+        <Link to={getCurrentSite()}>Change language/Skift Sprog</Link>
       </button>
     </div>
 

@@ -73,8 +73,7 @@ export var pdfText = {
     { // 14
       name: "VedtægterTextrow4_DK",
       header: "Vedtægter: Grundejerforeningens overtagelse af interne veje, stier, parkeringsanlæg, grønne arealer mv.",
-      text: "Hele formålet er at G/F Trekroner syd er at varetage medlemmernes fælles interesse i forbindelse til de fællesarealer der hører under grundejerforeningens område. Grundejerforeningen er forpligtet til at drive, renholde, vedligeholde og forny enhver areal uden for de enkelte sokkeludstykkede bebyggelser, kun hvis placering fremgår af det med grønt markerede områder, som der kan ses i pdf-filen vedtægter bilag 2.",
-    },
+      text: "Grundejerforeningens overtagelse af interne veje, stier, parkeringsanlæg, grønne arealer mv. Grundejerforeningen har ansvaret for det, som er markerede med grønt i arealer og anlæg på bilag 2 i pdf-filen vedtægter. Overdragelse af arealer og anlæg ønskes at finde sted 14 dage efter ibrugtagning af byggeri i de enkelte etaper. Alt asfalt i området overdrages med ny udlagt slidlag, hvor samlet grusstier, gives der nye udlagt grus belægning. Områdets parkeringsanlæg, gives der nye anlagte overflader og med beplantning i forhold til bestemmelserne i gældende lokalplan."},
     { // 15
       name: "VedtægterTextrow5_DK",
       header: "Vedtægter: Medlemmernes forhold til grundejerforeningen:",
@@ -183,17 +182,17 @@ export var pdfText = {
     {
      name: "VedtægterTextrow3_EN",
      header: "Articles of association: G/F Trekroner south purposes and tasks:",
-     text: "Hele formålet er at G/F Trekroner syd er at varetage medlemmernes fælles interesse i forbindelse til de fællesarealer der hører under grundejerforeningens område. Grundejerforeningen er forpligtet til at drive, renholde, vedligeholde og forny enhver areal uden for de enkelte sokkeludstykkede bebyggelser, kun hvis placering fremgår af det med grønt markerede områder, som der kan ses i pdf-filen vedtægter bilag 2.",
+     text: "The whole purpose is that G/F Trekroner south is to look after the members' common interest in connection with the common areas that fall under the area of the landowners' association. The landowners' association is obliged to operate, clean, maintain and renew any area outside the individual plinth-piece buildings, only if the location is indicated by the green-marked areas, as can be seen in the pdf file articles of association Annex 2.",
     },
     {
      name: "VedtægterTextrow4_EN",
      header: "Articles of association: The homeowners' association's takeover of internal roads, paths, parking facilities, green areas, ",
-     text: "Hele formålet er at G/F Trekroner syd er at varetage medlemmernes fælles interesse i forbindelse til de fællesarealer der hører under grundejerforeningens område. Grundejerforeningen er forpligtet til at drive, renholde, vedligeholde og forny enhver areal uden for de enkelte sokkeludstykkede bebyggelser, kun hvis placering fremgår af det med grønt markerede områder, som der kan ses i pdf-filen vedtægter bilag 2.",
+     text: "The homeowners' association is responsible for what is marked in green in the areas and installations on Annex 2 of the pdf file bylaws. The transfer of land and plant is to take place 14 days after the commissioning of construction in the individual stages. All asphalt in the area is transferred with new laid-out wear layers, where total gravel paths are given new laid gravel coating. The area's parking facilities are provided with new landscaped surfaces and with planting in accordance with the provisions of the applicable local plan.",
     },
     {
      name: "VedtægterTextrow5_EN",
      header: "Articles of association: Members' relationship with the homeowners' association:",
-     text: "Hvert år fastholder G/F Trekroner syd den ordinær generalforsamling, hvor der samlet skal opkræves for det kommende regnskabsår, ved hjælp af for udarbejdning af det godkendte budget. Bidrag betales halvårligt forud efter påkrav.",
+     text: "Every year, G/F Trekroner syd maintains the annual general meeting, where the total is to be charged for the next financial year, using the preparation of the approved budget. Contributions are paid half-yearly in advance on demand.",
     },
     {
      name: "VedtægterTextrow6_EN",
@@ -228,4 +227,64 @@ export var pdfText = {
      },
 
   ],
+  pdfHeaderText_DK: [
+    {
+      name: "ParkingHeader",
+      text: "Parkering",
+    },
+    {
+      name: "ReglementHeader",
+      text: "Reglement",
+    },
+    {
+      name: "PlejebeskrivelseHeader",
+      text: "Plejebeskrivelse",
+    },
+    {
+      name: "ResumeHeader",
+      text: "Resume Generalforsamling",
+    },
+    {
+      name: "VedtægterHeader",
+      text: "Vedtægter",
+    },
+    {
+      name: "BudgetHeader",
+      text: "Budget",
+    },
+    {
+      name: "UdbudmaterialeHeader",
+      text: "Udbudmateriale",
+    },
+  ],
+  pdfHeaderText_EN: [{
+    name: "ParkingHeader",
+    text: "Parking",
+  },
+  {
+    name: "ReglementHeader",
+    text: "Rules",
+  },
+  {
+    name: "PlejebeskrivelseHeader",
+    text: "Area Care description",
+  },
+  {
+    name: "ResumeHeader",
+    text: "Resume General Assembly",
+  },
+  {
+    name: "VedtægterHeader",
+    text: "Articles of Association",
+  },
+  {
+    name: "BudgetHeader",
+    text: "Budget",
+  },
+  {
+    name: "UdbudmaterialeHeader",
+    text: "Tender material",
+  },
+],
+
 };
