@@ -1,5 +1,5 @@
 export var forsideText = {
-    kontaktText_DK: [
+  forsideText_DK: [
       {
         name: "forsideTextCol1",
         text: "Nyheder",
@@ -7,7 +7,7 @@ export var forsideText = {
     ],
   
   
-    kontaktText_EN: [
+    forsideText_EN: [
       {
         name: "forsideTextCol1",
         text: "News",

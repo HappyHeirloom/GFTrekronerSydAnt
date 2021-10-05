@@ -1,6 +1,7 @@
 //#region Imports
 import React from "react";
 import "../styles/card.css";
+import changeLanguage from '../components/languageComponent';
 
 
 
@@ -14,6 +15,14 @@ import Typography from "@material-ui/core/Typography";
 //#endregion
 
 export default function PdfCard(prop) {
+  var title = "";
+  var content = "";
+
+  var number = 0;
+
+  if(changeLanguage() ? title = prop.prop.title_en  : title = prop.prop.title_dk); 
+  if(changeLanguage() ? content = prop.prop.content_en  : content = prop.prop.content_dk); 
+
   //#region HTML code
   return (
     <Card className="root">
@@ -25,7 +34,7 @@ export default function PdfCard(prop) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            {prop.prop.title}
+            {title}
           </Typography>
           <Typography
             className="text-truncate"
@@ -33,7 +42,7 @@ export default function PdfCard(prop) {
             color="textSecondary"
             component="p"
           >
-            {prop.prop.content}
+            {content}
           </Typography>
         </CardContent>
       </CardActionArea>

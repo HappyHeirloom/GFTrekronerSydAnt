@@ -7,14 +7,19 @@ import { Card, Avatar } from 'antd';
 
 const { Meta } = Card;
 
+function returnImage(image){
+    if(image === "Parking"){
+        return "https://cdn3.iconfinder.com/data/icons/line/36/parking-512.png";
+    }
+}
+
 const News = (props) => (
-    <Card
-        style={{ width: "auto", color: props.news.tag }}
-    >
+
+    <Card>   
         <Meta
             avatar={
                 // TODO Make avatar change depending on news image.
-                <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                <Avatar src={returnImage(props.news.image)} style={{backgroundColor: props.news.tag}} />
             }
             title={props.news.title}
             description={props.news.message}
@@ -65,7 +70,7 @@ export default class newsList extends Component {
     render() {
         return (
             <div>
-                <h3> Nyheder </h3>
+                <h3 style={{marginLeft: 40}}> News </h3>
                 {this.newsList()}
             </div>
         );

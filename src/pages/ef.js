@@ -5,7 +5,6 @@ import { efObjectList } from "../objects/efObjects";
 import { withRouter } from "react-router-dom";
 import { Row, Col } from "antd";
 import "../styles/ef.css";
-
 //#endregion
 
 function efOverview() {

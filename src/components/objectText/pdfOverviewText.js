@@ -15,6 +15,11 @@ export var pdfOverviewText = {
         text: "Her kan du se plejebeskrivelsen for området",
        },
        {
+        name: "ResumeText",
+        header: "Resumé",
+        text: "Her kan du se resume af møderne",
+       },
+       {
         name: "VedtægterText",
         header: "Vedtægter",
         text: "Her kan du se Vedtægterne for området",
@@ -45,10 +50,15 @@ export var pdfOverviewText = {
         text: "Here you can see the different rules",
       },
       {
-        name: "ReglerText",
+        name: "PlejebeskrivelseText",
         header: "Care description",
         text: "Here you can see the care description for the area",
        },
+      {
+        name: "ResumeText",
+        header: "Resume",
+        text: "Here you can the resume for the meetings",
+      },
        {
         name: "VedtægterText",
         header: "Articles of Association",

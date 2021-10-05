@@ -16,14 +16,14 @@ export var MiscText = {
     ButtonGFSideText_DK: [
       {
         name: "OmGfButtonSideText",
-        text: "Klik på knappen kan du se alle ejerforeningerne",
+        text: "Klik på knappen kan du se alle ejerforeningerne ",
        },
     ],
   
     ButtonGFSideText_EN: [
       {
         name: "OmGfButtonSideText",
-        text: "Click on the button you can see all the associations",
+        text: "Click on the button you can see all the associations ",
       },
     ],
     ButtonDokSideText_DK: [

@@ -3,13 +3,18 @@ import React from "react"
 import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
 import {gfText} from '../components/objectText/gfText';
+import {MiscText} from '../components/objectText/miscText';
 
 //#endregion
 
 function Gf() {
   var text = "";
+  var sideText = "";
+  var buttonText = "";
   var number = 0;
   if(changeLanguage() ? text = gfText.gfText_EN  : text = gfText.gfText_DK);  
+  if(changeLanguage() ? sideText = MiscText.ButtonGFSideText_EN  : sideText = MiscText.ButtonGFSideText_DK);  
+  if(changeLanguage() ? buttonText = MiscText.ButtonText_EN  : buttonText = MiscText.ButtonText_DK);  
 
   function raiseNumber(){
     number++;
@@ -53,8 +58,8 @@ function Gf() {
         </div>
         </div>
         <div className="text-center">
-          <strong className="text-center"> På knappen kan du se alle ejerforeningerne</strong>
-      <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> Klik her </Link></button>
+          <strong className="text-center"> {sideText[0].text}</strong>
+      <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
         </div>
     </div>
 
