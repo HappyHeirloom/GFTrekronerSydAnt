@@ -40,7 +40,7 @@ function App() {
       <Layout style={{ minHeight: '100vh' }}>
         <Navbar/>
         <Layout className="site-layout">
-          <Header className="site-layout-background" style={{ padding: 0, lineHeight: 1 }}>
+          <Header className="site-layout-background">
             <Gfheader></Gfheader>
           </Header>
           <Content style={{ margin: '0 16px' }}>

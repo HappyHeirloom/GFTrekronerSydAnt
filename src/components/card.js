@@ -1,7 +1,7 @@
 //#region Imports
 import React from "react";
 import "../styles/card.css";
-import changeLanguage from '../components/languageComponent';
+import changeLanguage from '../components/languageComponent'
 
 
 
@@ -17,8 +17,6 @@ import Typography from "@material-ui/core/Typography";
 export default function PdfCard(prop) {
   var title = "";
   var content = "";
-
-  var number = 0;
 
   if(changeLanguage() ? title = prop.prop.title_en  : title = prop.prop.title_dk); 
   if(changeLanguage() ? content = prop.prop.content_en  : content = prop.prop.content_dk); 

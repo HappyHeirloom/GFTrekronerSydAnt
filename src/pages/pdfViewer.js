@@ -112,164 +112,147 @@ function PdfViewer(embedURL) {
 
 //#region HTML code
   return (
-    <div className="mainFront">
-      <div className="row pdfHeader">
-        <h1>PDF View!</h1>
+    <div className="">          
+      <div className="buttonsSubject">
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => {
+            checkPdf(listOfPdf[0]);
+          }}
+        >
+          {" "}
+          Parkering{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[1])}
+        >
+          {" "}
+          Reglement{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[2])}
+        >
+          {" "}
+          Plejebeskrivelse{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[3])}
+        >
+          {" "}
+          Referat generalforsamling{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[8])}
+        >
+          {" "}
+          Vedtægter{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[9])}
+        >
+          {" "}
+          Budget{" "}
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          onClick={() => checkPdf(listOfPdf[14])}
+        >
+          {" "}
+          Udbudsmateriale{" "}
+        </button>
       </div>
-      <div className="row">
-        <div className="col">
-          <div className="row">
-            <div className="col">
-              
-              <div className="buttonsSubject">
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => {
-                    checkPdf(listOfPdf[0]);
-                  }}
-                >
-                  {" "}
-                  Parkering{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[1])}
-                >
-                  {" "}
-                  Reglement{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[2])}
-                >
-                  {" "}
-                  Plejebeskrivelse{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[3])}
-                >
-                  {" "}
-                  Referat generalforsamling{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[8])}
-                >
-                  {" "}
-                  Vedtægter{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[9])}
-                >
-                  {" "}
-                  Budget{" "}
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  onClick={() => checkPdf(listOfPdf[14])}
-                >
-                  {" "}
-                  Udbudsmateriale{" "}
-                </button>
-              </div>
-            </div>
 
-            <div className="col">
-              <div className="buttonsYear hidden" id="buttonsYear">
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  id="21"
-                  onClick={() => checkYear(prop, 21)}
-                >
-                  2021
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  id="20"
-                  onClick={() => checkYear(prop, 20)}
-                >
-                  2020
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  id="19"
-                  onClick={() => checkYear(prop, 19)}
-                >
-                  2019
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"
-                  id="18"
-                  onClick={() => checkYear(prop, 18)}
-                >
-                  2018
-                </button>
-                <button
-                  variant="contained"
-                  size="large"
-                  className="button"  
-                  id="17"
-                  onClick={() => checkYear(prop, 17)}
-                >
-                  2017
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="row p-3">
-            <div id="pdftextdiv" className="p-3">
-              <h4>
-                {header}
-              </h4>
-              <div className="pdftext p-1">
-                {text}
-              </div>
-              
-            </div>
-            </div>
+      <div className="buttonsYear hidden" id="buttonsYear">
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          id="21"
+          onClick={() => checkYear(prop, 21)}
+        >
+          2021
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          id="20"
+          onClick={() => checkYear(prop, 20)}
+        >
+          2020
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          id="19"
+          onClick={() => checkYear(prop, 19)}
+        >
+          2019
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"
+          id="18"
+          onClick={() => checkYear(prop, 18)}
+        >
+          2018
+        </button>
+        <button
+          variant="contained"
+          size="large"
+          className="button"  
+          id="17"
+          onClick={() => checkYear(prop, 17)}
+        >
+          2017
+        </button>
+      </div>
+
+      <div id="pdftextdiv" className="p-3">
+        <h4>
+          {header}
+        </h4>
+        <div className="pdftext p-1">
+          {text}
         </div>
+        
+      </div>
 
 
-        {/* Alle buttons og buttonstext ligger under /objectText/miscText.js */}
-        <div className="col-md-8">
-          <div className="container pdfViewer" id="pdfViewer">
-            <iframe title="PDF" src={prop.embedURL} width="100%" height="800" />
-          </div>
-          <div className="pdfLink" id="pdfLink">
-            <p>
-              {" "}
-              Din skærm er for lille, klik her for at se {currentPdf} pdf.{" "}
-            </p>
-            <a href={prop.embedURL}>
-              {" "}
-              <button variant="contained">Klik her!</button>{" "}
-            </a>
-          </div>
-        </div>
+    {/* Alle buttons og buttonstext ligger under /objectText/miscText.js */}
+      <div className="container pdfViewer" id="pdfViewer">
+        <iframe title="PDF" src={prop.embedURL} width="100%" height="800" />
+      </div>
+      <div className="pdfLink" id="pdfLink">
+        <p>
+          {" "}
+          Din skærm er for lille, klik her for at se {currentPdf} pdf.{" "}
+        </p>
+        <a href={prop.embedURL}>
+          {" "}
+          <button variant="contained">Klik her!</button>{" "}
+        </a>
       </div>
     </div>
   );
