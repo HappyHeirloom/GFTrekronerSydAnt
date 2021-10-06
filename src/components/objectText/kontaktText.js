@@ -33,6 +33,10 @@ export var kontaktText = {
         name: "BeskedText",
         text: "Din besked",
       },
+      {
+        name: "SendText",
+        text: "Send e-mail",
+      },
     ],
     kontaktformText_EN: [
       {
@@ -50,6 +54,10 @@ export var kontaktText = {
       {
         name: "BeskedText",
         text: "Your Message",
+      },
+      {
+        name: "SendText",
+        text: "Send e-mail",
       },
 
     ],

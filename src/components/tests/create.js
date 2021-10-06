@@ -111,7 +111,7 @@ export default class Create extends Component {
                             allowClear
                         >
                             <Option value="Parking">Parkering</Option>
-                            <Option value="Rules">Reglement</Option>
+                            <Option value="Important">Vigtigt</Option>
                             <Option value="Other">Andet</Option>
                         </Select>
                     </Form.Item>

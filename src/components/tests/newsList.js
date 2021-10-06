@@ -4,14 +4,36 @@ import React, { Component } from "react";
 import axios from 'axios';
 
 import { Card, Avatar } from 'antd';
+import { List } from 'antd';
 
 const { Meta } = Card;
+var list = [];
+
 
 function returnImage(image){
     if(image === "Parking"){
-        return "https://cdn3.iconfinder.com/data/icons/line/36/parking-512.png";
+        return "https://cdn-icons-png.flaticon.com/512/5006/5006090.png";
+    }
+    if(image === "Rules"){
+        return "https://cdn-icons-png.flaticon.com/512/3522/3522016.png";
     }
 }
+
+function returnColor(color){
+    switch(color){
+        case "Red":
+            return "#DB3E39";
+        case "Yellow":
+            return "#F0ED8C";
+        case "Green":
+            return "#77F085";
+        default:
+            return "white";
+    }
+}
+
+
+
 
 const News = (props) => (
 
@@ -19,7 +41,7 @@ const News = (props) => (
         <Meta
             avatar={
                 // TODO Make avatar change depending on news image.
-                <Avatar src={returnImage(props.news.image)} style={{backgroundColor: props.news.tag}} />
+                <Avatar src={returnImage(props.news.image)} style={{backgroundColor: returnColor(props.news.tag), padding: 5}} />
             }
             title={props.news.title}
             description={props.news.message}
@@ -66,12 +88,49 @@ export default class newsList extends Component {
         });
     }
 
+    newDataList(){
+        this.newsList().forEach(element => {
+            list.push(element.props.news);
+        });
+
+        list.reverse();
+    }
+
+    emptyArray(){
+        list = [];
+    }
 
     render() {
         return (
             <div>
-                <h3 style={{marginLeft: 40}}> News </h3>
-                {this.newsList()}
+                {this.newDataList()}
+                <List
+                    header="News"
+                    itemLayout="vertical"
+                    size="large"
+                    bordered="true"
+                    pagination={{
+                    onChange: page => {
+                        
+                    },
+                    pageSize: 3,
+                    }}
+                    dataSource={list}
+                    // footer={
+                    // }
+                    renderItem={item => (
+                    <List.Item
+                        key={item.id}
+                    >
+                        <List.Item.Meta
+                        avatar={<Avatar src={returnImage(item.image)} style={{backgroundColor: returnColor(item.tag), padding: 5}} />}
+                        title={item.title}
+                        description={item.message}
+                        />
+                    </List.Item>
+                    )}
+                />,
+                {this.emptyArray()}
             </div>
         );
     }

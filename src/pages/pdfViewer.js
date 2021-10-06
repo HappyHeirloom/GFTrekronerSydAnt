@@ -1,7 +1,9 @@
 //#region Imports
 import React, { useState, useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
+import {MiscText} from '../components/objectText/miscText';
+import {pdfOverviewText} from '../components/objectText/pdfOverviewText';
 
 
 // Objects
@@ -15,6 +17,7 @@ import "../styles/pdfViewer.css";
 
 
 
+
 function PdfViewer(embedURL) {
   //#region React hooks and variables
   var [prop, updateURL] = useState(embedURL.embedURL);
@@ -24,11 +27,23 @@ function PdfViewer(embedURL) {
   
   var text = "";
   var header = "";
+  var sideText = "";
+  var buttonText = "";
+  var pdfButtonText = "";
+  var number = 0;
+  if(changeLanguage() ? sideText = MiscText.ButtonDokSideText_EN  : sideText = MiscText.ButtonDokSideText_DK);  
+  if(changeLanguage() ? buttonText = MiscText.ButtonText_EN  : buttonText = MiscText.ButtonText_DK);  
   if(changeLanguage() ? text = prop.text_en  : text = prop.text_dk);
   if(changeLanguage() ? header = prop.header_en  : header = prop.header_dk);
+  if(changeLanguage() ? pdfButtonText = pdfOverviewText.pdfOverviewText_EN : pdfButtonText = pdfOverviewText.pdfOverviewText_DK);
   //#endregion
 
   //#region Functions
+
+  function raiseNumber(){
+    number++;
+  }
+
   // Checks given pdf if we should show the buttons for the year
   function checkPdf(pdf) {
     var but = document.getElementById("buttonsYear");
@@ -123,7 +138,10 @@ function PdfViewer(embedURL) {
           }}
         >
           {" "}
-          Parkering{" "}
+          <Link to="/doc/parkering">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -132,7 +150,10 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[1])}
         >
           {" "}
-          Reglement{" "}
+          <Link to="/doc/reglement">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -141,7 +162,10 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[2])}
         >
           {" "}
-          Plejebeskrivelse{" "}
+          <Link to="/doc/plejebeskrivelse">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -150,7 +174,10 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[3])}
         >
           {" "}
-          Referat generalforsamling{" "}
+          <Link to="/doc/resume">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -159,7 +186,10 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[8])}
         >
           {" "}
-          Vedtægter{" "}
+          <Link to="/doc/vedtægter">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -168,7 +198,10 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[9])}
         >
           {" "}
-          Budget{" "}
+          <Link to="/doc/budget">
+            {pdfButtonText[number].header}{" "}
+          </Link>
+          {raiseNumber()}
         </button>
         <button
           variant="contained"
@@ -177,7 +210,9 @@ function PdfViewer(embedURL) {
           onClick={() => checkPdf(listOfPdf[14])}
         >
           {" "}
-          Udbudsmateriale{" "}
+          <Link to="/doc/udbudsmateriale">
+            {pdfButtonText[number].header}{" "}
+          </Link>
         </button>
       </div>
 
@@ -247,11 +282,11 @@ function PdfViewer(embedURL) {
       <div className="pdfLink" id="pdfLink">
         <p>
           {" "}
-          Din skærm er for lille, klik her for at se {currentPdf} pdf.{" "}
+          {sideText[0].text} {currentPdf} {" "}
         </p>
         <a href={prop.embedURL}>
           {" "}
-          <button variant="contained">Klik her!</button>{" "}
+          <button variant="contained">{buttonText[0].text}</button>{" "}
         </a>
       </div>
     </div>

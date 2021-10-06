@@ -9,17 +9,18 @@ import changeLanguage from "./languageComponent";
 var site = getCurrentSite();
 
 function Gfheader() {
-  
+  var lang = "";
   var [disabledDK, changeDisDK] = useState(true);
   var [disabledEN, changeDisEN] = useState(false);
   
+  if(changeLanguage() ? lang = "Language: EN" : lang = "Sprog: DK");
+
   function handleMenuClick(e) {
     // message.info('Click on menu item.');
     changeLanguage(true);
     checkLanguage();
   }
   function checkLanguage(){
-    console.log("changed");
     if(disabledEN ? changeDisDK(disabledDK = true) : changeDisDK(disabledDK = false));
     if(disabledDK ? changeDisEN(disabledEN = false) : changeDisEN(disabledEN = true));
   }
@@ -32,21 +33,21 @@ function Gfheader() {
       </Menu.Item>
       <Menu.Item key="2" icon={<UserOutlined />} disabled={disabledEN}>
         <Link to={site}>
-          Engelsk
+          English
         </Link>
       </Menu.Item>
     </Menu>
   );
 
   return (
-        <Row gutter={[16, 16]}>
-          <Col span={20}>
-            <h1 style={{fontSize: 30}}>GF Trekroner Syd</h1>
+        <Row gutter={[]}>
+          <Col xl={20} md={20} sm={12} xs={0} style={{margin: "auto", lineHeight: 1}}>
+            <h1 className="gfHeader">GF Trekroner Syd</h1>
           </Col>
-          <Col span={4}>
+          <Col xl={4} md={4} sm={12} xs={24}>
             <Dropdown overlay={menu}>
               <Button>
-                Sprog <DownOutlined />
+                {lang} <DownOutlined />
               </Button>
             </Dropdown>
           </Col>

@@ -1,5 +1,5 @@
-.mainFront {
-    margin-top: -2.5rem;
+Button > a {
+    color: black;
 }
 
 .pdfHeader{
@@ -16,9 +16,7 @@
 
 
 .pdftext{
-    max-height: 25rem;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    padding: 0.2rem;
 }
 
 @media only screen and (min-width: 992px) {

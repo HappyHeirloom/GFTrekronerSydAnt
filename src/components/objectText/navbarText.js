@@ -10,7 +10,7 @@ export var navtext = {
        },
        {
         name: "DokumenttextText",
-        text: "Forside",
+        text: "Dokumenter",
        },
        {
         name: "DokuDropText_1",
@@ -64,6 +64,10 @@ export var navtext = {
         name: "seAdmin",
         text: "Se Admin Side",
        },
+       {
+         name: "FAQ",
+         text: "FAQ"
+       }
        
     ],
   
@@ -133,5 +137,9 @@ export var navtext = {
         name: "seAdmin_EN",
         text: "See Admin Panel",
        },
+       {
+        name: "FAQ",
+        text: "FAQ"
+        }
     ],
   };

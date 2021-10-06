@@ -1,5 +1,18 @@
 import { React, useState } from "react";
 import { send } from 'emailjs-com';
+import {kontaktText} from '../components/objectText/kontaktText';
+import changeLanguage from './languageComponent';
+
+var pHolder = "";
+var number = 0;
+
+function resetNumber(){
+  number = 0;
+}
+
+function raiseNumber(){
+  number++;
+}
 
 function EmailForm() {
     //#region Variables
@@ -51,41 +64,50 @@ function EmailForm() {
       }
     }
 
+    if(changeLanguage() ? pHolder = kontaktText.kontaktformText_EN : pHolder = kontaktText.kontaktformText_DK);
+
+    //#endregion
+
     return (
         <form id="emailForm" onSubmit={onSubmit}>
             <input
             id="emailName"
             type='text'
             name='from_name'
-            placeholder='Dit navn'
+            placeholder={pHolder[number].text}
             value={toSend.from_name}
             onChange={handleChange}
             />
+            {raiseNumber()}
             <input
             id="emailMail"
             type='text'
             name='reply_to'
-            placeholder='Din email'
+            placeholder={pHolder[number].text}
             value={toSend.reply_to}
             onChange={handleChange}
             />
+            {raiseNumber()}
             <input
             id="emailSubject"
             type='text'
             name='subject'
-            placeholder='Email emne'
+            placeholder={pHolder[number].text}
             value={toSend.subject}
             onChange={handleChange}
             />
+            {raiseNumber()}
             <input
             id="emailMessage"
             type='text'
             name='message'
-            placeholder='Din besked'
+            placeholder={pHolder[number].text}
             value={toSend.message}
             onChange={handleChange}
             />
-            <button id="submitButton" type='submit' disabled={dis}>Send e-mail</button>
+            {raiseNumber()}
+            <button id="submitButton" type='submit' disabled={dis}>{pHolder[number].text}</button>
+            {resetNumber()}
         </form>
     )
 }
