@@ -6,7 +6,7 @@ import axios from 'axios';
 class AdminLogin extends Component {
     constructor(props) {
         super(props);
-        this.state = { admin: {}};
+        this.state = { admin: {} };
     }
 
     componentDidMount() {

@@ -59,7 +59,7 @@ function Gf() {
         </div>
         <div className="text-center">
           <strong className="text-center"> {sideText[0].text}</strong>
-      <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
+            <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
         </div>
     </div>
 
