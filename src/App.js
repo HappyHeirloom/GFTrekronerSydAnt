@@ -27,6 +27,7 @@ import AdminNewsfeed from './components/tests/adminNewsList';
 // Google analytics
 import RouteChangeTracker from './RouteChangeTracker';
 import ReactGA from 'react-ga';
+import adminLogin from './pages/adminLogin';
 
 const TRACKING_ID = "UA-208535202-1";
 ReactGA.initialize(TRACKING_ID);
@@ -104,6 +105,7 @@ function App() {
                 </Route>
                 <Route path="/adminnewsfeed" component={AdminNewsfeed}/>
                 <Route path="/FAQ" component={FAQ}/>
+                <Route path="/admin" component={adminLogin}/>
               </Switch>
             </div>
           </Content>

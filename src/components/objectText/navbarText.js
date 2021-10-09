@@ -67,6 +67,10 @@ export var navtext = {
        {
          name: "FAQ",
          text: "FAQ"
+       },
+       {
+         name: "admin",
+         text: "Admin"
        }
        
     ],
@@ -140,6 +144,10 @@ export var navtext = {
        {
         name: "FAQ",
         text: "FAQ"
+        },
+        {
+          name: "admin",
+          text: "Admin"
         }
     ],
   };

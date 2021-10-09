@@ -142,6 +142,10 @@ export default class Navbar extends Component {
           <Menu.Item key="16" icon={<UserOutlined/>}>
             <Link to="/FAQ">{text[number].text}</Link>
           </Menu.Item>
+          {this.raiseNumber()}
+          <Menu.Item key="17" icon={<UserOutlined/>}>
+            <Link to="/admin">{text[number].text}</Link>
+          </Menu.Item>
           {this.resetNumber()}
         </Menu>
       </Sider>
