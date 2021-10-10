@@ -56,14 +56,14 @@ export var navtext = {
         name: "EjerforeningText",
         text: "Ejerforeningerne",
        },
-       {
-        name: "lavNyhedText",
-        text: "Lav En Nyhed",
-       },
-       {
-        name: "seAdmin",
-        text: "Se Admin Side",
-       },
+      //  {
+      //   name: "lavNyhedText",
+      //   text: "Lav En Nyhed",
+      //  },
+      //  {
+      //   name: "seAdmin",
+      //   text: "Se Admin Side",
+      //  },
        {
          name: "FAQ",
          text: "FAQ"
@@ -133,14 +133,14 @@ export var navtext = {
         name: "EjerforeningText_EN",
         text: "Associations",
        },
-       {
-        name: "lavNyhedText_EN",
-        text: "Make News Story",
-       },
-       {
-        name: "seAdmin_EN",
-        text: "See Admin Panel",
-       },
+      //  {
+      //   name: "lavNyhedText_EN",
+      //   text: "Make News Story",
+      //  },
+      //  {
+      //   name: "seAdmin_EN",
+      //   text: "See Admin Panel",
+      //  },
        {
         name: "FAQ",
         text: "FAQ"

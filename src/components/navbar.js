@@ -130,14 +130,14 @@ export default class Navbar extends Component {
           </Menu.Item>
 
           {/* TEST FOR ADMIN */}
-          {this.raiseNumber()}
+          {/* {this.raiseNumber()}
           <Menu.Item key="14" icon={<ApartmentOutlined />}>
             <Link to="/create">{text[number].text}</Link>
           </Menu.Item>
           {this.raiseNumber()}
           <Menu.Item key="15" icon={<ApartmentOutlined />}>
             <Link to="/adminnewsfeed">{text[number].text}</Link>
-          </Menu.Item>
+          </Menu.Item> */}
           {this.raiseNumber()}
           <Menu.Item key="16" icon={<UserOutlined/>}>
             <Link to="/FAQ">{text[number].text}</Link>
