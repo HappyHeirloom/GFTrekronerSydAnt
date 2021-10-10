@@ -18,6 +18,7 @@ import EF from "./pages/ef";
 import Gfheader from './components/gfheader';
 import FAQ from './pages/FAQ';
 import login from './pages/login';
+import AdminPanel from './pages/adminPanel';
 
 //TESTS MONGODB
 import Create from './components/tests/create';
@@ -106,6 +107,7 @@ function App() {
                 <Route path="/adminnewsfeed" component={AdminNewsfeed}/>
                 <Route path="/FAQ" component={FAQ}/>
                 <Route path="/admin" component={login}/>
+                <Route path="/dashboard" component={AdminPanel}/>
               </Switch>
             </div>
           </Content>

@@ -284,7 +284,7 @@ function PdfViewer(embedURL) {
           {" "}
           {sideText[0].text} {currentPdf} {" "}
         </p>
-          <a href={prop.embedURL} target="_blank">
+          <a href={prop.embedURL} target="_blank" rel="noreferrer">
           {" "}
           <button variant="contained">{buttonText[0].text}</button>{" "}
         </a>

@@ -12,7 +12,7 @@ class AdminLogin extends Component {
     componentDidMount() {
         var loggedIn = localStorage.getItem("loggedIn");
         if (loggedIn === "true"){
-            this.props.history.push("/adminnewsfeed");
+            this.props.history.push("/dashboard");
         } else {
             axios
             .get("https://gftrekronersydrestapi.azurewebsites.net/api/admin")
@@ -33,7 +33,7 @@ class AdminLogin extends Component {
             .then (() => message.success("Login success.", 0.3))
             message
             .loading("Redirecting...", 1)
-            .then(() => this.props.history.push("/adminnewsfeed"))
+            .then(() => this.props.history.push("/dashboard"))
         }
         else{
             this.onFinishFailed();
