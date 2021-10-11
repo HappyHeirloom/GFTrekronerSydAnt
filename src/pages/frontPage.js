@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router';
 import { Row, Col } from 'antd';
 import Carousel from "../components/carousel";
-import NewsList from '../components/tests/newsList';
+import NewsList from '../components/newsList';
 // import {forsideText} from '../components/objectText/forsideText';
 // import changeLanguage from '../components/languageComponent';
 

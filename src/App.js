@@ -21,9 +21,9 @@ import login from './pages/login';
 import AdminPanel from './pages/adminPanel';
 
 //TESTS MONGODB
-import Create from './components/tests/create';
-import Edit from './components/tests/edit';
-import AdminNewsfeed from './components/tests/adminNewsList';
+import Create from './components/create';
+import Edit from './components/edit';
+import AdminNewsfeed from './components/adminNewsList';
 
 
 // Google analytics

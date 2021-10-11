@@ -6,6 +6,8 @@ import { DownOutlined, UserOutlined } from '@ant-design/icons';
 import getCurrentSite from "./languageComponent";
 import changeLanguage from "./languageComponent";
 
+import '../styles/gfheader.css';
+
 var site = getCurrentSite();
 
 function Gfheader() {
@@ -41,8 +43,8 @@ function Gfheader() {
 
   return (
         <Row gutter={[]}>
-          <Col xl={20} md={20} sm={12} xs={0} style={{margin: "auto", lineHeight: 1}}>
-            <h1 className="gfHeader">GF Trekroner Syd</h1>
+          <Col xl={20} md={20} sm={12} xs={0} style={{margin: "auto", }}>
+            <h1 className="gfHeader" id="neon">GF Trekroner Syd</h1>
           </Col>
           <Col xl={4} md={4} sm={12} xs={24}>
             <Dropdown overlay={menu}>

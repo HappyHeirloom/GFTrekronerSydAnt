@@ -4,6 +4,7 @@ import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
 import {gfText} from '../components/objectText/gfText';
 import {MiscText} from '../components/objectText/miscText';
+import { Col, Row } from 'antd';
 
 //#endregion
 
@@ -22,46 +23,42 @@ function Gf() {
 
   //#region HTML code
   return (
-    <div className="">
-      <h1 className="text-center p-3">Grundejerforeningen</h1>
-      <div className="">
-        <div className="row p-2">
-          <div className="col-md-6">
-            <h3>{text[number].header}</h3>
-            <p>
-              {text[number].text}
-            </p>
-            {raiseNumber()}
-          </div>
-          <div className="col-md-6">
-            <h3>{text[number].header}</h3>
-            <p>
-              {text[number].text}
-            </p>
-            {raiseNumber()}
-          </div>
-        </div>
-        <div className="row p-2">
-          <div className="col-md-6">
-            <h3>{text[number].header}</h3>
-            <p>
-              {text[number].text}
-            </p>
-            {raiseNumber()}
-          </div>
-          <div className="col-md-6">
-            <h3>{text[number].header}</h3>
-            <p>
-              {text[number].text}
-            </p>
-         </div>
-        </div>
-        </div>
-        <div className="text-center">
-          <strong className="text-center"> {sideText[0].text}</strong>
-            <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
-        </div>
-    </div>
+    <Row gutter={[48,48]}>
+      <Col span={24}>
+        <h1 className="text-center p-3">Grundejerforeningen</h1>
+      </Col>
+      <Col span={12}>
+        <h3>{text[number].header}</h3>
+        <p>
+          {text[number].text}
+        </p>
+      </Col>
+      {raiseNumber()}
+      <Col span={12}>
+        <h3>{text[number].header}</h3>
+        <p>
+          {text[number].text}
+        </p>
+      </Col>
+      {raiseNumber()}
+      <Col span={12}>
+        <h3>{text[number].header}</h3>
+        <p>
+          {text[number].text}
+        </p>
+      </Col>
+      {raiseNumber()}
+      <Col span={12}>
+        <h3>{text[number].header}</h3>
+        <p>
+          {text[number].text}
+        </p>
+      </Col>
+      <Col span={24}>
+        <strong className="text-center"> {sideText[0].text}</strong>
+          <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
+      </Col>
+    </Row>
 
   );
   //#endregion

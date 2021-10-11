@@ -67,7 +67,7 @@ export default class Navbar extends Component {
           />
           </Link>
         </div>
-        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline">
+        <Menu theme="dark" defaultSelectedKeys={["1"]} mode="inline" id="testingText">
           <Menu.Item key="1" icon={<HomeOutlined />}>
             <Link to="/">{text[number].text}</Link>
           </Menu.Item>

@@ -19,7 +19,7 @@
 
 .background {
     background: rgb(255,255,255);
-    /* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(141,242,197,1) 9%, rgba(255,255,255,1) 100%); */
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(141,242,197,1) 9%, rgba(255,255,255,1) 100%);
 }
 
 /* username */
