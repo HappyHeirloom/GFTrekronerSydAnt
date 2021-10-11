@@ -26,7 +26,7 @@ function Gf() {
   return (
     <Row gutter={[48,48]}>
       <Col span={24}>
-        <h1 style={{fontSize: 24}} className="animate__animated animate__backInUp">Grundejerforeningen</h1>
+        <h1 style={{fontSize: 24}} className="animate__animated animate__backInDown">Grundejerforeningen</h1>
       </Col>
       <Col span={12} className="animate__animated animate__backInLeft animate__faster">
         <h3>{text[number].header}</h3>
@@ -55,9 +55,9 @@ function Gf() {
           {text[number].text}
         </p>
       </Col>
-      <Col span={24} className="animate__animated animate__backInDown animate__faster">
+      <Col span={24} className="animate__animated animate__backInUp animate__faster">
         <strong className="text-center"> {sideText[0].text}</strong>
-          <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
+          <button variant="outlined"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
       </Col>
     </Row>
 
