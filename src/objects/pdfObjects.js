@@ -1,4 +1,4 @@
-import { pdfOverviewText } from "../components/objectText/pdfOverviewText";
+import { pdfOverviewText } from "../objectText/pdfOverviewText";
 
 var number = 0;
 

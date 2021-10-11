@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 import EmailForm from "../components/emailForm";
 
 import changeLanguage from "../components/languageComponent";
-import {kontaktText} from '../components/objectText/kontaktText';
+import {kontaktText} from '../objectText/kontaktText';
 
 
 import "../styles/App.css";

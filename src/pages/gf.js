@@ -2,10 +2,11 @@
 import React from "react"
 import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
-import {gfText} from '../components/objectText/gfText';
-import {MiscText} from '../components/objectText/miscText';
+import {gfText} from '../objectText/gfText';
+import {MiscText} from '../objectText/miscText';
 import { Col, Row } from 'antd';
 
+import 'animate.css';
 //#endregion
 
 function Gf() {
@@ -25,36 +26,36 @@ function Gf() {
   return (
     <Row gutter={[48,48]}>
       <Col span={24}>
-        <h1 className="text-center p-3">Grundejerforeningen</h1>
+        <h1 style={{fontSize: 24}} className="animate__animated animate__backInUp">Grundejerforeningen</h1>
       </Col>
-      <Col span={12}>
+      <Col span={12} className="animate__animated animate__backInLeft animate__faster">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12}>
+      <Col span={12} className="animate__animated animate__backInRight animate__fast">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12}>
+      <Col span={12} className="animate__animated animate__backInLeft animate__slow">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12}>
+      <Col span={12} className="animate__animated animate__backInRight animate__slower">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
-      <Col span={24}>
+      <Col span={24} className="animate__animated animate__backInDown animate__faster">
         <strong className="text-center"> {sideText[0].text}</strong>
           <button variant="outlined" className="m-3"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
       </Col>

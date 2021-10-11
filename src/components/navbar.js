@@ -14,7 +14,7 @@ import {
 import logo from "../images/GF_LOGO.png";
 import logoMini from "../images/GF_LOGO_MINI.png";
 
-import {navtext} from '../components/objectText/navbarText';
+import {navtext} from '../objectText/navbarText';
 import changeLanguage from './languageComponent';
 
 var image = logo;

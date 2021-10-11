@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from "react";
 import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
-import {MiscText} from '../components/objectText/miscText';
-import {pdfOverviewText} from '../components/objectText/pdfOverviewText';
+import {MiscText} from '../objectText/miscText';
+import {pdfOverviewText} from '../objectText/pdfOverviewText';
 
 
 // Objects

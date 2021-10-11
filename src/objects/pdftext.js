@@ -1,4 +1,4 @@
-import {pdfText} from '../components/objectText/pdfText';
+import {pdfText} from '../objectText/pdfText';
 
 var number = 0;
 var oldNum = 0;

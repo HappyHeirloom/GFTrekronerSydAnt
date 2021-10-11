@@ -1,6 +1,6 @@
 import { React, useState } from "react";
 import { send } from 'emailjs-com';
-import {kontaktText} from '../components/objectText/kontaktText';
+import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
 var pHolder = "";

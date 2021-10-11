@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 import "../styles/management.css";
 import { Row, Col } from "antd";
 import changeLanguage from "../components/languageComponent";
-import {managementText} from '../components/objectText/managementText';
+import {managementText} from '../objectText/managementText';
 
 //#endregion
 
