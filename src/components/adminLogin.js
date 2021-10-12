@@ -10,7 +10,7 @@ class AdminLogin extends Component {
     }
 
     componentDidMount() {
-        var loggedIn = localStorage.getItem("loggedIn");
+        var loggedIn = sessionStorage.getItem("loggedIn");
         if (loggedIn === "true"){
             this.props.history.push("/dashboard");
         } else {
@@ -27,7 +27,7 @@ class AdminLogin extends Component {
 
     onFinish = (values) => {
         if(values.username === this.state.admin.username && values.password === this.state.admin.password){
-            localStorage.setItem("loggedIn", "true");
+            sessionStorage.setItem("loggedIn", "true");
             message
             .loading('Checking login...', 0.2)
             .then (() => message.success("Login success.", 0.3))

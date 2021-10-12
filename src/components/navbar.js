@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
@@ -29,7 +29,6 @@ var number = 0;
 
 function Navbar() {
   var [collap, collapChange] = useState(false);
-  var [lang, changeLang] = useState(changeLanguage());
   const { collapsed } = collap;
 
 
