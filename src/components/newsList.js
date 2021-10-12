@@ -14,7 +14,7 @@ function returnImage(image){
     if(image === "Parking"){
         return "https://cdn-icons-png.flaticon.com/512/5006/5006090.png";
     }
-    if(image === "Rules"){
+    if(image === "Important"){
         return "https://cdn-icons-png.flaticon.com/512/3522/3522016.png";
     }
 }
@@ -40,7 +40,6 @@ const News = (props) => (
     <Card>   
         <Meta
             avatar={
-                // TODO Make avatar change depending on news image.
                 <Avatar src={returnImage(props.news.image)} style={{backgroundColor: returnColor(props.news.tag), padding: 5}} />
             }
             title={props.news.title}
