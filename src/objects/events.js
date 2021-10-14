@@ -1,19 +1,20 @@
 import axios from "axios";
 
-var events = [];
+function getEvents() {
+    var events = [];
+    axios
+        .get("https://gftrekronersydrestapi.azurewebsites.net/api/event")
+        .then((response) => {
+            events = response.data;
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
 
-axios
-    .get("https://gftrekronersydrestapi.azurewebsites.net/api/events")
-    .then((response) => {
-        events = response.data
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
+        return events;
+}
 
-var myevents = events;
-
-export default myevents
+export default (getEvents);
 //   {
 //     id: 0,
 //     title: 'All Day Event very long title',

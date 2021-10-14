@@ -108,14 +108,9 @@ function App() {
 
                   {/* MONGODB TESTS */}
                 <Route path="/editNews/:id" component={EditNews}/>
-                <Route path="/createNews">
-                  <CreateNews/>
-                </Route>
+                <Route path="/createNews" component={CreateNews}/>
                 <Route path="/editEvent/:id" component={EditEvent}/>
-                <Route path="/createEvent">
-                  <CreateEvent/>
-                </Route>
-
+                <Route path="/createEvent" component={CreateEvent} />
                 <Route path="/adminnewsfeed" component={AdminNewsfeed}/>
                 <Route path="/FAQ" component={FAQ}/>
                 <Route path="/admin" component={login}/>
