@@ -9307,11 +9307,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EG\\source\\repos\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
+      "projectUniqueName": "C:\\Users\\EG\\Desktop\\skole\\Praktik\\GFTrekronerSydAnt\\Rest\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
       "projectName": "GfTrekronerSyd",
-      "projectPath": "C:\\Users\\EG\\source\\repos\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
+      "projectPath": "C:\\Users\\EG\\Desktop\\skole\\Praktik\\GFTrekronerSydAnt\\Rest\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
       "packagesPath": "C:\\Users\\EG\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EG\\source\\repos\\GfTrekronerSyd\\GfTrekronerSyd\\obj\\",
+      "outputPath": "C:\\Users\\EG\\Desktop\\skole\\Praktik\\GFTrekronerSydAnt\\Rest\\GfTrekronerSyd\\GfTrekronerSyd\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

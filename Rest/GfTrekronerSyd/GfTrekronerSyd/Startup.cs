@@ -65,6 +65,15 @@ namespace GfTrekronerSyd
                 sp.GetRequiredService<IOptions<AdminDatabaseSettings>>().Value);
 
             services.AddSingleton<AdminService>();
+
+            // EVENT
+            services.Configure<EventDatabaseSettings>(
+                Configuration.GetSection(nameof(EventDatabaseSettings)));
+
+            services.AddSingleton<IEventDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<EventDatabaseSettings>>().Value);
+
+            services.AddSingleton<EventService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

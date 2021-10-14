@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0M74LkEUzTUIS4BDBeamg+LAB7WSnxR2wwegTiAy7VG/x2aG6Vd1zdhzYyrqMLJ7LhpuUFJp51TCkKidN2GnLA==",
+  "dgSpecHash": "C+snrD0aScmZrmllBaeZkoA/Ku+EbZTjs1A/PlGCNN++o8mvim0Ky6sKqJC68/W2oPffM4WPPaMnZwgcWBVJ2g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EG\\source\\repos\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
+  "projectFilePath": "C:\\Users\\EG\\Desktop\\skole\\Praktik\\GFTrekronerSydAnt\\Rest\\GfTrekronerSyd\\GfTrekronerSyd\\GfTrekronerSyd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EG\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
     "C:\\Users\\EG\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
