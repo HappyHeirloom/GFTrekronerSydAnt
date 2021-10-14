@@ -23,7 +23,6 @@ function privacy() {
       <Col span={24}>
         <h1 style={{fontSize: 24}} className="animate__animated animate__backInDown">{text[number].header}</h1>
       </Col>
-      {raiseNumber()}
       <Col span={12} className="animate__animated animate__backInLeft animate__faster">
         <h3>{text[number].header}</h3>
         <p>
