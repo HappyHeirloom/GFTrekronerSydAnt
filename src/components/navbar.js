@@ -123,7 +123,7 @@ function Navbar() {
         </Menu.Item>
         {raiseNumber()}
         <Menu.Item key="17" icon={<UserOutlined/>}>
-          <Link to="/Calender">Calender</Link>
+          <Link to="/Calender">Kalender</Link>
         </Menu.Item>
         {/* {raiseNumber()} */}
         <Menu.Item key="12" icon={<MailFilled />}>
