@@ -129,7 +129,7 @@ function Navbar() {
         <Menu.Item key="13" icon={<ApartmentOutlined />}>
           <Link to="/ejerforeningerne">{text[number].text}</Link>
         </Menu.Item>
-        {raiseNumber()}
+        raiseNumber()
         <Menu.Item key="14" icon={<ApartmentOutlined />}>
           <Link to="/privacy">{text[number].text}</Link>
         </Menu.Item>        

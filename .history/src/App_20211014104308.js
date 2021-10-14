@@ -99,7 +99,7 @@ function App() {
                 <Route path="/kontakt" component={Contact} />
                 <Route path="/GF" component={GF} />
                 <Route path="/ejerforeningerne" component={EF} />
-                <Route path="/privacy" component={Privacy}/>
+                <Route path="/privacy" component={Privacy}
               
 
                   {/* MONGODB TESTS */}

@@ -60,6 +60,10 @@ export var navtext = {
         name: "PrivacyText",
         text: "Privacy",
        },
+      //  {
+      //   name: "seAdmin",
+      //   text: "Se Admin Side",
+      //  },
        {
          name: "FAQ",
          text: "FAQ"
@@ -133,6 +137,10 @@ export var navtext = {
         name: "Privacy_EN",
         text: "Privacy",
        },
+      //  {
+      //   name: "seAdmin_EN",
+      //   text: "See Admin Panel",
+      //  },
        {
         name: "FAQ",
         text: "FAQ"

@@ -56,10 +56,14 @@ export var navtext = {
         name: "EjerforeningText",
         text: "Ejerforeningerne",
        },
-       {
-        name: "PrivacyText",
-        text: "Privacy",
-       },
+      //  {
+      //   name: "lavNyhedText",
+      //   text: "Lav En Nyhed",
+      //  },
+      //  {
+      //   name: "seAdmin",
+      //   text: "Se Admin Side",
+      //  },
        {
          name: "FAQ",
          text: "FAQ"
@@ -133,6 +137,10 @@ export var navtext = {
         name: "Privacy_EN",
         text: "Privacy",
        },
+      //  {
+      //   name: "seAdmin_EN",
+      //   text: "See Admin Panel",
+      //  },
        {
         name: "FAQ",
         text: "FAQ"

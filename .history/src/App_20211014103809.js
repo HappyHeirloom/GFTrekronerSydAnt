@@ -19,7 +19,7 @@ import Gfheader from './components/gfheader';
 import FAQ from './pages/FAQ';
 import login from './pages/login';
 import AdminPanel from './pages/adminPanel';
-import Privacy from "./pages/privacy";
+import Privacy from "./pages/privacy"
 
 //TESTS MONGODB
 import Create from './components/create';
@@ -99,7 +99,6 @@ function App() {
                 <Route path="/kontakt" component={Contact} />
                 <Route path="/GF" component={GF} />
                 <Route path="/ejerforeningerne" component={EF} />
-                <Route path="/privacy" component={Privacy}/>
               
 
                   {/* MONGODB TESTS */}

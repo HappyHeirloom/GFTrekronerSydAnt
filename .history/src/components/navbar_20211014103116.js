@@ -129,16 +129,17 @@ function Navbar() {
         <Menu.Item key="13" icon={<ApartmentOutlined />}>
           <Link to="/ejerforeningerne">{text[number].text}</Link>
         </Menu.Item>
-        {raiseNumber()}
         <Menu.Item key="14" icon={<ApartmentOutlined />}>
           <Link to="/privacy">{text[number].text}</Link>
-        </Menu.Item>        
+        </Menu.Item>
+
+        
         {raiseNumber()}
-        <Menu.Item key="15" icon={<UserOutlined/>}>
+        <Menu.Item key="16" icon={<UserOutlined/>}>
           <Link to="/FAQ">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="16" icon={<UserOutlined/>}>
+        <Menu.Item key="17" icon={<UserOutlined/>}>
           <Link to="/admin">{text[number].text}</Link>
         </Menu.Item>
         {resetNumber()}
