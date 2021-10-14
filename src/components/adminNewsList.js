@@ -38,7 +38,7 @@ const OneNews = (props) => (
         <Card
             style={{ width: 300 }}
             actions={[
-                <Link to={"/edit/" + props.news.id}>Rediger</Link>,
+                <Link to={"/editNews/" + props.news.id}>Rediger</Link>,
                 <Link onClick={ () => {props.deleteOneNews(props.news.id)} } to="/adminnewsfeed" > Slet </Link>
             ]}
         >
@@ -127,7 +127,7 @@ export default class newsList extends Component {
                     <List.Item
                         key={item.id}
                         actions={[
-                            <Link to={"/edit/" + item.id}>Rediger</Link>,
+                            <Link to={"/editNews/" + item.id}>Rediger</Link>,
                             <Link onClick={ () => {this.deleteOneNews(item.id)} } to="/adminnewsfeed" > Slet </Link>
                           ]}
                     >

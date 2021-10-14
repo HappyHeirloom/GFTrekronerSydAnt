@@ -122,6 +122,10 @@ function Navbar() {
           <Link to="/bestyrelsen">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
+        <Menu.Item key="17" icon={<UserOutlined/>}>
+          <Link to="/Calender">Calender</Link>
+        </Menu.Item>
+        {/* {raiseNumber()} */}
         <Menu.Item key="12" icon={<MailFilled />}>
           <Link to="/kontakt">{text[number].text}</Link>
         </Menu.Item>

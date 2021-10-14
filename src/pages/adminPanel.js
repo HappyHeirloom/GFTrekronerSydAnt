@@ -7,7 +7,7 @@ function AdminPanel() {
         <div>
             <h1> Admin dashboard </h1>
             <Link to="/adminnewsfeed"> <button> Overview </button> </Link>
-            <Link to="/create"> <button> Add news </button> </Link>
+            <Link to="/createNews"> <button> Add news </button> </Link>
         </div>
     )
 }

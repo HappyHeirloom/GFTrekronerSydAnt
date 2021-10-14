@@ -20,10 +20,13 @@ import FAQ from './pages/FAQ';
 import login from './pages/login';
 import AdminPanel from './pages/adminPanel';
 import Privacy from "./pages/privacy";
+import CalendarPage from './pages/calendar';
 
 //TESTS MONGODB
-import Create from './components/create';
-import Edit from './components/edit';
+import CreateNews from './components/createNews';
+import EditNews from './components/editNews';
+import CreateEvent from './components/createEvent';
+import EditEvent from './components/editEvent';
 import AdminNewsfeed from './components/adminNewsList';
 
 
@@ -96,6 +99,7 @@ function App() {
                 )}
                 />
                 <Route path="/bestyrelsen" component={Management} />
+                <Route path="/Calender" component={CalendarPage} />
                 <Route path="/kontakt" component={Contact} />
                 <Route path="/GF" component={GF} />
                 <Route path="/ejerforeningerne" component={EF} />
@@ -103,10 +107,15 @@ function App() {
               
 
                   {/* MONGODB TESTS */}
-                <Route path="/edit/:id" component={Edit}/>
-                <Route path="/create">
-                  <Create/>
+                <Route path="/editNews/:id" component={EditNews}/>
+                <Route path="/createNews">
+                  <CreateNews/>
                 </Route>
+                <Route path="/editEvent/:id" component={EditEvent}/>
+                <Route path="/createEvent">
+                  <CreateEvent/>
+                </Route>
+
                 <Route path="/adminnewsfeed" component={AdminNewsfeed}/>
                 <Route path="/FAQ" component={FAQ}/>
                 <Route path="/admin" component={login}/>
