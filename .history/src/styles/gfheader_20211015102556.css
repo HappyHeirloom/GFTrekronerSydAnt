@@ -1,0 +1,14 @@
+/* .gfHeader {
+    display: none;
+} */
+
+.gfHeader{
+   text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;
+
+}
+
+#testingText {
+    color: #FFFFFF;
+    text-shadow: #474747 3px 7px 2px;
+    color: #FFFFFF;
+}
