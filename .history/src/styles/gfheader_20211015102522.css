@@ -1,0 +1,15 @@
+/* .gfHeader {
+    display: none;
+} */
+
+.gfHeader{
+    : 1px solid;
+    border-color: white;
+
+}
+
+#testingText {
+    color: #FFFFFF;
+    text-shadow: #474747 3px 7px 2px;
+    color: #FFFFFF;
+}
