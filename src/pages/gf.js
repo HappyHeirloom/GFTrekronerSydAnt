@@ -57,7 +57,7 @@ function Gf() {
           {text[number].text}
         </p>
       </Col>
-      <Col span={24} xl={24} md={20} sm={12} xs={0}> 
+      <Col xl={24} md={24} sm={24} xs={0}> 
       <Image src={sitePlanTrekroner} alt="" style={{justifyContent: 'center', alignItems: 'center'}}></Image>
       </Col> 
       <Col span={24} className="animate__animated animate__backInUp animate__faster">
