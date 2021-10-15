@@ -4,7 +4,9 @@ import { withRouter, Link } from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
 import {gfText} from '../objectText/gfText';
 import {MiscText} from '../objectText/miscText';
-import { Col, Row } from 'antd';
+import { Col, Row, Image } from 'antd';
+import sitePlanTrekroner from '../images/sitePlanTrekroner.jpg'
+
 
 import 'animate.css';
 //#endregion
@@ -55,6 +57,9 @@ function Gf() {
           {text[number].text}
         </p>
       </Col>
+      <Col span={24} xl={24} md={20} sm={12} xs={0}> 
+      <Image src={sitePlanTrekroner} alt="" style={{justifyContent: 'center', alignItems: 'center'}}></Image>
+      </Col> 
       <Col span={24} className="animate__animated animate__backInUp animate__faster">
         <strong className="text-center"> {sideText[0].text}</strong>
           <button variant="outlined"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
