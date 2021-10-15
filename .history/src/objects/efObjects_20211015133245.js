@@ -31,6 +31,7 @@ export var efObjectList = {
       content_en:"Adresse: Trekroner Centervej 75A og 79 (bygning I2).",
       img: "https://w7.pngwing.com/pngs/726/537/png-transparent-x-mark-computer-icons-check-mark-x-mark.png",
     },
+    
     {
       title_dk: "Akacielunden Ejerforening",
       content_dk: "Adresse: Akacielunden 1-15",

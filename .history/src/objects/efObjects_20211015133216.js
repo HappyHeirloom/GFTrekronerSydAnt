@@ -18,15 +18,15 @@ export var efObjectList = {
       img: ahornlunden
     },
     {
-      title_dk: "E/F Ahornlunden 15",
-      content_dk: "Adresse: Ahornlunden 15",
-      title_en:"E/F Trekroner Center",
-      content_en:"Adresse: Trekroner Centervej 75A og 79 (bygning I2).",
-      img: ahornlunden,
-    },
-    {
       title_dk: "E/F Nordens Park, Bygning II",
       content_dk: "Adresse: Ahornlunden 13",
+      title_en:"E/F Trekroner Center",
+      content_en:"Adresse: Trekroner Centervej 75A og 79 (bygning I2).",
+      img: "https://w7.pngwing.com/pngs/726/537/png-transparent-x-mark-computer-icons-check-mark-x-mark.png",
+    },
+    {
+      title_dk: "E/F Ahornlunden 15",
+      content_dk: "Adresse: Ahornlunden 15",
       title_en:"E/F Trekroner Center",
       content_en:"Adresse: Trekroner Centervej 75A og 79 (bygning I2).",
       img: "https://w7.pngwing.com/pngs/726/537/png-transparent-x-mark-computer-icons-check-mark-x-mark.png",
