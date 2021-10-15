@@ -4,9 +4,6 @@
 
 @media screen and (max-width: 700px) {
   .calendar{
-      transform:scale(0.9);
-  }
-  .calendar-button{
-      
+      transform:scale(0.5);
   }
 }

@@ -6,3 +6,8 @@
     margin: auto;
 }
 
+.media {
+    height: 0;
+    padding-Top: '56.25%';
+    margin-Top:'30';
+}

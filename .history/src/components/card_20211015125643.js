@@ -19,7 +19,7 @@ const styles = {
     maxWidth: 345
   },
   media: {
-    height: 200,
+    height: 0,
     paddingTop: "45%" // 16:9
   }
 };

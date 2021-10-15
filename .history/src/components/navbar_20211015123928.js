@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout, Menu} from "antd";
+import { Layout, Menu, Affix } from "antd";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import {
@@ -58,15 +58,10 @@ function Navbar() {
   if(changeLanguage() ? text = navtext.navText_EN : text = navtext.navText_DK);
 
   return (
-  
-    <Sider style={{
-        
-        height: '100vh',
-        position: 'sticky',
-        top: 0,
-      }} id="" collapsible collapsed={collapsed} onCollapse={onCollapse} breakpoint="sm">
-
       
+    <Sider id="" collapsible collapsed={collapsed} onCollapse={onCollapse} breakpoint="sm">
+
+      <div id="navigationfull">
       <div className="logo">
         <Link to="/">
         <img
@@ -155,6 +150,7 @@ function Navbar() {
         </Menu.Item>
         {resetNumber()}
       </Menu>
+      </div>
     </Sider>
   );
 }

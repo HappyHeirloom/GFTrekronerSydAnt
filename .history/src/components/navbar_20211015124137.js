@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Layout, Menu} from "antd";
+import { Layout, Menu, Affix } from "antd";
 import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import {
@@ -60,10 +60,10 @@ function Navbar() {
   return (
   
     <Sider style={{
-        
+        overflow: 'auto',
         height: '100vh',
-        position: 'sticky',
-        top: 0,
+        position: 'fixed',
+        left: 0,
       }} id="" collapsible collapsed={collapsed} onCollapse={onCollapse} breakpoint="sm">
 
       
@@ -155,6 +155,7 @@ function Navbar() {
         </Menu.Item>
         {resetNumber()}
       </Menu>
+      
     </Sider>
   );
 }

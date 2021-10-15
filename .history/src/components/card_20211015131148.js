@@ -20,7 +20,8 @@ const styles = {
   },
   media: {
     height: 200,
-    paddingTop: "45%" // 16:9
+    width: 200,
+    // paddingTop: "45%" // 16:9
   }
 };
 

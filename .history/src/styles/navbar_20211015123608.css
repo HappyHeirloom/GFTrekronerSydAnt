@@ -17,3 +17,11 @@
   background: #141414;
 }
 
+.ant-layout-sider{
+  position:sticky;
+}
+
+.navigationfull{
+  position: sticky !important;
+  top: 0
+}

@@ -17,3 +17,10 @@
   background: #141414;
 }
 
+.ant-layout-sider{
+  position:sticky;
+}
+
+#testingText{
+  position:sticky
+}

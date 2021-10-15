@@ -16,11 +16,11 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: 250
   },
   media: {
-    height: 200,
-    paddingTop: "45%" // 16:9
+    height: 0,
+    paddingTop: "56.25%" // 16:9
   }
 };
 

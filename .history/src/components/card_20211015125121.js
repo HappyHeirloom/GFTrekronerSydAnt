@@ -19,8 +19,8 @@ const styles = {
     maxWidth: 345
   },
   media: {
-    height: 200,
-    paddingTop: "45%" // 16:9
+    height: 0,
+    paddingTop: "56.25%" // 16:9
   }
 };
 
@@ -34,7 +34,7 @@ export default function PdfCard(prop) {
   //#region HTML code
   return (
     <Card className="root">
-      <CardActionArea>  
+      <CardActionArea>
         <CardMedia
           style={styles.media}
           image={prop.prop.img}

@@ -17,3 +17,6 @@
   background: #141414;
 }
 
+.ant-layout-sider:nth-child(1){
+  position:sticky;
+}

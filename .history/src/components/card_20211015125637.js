@@ -19,8 +19,8 @@ const styles = {
     maxWidth: 345
   },
   media: {
-    height: 200,
-    paddingTop: "45%" // 16:9
+    height: 0,
+    paddingTop: "41%" // 16:9
   }
 };
 
