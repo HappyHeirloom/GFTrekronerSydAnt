@@ -37,7 +37,7 @@ export default class eventsList extends Component {
         
     componentDidMount() {
         axios
-            .get("https://gftrekronersydrestapi.azurewebsites.net/api/events")
+            .get("https://gftrekronersydrestapi.azurewebsites.net/api/event")
             .then((response) => {
                 this.setState({ events: response.data });
             })
@@ -47,7 +47,7 @@ export default class eventsList extends Component {
         }
 
     deleteOneEvent(id) {
-        axios.delete("https://gftrekronersydrestapi.azurewebsites.net/api/events/" + id).then((response) => {
+        axios.delete("https://gftrekronersydrestapi.azurewebsites.net/api/event/" + id).then((response) => {
             console.log(response.data);
         });
     
