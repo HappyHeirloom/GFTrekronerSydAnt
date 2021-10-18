@@ -51,7 +51,7 @@ function Gf() {
         </p>
       </Col>
       {raiseNumber()}
-      <Col className="animate__animated animate__backInRight animate__slower">
+      <Col xs={24} xl={12} className="animate__animated animate__backInRight animate__slower">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}

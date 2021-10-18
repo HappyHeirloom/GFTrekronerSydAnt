@@ -23,22 +23,19 @@ function managementOverview() {
       <p>
         {text[0].text}
       </p>
-      <Row>
-      <div className="cardtransform">
-        <Col xs={24} xl={12}>
+      <Row gutter={[24, 24]}>
+        <Col xl={12} xs={24}>
           <Card prop={managagementObjectList.managementObjects[0]}></Card>
         </Col>
-        <Col xs={24} xl={12}>
+        <Col xl={12} xs={24}>
           <Card prop={managagementObjectList.managementObjects[1]}></Card>
         </Col>
-
-        <Col xs={24} xl={12}>
+        <Col xl={12} xs={24}>
           <Card prop={managagementObjectList.managementObjects[2]}></Card>
         </Col>
-        <Col xs={24} xl={12}>
+        <Col xl={12} xs={24}>
           <Card prop={managagementObjectList.managementObjects[3]}></Card>
         </Col>
-        </div>
       </Row>
 
     </div>
