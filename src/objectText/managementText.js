@@ -2,7 +2,7 @@ export var managementText = {
   managementText_DK: [
     {
       name: "bestyrelseText",
-      header: "Hierarkiet i G/F Trekroner syd ",
+      header: "Bestyrelsen i G/F Trekroner syd ",
       text: "Her på siden kan man se bestyrelsen, administrator og suppleanter. Her kan du se en opstilling på de forskellige ansvarsområder, hvor dem i bestyrelsen har.",
      },
      {

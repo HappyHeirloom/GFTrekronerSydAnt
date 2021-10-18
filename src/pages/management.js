@@ -16,27 +16,29 @@ function managementOverview() {
   var text = "";
   if(changeLanguage() ? text = managementText.managementText_EN  : text = managementText.managementText_DK);  
   return (
-    <div className="" id="">
+    <div className="box">
       <h2>
         {text[0].header}
       </h2>
       <p>
         {text[0].text}
       </p>
-      <Row gutter={[24, 24]}>
-        <Col span={12}>
+      <Row>
+      <div className="cardtransform">
+        <Col xs={24} xl={12}>
           <Card prop={managagementObjectList.managementObjects[0]}></Card>
         </Col>
-        <Col span={12}>
+        <Col xs={24} xl={12}>
           <Card prop={managagementObjectList.managementObjects[1]}></Card>
         </Col>
 
-        <Col span={12}>
+        <Col xs={24} xl={12}>
           <Card prop={managagementObjectList.managementObjects[2]}></Card>
         </Col>
-        <Col span={12}>
+        <Col xs={24} xl={12}>
           <Card prop={managagementObjectList.managementObjects[3]}></Card>
         </Col>
+        </div>
       </Row>
 
     </div>

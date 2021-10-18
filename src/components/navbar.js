@@ -9,6 +9,10 @@ import {
   UserOutlined,
   MailFilled,
   ApartmentOutlined,
+  LoginOutlined,
+  ContactsOutlined,
+  DatabaseOutlined,
+  SolutionOutlined
 } from "@ant-design/icons";
 
 import logo from "../images/GF_LOGO.png";
@@ -85,6 +89,14 @@ function Navbar() {
           <Link to="/GF">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
+        <Menu.Item key="13" icon={<ApartmentOutlined />}>
+          <Link to="/ejerforeningerne">{text[number].text}</Link>
+        </Menu.Item>
+        {raiseNumber()}
+        <Menu.Item key="11" icon={<UserOutlined />}>
+          <Link to="/bestyrelsen">{text[number].text}</Link>
+        </Menu.Item>
+        {raiseNumber()}
         <SubMenu key="sub1" icon={<FileWordOutlined />} title={text[number].text}>
         {raiseNumber()}
           <Menu.Item key="3">
@@ -126,11 +138,7 @@ function Navbar() {
           </Menu.Item>
         </SubMenu>
         {raiseNumber()}
-        <Menu.Item key="11" icon={<UserOutlined />}>
-          <Link to="/bestyrelsen">{text[number].text}</Link>
-        </Menu.Item>
-        {raiseNumber()}
-        <Menu.Item key="17" icon={<UserOutlined/>}>
+        <Menu.Item key="17" icon={<ContactsOutlined />}>
           <Link to="/Calender">Kalender</Link>
         </Menu.Item>
         {/* {raiseNumber()} */}
@@ -138,19 +146,15 @@ function Navbar() {
           <Link to="/kontakt">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="13" icon={<ApartmentOutlined />}>
-          <Link to="/ejerforeningerne">{text[number].text}</Link>
-        </Menu.Item>
-        {raiseNumber()}
-        <Menu.Item key="14" icon={<ApartmentOutlined />}>
-          <Link to="/privacy">{text[number].text}</Link>
-        </Menu.Item>        
-        {raiseNumber()}
-        <Menu.Item key="15" icon={<UserOutlined/>}>
+        <Menu.Item key="15" icon={<SolutionOutlined />}>
           <Link to="/FAQ">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="16" icon={<UserOutlined/>}>
+        <Menu.Item key="14" icon={<DatabaseOutlined />}>
+          <Link to="/privacy">{text[number].text}</Link>
+        </Menu.Item>        
+        {raiseNumber()}
+        <Menu.Item key="16" icon={<LoginOutlined />}>
           <Link to="/admin">{text[number].text}</Link>
         </Menu.Item>
         {resetNumber()}

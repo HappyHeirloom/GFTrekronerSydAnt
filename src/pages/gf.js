@@ -30,28 +30,28 @@ function Gf() {
       <Col span={24}>
         <h1 style={{fontSize: 24}} className="animate__animated animate__backInDown">Grundejerforeningen</h1>
       </Col>
-      <Col span={12} className="animate__animated animate__backInLeft animate__faster">
+      <Col xs={24} xl={12} className="animate__animated animate__backInLeft animate__faster">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12} className="animate__animated animate__backInRight animate__fast">
+      <Col xs={24} xl={12} className="animate__animated animate__backInRight animate__fast">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12} className="animate__animated animate__backInLeft animate__slow">
+      <Col xs={24} xl={12} className="animate__animated animate__backInLeft animate__slow">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
         </p>
       </Col>
       {raiseNumber()}
-      <Col span={12} className="animate__animated animate__backInRight animate__slower">
+      <Col className="animate__animated animate__backInRight animate__slower">
         <h3>{text[number].header}</h3>
         <p>
           {text[number].text}
@@ -60,7 +60,7 @@ function Gf() {
       <Col xl={24} md={24} sm={24} xs={0}> 
       <Image src={sitePlanTrekroner} alt="" style={{justifyContent: 'center', alignItems: 'center'}}></Image>
       </Col> 
-      <Col span={24} className="animate__animated animate__backInUp animate__faster">
+      <Col xs={24} xl={12} className="animate__animated animate__backInUp animate__faster">
         <strong className="text-center"> {sideText[0].text}</strong>
           <button variant="outlined"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
       </Col>

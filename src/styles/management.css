@@ -1,7 +1,10 @@
 @import "antd/dist/antd.css";
 
-@media screen and (max-width: 992px) {
-  .column {
-    flex: 10%;
+@media screen and (max-width: 700px) {
+  .box {
+    transform: scale(1);
+  }
+  .cardtransform{
+    transform: scale(0.9);
   }
 }

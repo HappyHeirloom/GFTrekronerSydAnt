@@ -96,7 +96,7 @@ class AdminLogin extends Component {
             }}
             >
             <Button type="primary" htmlType="submit">
-                Submit
+                Login
             </Button>
             </Form.Item>
         </Form>

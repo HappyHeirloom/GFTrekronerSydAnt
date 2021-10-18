@@ -9,6 +9,14 @@ export var navtext = {
         text: "Om Grundejerforeninger",
        },
        {
+        name: "EjerforeningText",
+        text: "Ejerforeningerne",
+       },
+       {
+        name: "bestyrelseText",
+        text: "Bestyrelsen",
+       },
+       {
         name: "DokumenttextText",
         text: "Dokumenter",
        },
@@ -45,24 +53,17 @@ export var navtext = {
         text: "Udbudsmateriale",
        },
        {
-        name: "bestyrelseText",
-        text: "Bestyrelsen",
-       },
-       {
         name: "kontaktOs",
         text: "Kontakt os",
        },
+     
        {
-        name: "EjerforeningText",
-        text: "Ejerforeningerne",
+         name: "FAQ",
+         text: "FAQ"
        },
        {
         name: "PrivacyText",
         text: "Privacy",
-       },
-       {
-         name: "FAQ",
-         text: "FAQ"
        },
        {
          name: "admin",
