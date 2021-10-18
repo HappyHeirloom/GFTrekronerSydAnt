@@ -60,7 +60,7 @@ function Gf() {
       <Col xl={24} md={24} sm={24} xs={0}> 
       <Image src={sitePlanTrekroner} alt="" style={{justifyContent: 'center', alignItems: 'center'}}></Image>
       </Col> 
-      <Col xs={24} xl={12} className="animate__animated animate__backInUp animate__faster">
+      <Col span={24} className="animate__animated animate__backInUp animate__faster">
         <strong className="text-center"> {sideText[0].text}</strong>
           <button variant="outlined"> <Link to ="/ejerforeningerne"> {buttonText[0].text} </Link></button>
       </Col>
