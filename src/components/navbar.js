@@ -59,6 +59,7 @@ function Navbar() {
     number = 0;
   }
 
+
   if(changeLanguage() ? text = navtext.navText_EN : text = navtext.navText_DK);
 
   return (

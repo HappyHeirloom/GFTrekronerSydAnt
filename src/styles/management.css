@@ -7,4 +7,7 @@
   .cardtransform{
     transform: scale(0.9);
   }
+  .site-layout-background{
+    padding: 16px !important;
+  }
 }

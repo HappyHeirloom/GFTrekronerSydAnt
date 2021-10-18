@@ -33,7 +33,7 @@ export default function PdfCard(prop) {
 
   //#region HTML code
   return (
-    <Card className="root">
+    <Card className="root cardtext">
       <CardActionArea>  
         <CardMedia
           style={styles.media}
