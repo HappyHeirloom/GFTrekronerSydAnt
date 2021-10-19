@@ -4,8 +4,6 @@ import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
 
-
-
 import '../styles/contact.css'
 
 var pHolder = "";
@@ -75,62 +73,61 @@ function EmailForm() {
 
   
     return (
-      <form onSubmit={onSubmit}>
-          <div className="forminput">
+        <form id="emailForm" onSubmit={onSubmit}>
+            <div className="forminput"> 
             <input
-              className=""
-              id="emailName"
-              type="text"
-              name="from_name"
-              placeholder={pHolder[number].text}
-              value={toSend.from_name}
-              onChange={handleChange}
+            className="emailinput"
+            id="emailName"
+            type='text'
+            name='from_name'
+            placeholder={pHolder[number].text}
+            value={toSend.from_name}
+            onChange={handleChange}
             />
-          </div>
-          <div className="forminput">
+             </div>
+             <div className="forminput"> 
             {raiseNumber()}
             <input
-              className=""
-              id="emailMail"
-              type="text"
-              name="reply_to"
-              placeholder={pHolder[number].text}
-              value={toSend.reply_to}
-              onChange={handleChange}
+            className="emailinput"
+            id="emailMail"
+            type='text'
+            name='reply_to'
+            placeholder={pHolder[number].text}
+            value={toSend.reply_to}
+            onChange={handleChange}
             />
-
+            <br/>
             {raiseNumber()}
-          </div>
-          <div className="forminput">
+             </div>
+             <div className="forminput"> 
             <input
-              className="emailinput"
-              id="emailSubject"
-              type="text"
-              name="subject"
-              placeholder={pHolder[number].text}
-              value={toSend.subject}
-              onChange={handleChange}
+            className="emailinput"
+            id="emailSubject"
+            type='text'
+            name='subject'
+            placeholder={pHolder[number].text}
+            value={toSend.subject}
+            onChange={handleChange}
             />
             {raiseNumber()}
-          </div>
-          <div className="forminput">
+            </div>
+            <div className="forminput"> 
             <textarea
-              id="emailMessage"
-              type="text"
-              name="message"
-              rows="5"
-              placeholder={pHolder[number].text}
-              value={toSend.message}
-              onChange={handleChange}
+            id="emailMessage"
+            type='text'
+            name='message'
+            rows="5"
+            placeholder={pHolder[number].text}
+            value={toSend.message}
+            onChange={handleChange}
             />
             {raiseNumber()}
-            <br />
-            <button className="forminput" id="submitButton" type="submit" disabled={dis}>
-              {pHolder[number].text}
-            </button>
-            {resetNumber()}
-          </div>
+            <br/>
+            <button id="submitButton" type='submit' disabled={dis}>{pHolder[number].text}</button>
+            {resetNumber()} 
+            </div>
         </form>
+       
     )
 }
 

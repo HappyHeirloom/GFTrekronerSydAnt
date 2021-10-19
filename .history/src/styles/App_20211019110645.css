@@ -7,12 +7,16 @@
   rgba(0,21,41,0.5102415966386555) 67%, 
   rgba(0,21,41,0.3617822128851541) 82%, 
   rgba(0,21,41,0.30015756302521013) 91%) !important;
+  z-index: 1;
 }
 
+.ant-layout-content{
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png") !important;
+  z-index: 0; 
+}
 
 .App {
   text-align:center;
-  
 }
 
 .App-logo {
@@ -35,6 +39,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {

@@ -4,8 +4,6 @@ import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
 
-
-
 import '../styles/contact.css'
 
 var pHolder = "";

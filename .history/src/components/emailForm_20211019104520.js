@@ -4,8 +4,6 @@ import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
 
-
-
 import '../styles/contact.css'
 
 var pHolder = "";
@@ -125,7 +123,7 @@ function EmailForm() {
             />
             {raiseNumber()}
             <br />
-            <button className="forminput" id="submitButton" type="submit" disabled={dis}>
+            <button id="submitButton" type="submit" disabled={dis}>
               {pHolder[number].text}
             </button>
             {resetNumber()}
