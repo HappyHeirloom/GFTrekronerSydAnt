@@ -3,9 +3,6 @@ import { send } from 'emailjs-com';
 import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
-
-import '../styles/contact.css'
-
 var pHolder = "";
 var number = 0;
 
@@ -71,13 +68,9 @@ function EmailForm() {
 
     //#endregion
 
-  
     return (
-
-      
         <form id="emailForm" onSubmit={onSubmit}>
             <input
-            
             id="emailName"
             type='text'
             name='from_name'
@@ -87,7 +80,6 @@ function EmailForm() {
             />
             {raiseNumber()}
             <input
-            
             id="emailMail"
             type='text'
             name='reply_to'
@@ -95,10 +87,8 @@ function EmailForm() {
             value={toSend.reply_to}
             onChange={handleChange}
             />
-          
             {raiseNumber()}
             <input
-            
             id="emailSubject"
             type='text'
             name='subject'
@@ -107,13 +97,10 @@ function EmailForm() {
             onChange={handleChange}
             />
             {raiseNumber()}
-            
-            <textarea
-        
+            <input
             id="emailMessage"
             type='text'
             name='message'
-            rows="10"
             placeholder={pHolder[number].text}
             value={toSend.message}
             onChange={handleChange}

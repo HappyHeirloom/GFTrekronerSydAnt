@@ -29,9 +29,9 @@ function Contact() {
 
   return (
     <div className="row">
-      <div className="">
+      <div className="col-6 my-auto">
         <div className="text-center">
-          <h1 style={{fontSize: 24}}>
+          <h1 className="mb-5">
             {text[0].header}
           </h1>
           <p>
@@ -44,7 +44,7 @@ function Contact() {
       </div>
 
       {/* Submit emails form */}
-      <div className="">
+      <div className="col-6 my-auto">
         <div className="email">
           <EmailForm/>
         </div>

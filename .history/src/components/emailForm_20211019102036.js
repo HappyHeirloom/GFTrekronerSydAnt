@@ -71,7 +71,12 @@ function EmailForm() {
 
     //#endregion
 
-  
+   
+        
+
+    
+
+
     return (
 
       
@@ -109,11 +114,11 @@ function EmailForm() {
             {raiseNumber()}
             
             <textarea
-        
+            
             id="emailMessage"
             type='text'
             name='message'
-            rows="10"
+            rows="5"
             placeholder={pHolder[number].text}
             value={toSend.message}
             onChange={handleChange}

@@ -44,7 +44,7 @@ function Contact() {
       </div>
 
       {/* Submit emails form */}
-      <div className="">
+      <div className="col-6 my-auto">
         <div className="email">
           <EmailForm/>
         </div>

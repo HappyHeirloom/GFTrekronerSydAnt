@@ -74,7 +74,11 @@ function EmailForm() {
   
     return (
 
-      
+      const styleform = {
+
+      }
+
+
         <form id="emailForm" onSubmit={onSubmit}>
             <input
             

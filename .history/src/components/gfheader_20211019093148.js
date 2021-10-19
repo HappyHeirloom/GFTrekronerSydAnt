@@ -42,9 +42,13 @@ function Gfheader() {
   );
 
   return (
-        <Row gutter={48}>
+        <Row>
+
+            <Col>
+            </Col>
+
            <Col xl={20} md={16} sm={12} xs={16}>
-            <h1 className="gfHeader">GF Trekroner Syd</h1>
+            <h1 className="gfHeader" id="">GF Trekroner Syd</h1>
           </Col>
       
             <Col xl={4} md={8} sm={12} xs={8}>

@@ -71,7 +71,12 @@ function EmailForm() {
 
     //#endregion
 
-  
+   
+        
+
+    
+
+
     return (
 
       
@@ -109,7 +114,7 @@ function EmailForm() {
             {raiseNumber()}
             
             <textarea
-        
+            style={}
             id="emailMessage"
             type='text'
             name='message'

@@ -41,21 +41,25 @@ function Gfheader() {
     </Menu>
   );
 
-  return (
-        <Row gutter={48}>
-           <Col xl={20} md={16} sm={12} xs={16}>
-            <h1 className="gfHeader">GF Trekroner Syd</h1>
+  return (<>
+    <Row>
+    </Row>
+        <Row>
+           <Col xl={20} md={16} sm={12} xs={14}>
+            <h1 className="gfHeader" id="">GF Trekroner Syd</h1>
           </Col>
-      
-            <Col xl={4} md={8} sm={12} xs={8}>
-                <Dropdown className="langbutton" overlay={menu}>
-                  <Button>
-                   {lang} <DownOutlined />
-                   </Button>
-                    </Dropdown>
-             </Col>
-        </Row>
-    
+      </Row>
+      <Row>
+        <Col xl={4} md={8} sm={12} xs={8}>
+           <Dropdown className="langbutton" overlay={menu}>
+              <Button>
+               {lang} <DownOutlined />
+              </Button>
+            </Dropdown>
+         </Col>
+      </Row>
+
+        </>
   );
 }
 

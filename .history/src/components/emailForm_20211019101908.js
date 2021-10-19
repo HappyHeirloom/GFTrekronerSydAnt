@@ -71,13 +71,18 @@ function EmailForm() {
 
     //#endregion
 
-  
+   
+        
+
+    
+
+
     return (
 
       
         <form id="emailForm" onSubmit={onSubmit}>
             <input
-            
+            style={}
             id="emailName"
             type='text'
             name='from_name'
@@ -87,7 +92,7 @@ function EmailForm() {
             />
             {raiseNumber()}
             <input
-            
+            style={}
             id="emailMail"
             type='text'
             name='reply_to'
@@ -95,10 +100,10 @@ function EmailForm() {
             value={toSend.reply_to}
             onChange={handleChange}
             />
-          
+            <br/>
             {raiseNumber()}
             <input
-            
+            style={}
             id="emailSubject"
             type='text'
             name='subject'
@@ -107,13 +112,12 @@ function EmailForm() {
             onChange={handleChange}
             />
             {raiseNumber()}
-            
+            <br/>
             <textarea
-        
+            style={}
             id="emailMessage"
             type='text'
             name='message'
-            rows="10"
             placeholder={pHolder[number].text}
             value={toSend.message}
             onChange={handleChange}

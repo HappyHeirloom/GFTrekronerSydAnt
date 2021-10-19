@@ -71,13 +71,31 @@ function EmailForm() {
 
     //#endregion
 
-  
+    const stylebesked = {
+        maxHeight: "75px",
+        minHeight: "100px",
+        resize: "none",
+        padding: "10px",
+        boxSizing: "border-box",
+        fontSize: "15px", 
+      }
+        
+
+    const style= {
+        maxHeight: "75px",
+        minHeight: "38px",
+        resize: "none",
+        padding: "10px",
+        boxSizing: "border-box",
+        fontSize: "15px"}
+
+
     return (
 
       
         <form id="emailForm" onSubmit={onSubmit}>
             <input
-            
+            style={style}
             id="emailName"
             type='text'
             name='from_name'
@@ -87,7 +105,7 @@ function EmailForm() {
             />
             {raiseNumber()}
             <input
-            
+            style={style}
             id="emailMail"
             type='text'
             name='reply_to'
@@ -95,10 +113,9 @@ function EmailForm() {
             value={toSend.reply_to}
             onChange={handleChange}
             />
-          
             {raiseNumber()}
             <input
-            
+            style={style}
             id="emailSubject"
             type='text'
             name='subject'
@@ -107,13 +124,12 @@ function EmailForm() {
             onChange={handleChange}
             />
             {raiseNumber()}
-            
+            <br/>
             <textarea
-        
+            style={stylebesked}
             id="emailMessage"
             type='text'
             name='message'
-            rows="10"
             placeholder={pHolder[number].text}
             value={toSend.message}
             onChange={handleChange}
