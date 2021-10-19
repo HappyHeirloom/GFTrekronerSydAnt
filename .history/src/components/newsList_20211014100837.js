@@ -112,7 +112,7 @@ export default class newsList extends Component {
                     onChange: page => {
                         
                     },
-                    pageSize: 5,
+                    pageSize: 3,
                     }}
                     dataSource={list}
                     // footer={
