@@ -54,8 +54,6 @@ function Navbar() {
   if(changeLanguage() ? text = navtext.navText_EN : text = navtext.navText_DK);
   var location = useLocation();
 
-  console.log(location.pathname)
-
   function test(){
     if(location.pathname === "/"){
       return "/";

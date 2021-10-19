@@ -56,7 +56,7 @@ export default class eventsList extends Component {
         });
         }
 
-    newsList() {
+    eventList() {
         return this.state.events.map((currentoneevent) => {
             return (
                 <OneEvent
