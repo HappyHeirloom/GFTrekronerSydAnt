@@ -3,6 +3,13 @@ import { withRouter } from 'react-router';
 import { Row, Col } from 'antd';
 import Carousel from "../components/carousel";
 import NewsList from '../components/newsList';
+// import {forsideText} from '../components/objectText/forsideText';
+// import changeLanguage from '../components/languageComponent';
+
+// var text = "";
+// var number = 0;
+
+// if(changeLanguage() ? text = forsideText.forsideText_EN : text = forsideText.forsideText_DK);
 
 function FrontPage() {
     return (

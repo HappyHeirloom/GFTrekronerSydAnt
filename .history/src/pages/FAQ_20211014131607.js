@@ -17,7 +17,8 @@ var text4 ="Alle må benytte legepladserne. Der må dog ikke luftes hunde på le
 var text5 ="Du skal skrive til bestyrelsen via kontaktformularen på siden Kontakt os"
 
 function FAQ() {
-
+//   var text = "";
+//   if(changeLanguage() ? text =   : text = );  
 
   //#region React hooks
 
@@ -30,6 +31,22 @@ function FAQ() {
   //#region Html code
 
   return (
+    // <div className="row">
+    //   <div className="col-6 my-auto">
+    //     <div className="text-center">
+    //       <h1 className="mb-5">
+    //           FAQ
+    //       </h1>
+    //       <p>
+    //       </p>
+    //     </div>
+    //   </div>
+      
+    //   <div className="">
+    //     <div className="">
+    //     </div>
+    //   </div>
+    // </div>
     <Collapse defaultActiveKey={['0']} onChange={callback}>
     <Panel header="Parkering som beboer" key="1">
       <p>{text}</p>

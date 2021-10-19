@@ -60,6 +60,15 @@ function fixArray(arrayToFix, date){
     return tempArNum;
 }
 
+// function makeDate(arrayDate, arrayTime){
+//     var year = arrayDate[2];
+//     var month = arrayDate[0];
+//     var day = arrayDate[1];
+//     var hour = arrayTime[0];
+//     var min = arrayTime[1];
+//     var sec = arrayTime[2];
+//     return new Date(year,month,day,hour,min,sec);
+// }
 
 //#region form antd
 const { Option } = Select;
