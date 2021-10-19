@@ -65,15 +65,6 @@ function Navbar() {
 
   console.log(location.pathname)
 
-  function test(){
-    if(location.pathname === "/"){
-      return "/";
-    }
-    else {
-      return location.pathname;
-    }
-  }
-
   return (
   
     
@@ -86,15 +77,15 @@ function Navbar() {
 
       
       <div className="logo">
-        
+        <Link to="/">
         <img
           src={image}
           alt="GF Trekroner Syd logo"
           className="logoImage"
         />
-        
+        </Link>
       </div>
-      <Menu theme="dark" defaultSelectedKeys={test()} mode="inline" id="testingText">
+      <Menu  theme="dark" defaultSelectedKeys={location.pathname} mode="inline" id="testingText">
         <Menu.Item key="/" icon={<HomeOutlined />}>
           <Link to="/">{text[number].text}</Link>
         </Menu.Item>

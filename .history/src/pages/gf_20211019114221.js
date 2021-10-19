@@ -3,6 +3,7 @@ import React from "react"
 import { withRouter} from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
 import {gfText} from '../objectText/gfText';
+import {MiscText} from '../objectText/miscText';
 import { Col, Row, Image } from 'antd';
 import sitePlanTrekroner from '../images/sitePlanTrekroner.jpg'
 

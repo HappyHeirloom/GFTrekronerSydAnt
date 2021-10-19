@@ -1,6 +1,6 @@
-import React, { useState} from "react";
+import React, { useState, useLocation} from "react";
 import { Layout, Menu} from "antd";
-import { Link,  useLocation} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import {
   HomeOutlined,
@@ -61,18 +61,7 @@ function Navbar() {
 
 
   if(changeLanguage() ? text = navtext.navText_EN : text = navtext.navText_DK);
-  var location = useLocation();
-
-  console.log(location.pathname)
-
-  function test(){
-    if(location.pathname === "/"){
-      return "/";
-    }
-    else {
-      return location.pathname;
-    }
-  }
+  const location = useLocation();
 
   return (
   
@@ -86,15 +75,15 @@ function Navbar() {
 
       
       <div className="logo">
-        
+        <Link to="/">
         <img
           src={image}
           alt="GF Trekroner Syd logo"
           className="logoImage"
         />
-        
+        </Link>
       </div>
-      <Menu theme="dark" defaultSelectedKeys={test()} mode="inline" id="testingText">
+      <Menu  theme="dark" defaultSelectedKeys={[location.pathname]} mode="inline" id="testingText">
         <Menu.Item key="/" icon={<HomeOutlined />}>
           <Link to="/">{text[number].text}</Link>
         </Menu.Item>
@@ -103,72 +92,72 @@ function Navbar() {
           <Link to="/GF">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="/ejerforeningerne" icon={<ApartmentOutlined />}>
+        <Menu.Item key="" icon={<ApartmentOutlined />}>
           <Link to="/ejerforeningerne">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="/bestyrelsen" icon={<UserOutlined />}>
+        <Menu.Item key="" icon={<UserOutlined />}>
           <Link to="/bestyrelsen">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
         <SubMenu key="sub1" icon={<FileWordOutlined />} title={text[number].text}>
         {raiseNumber()}
-          <Menu.Item key="/dokumenter">
+          <Menu.Item key="">
             <Link to="/dokumenter">{text[number].text}</Link>
           </Menu.Item>
         {raiseNumber()}
-          <Menu.Item key="/doc/parkering">
+          <Menu.Item key="">
             <Link to="/doc/parkering">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/reglement">
+          <Menu.Item key="">
             <Link to="/doc/reglement">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/plejebeskrivelse">
+          <Menu.Item key="">
             <Link to="/doc/plejebeskrivelse">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/resume">
+          <Menu.Item key="">
             <Link to="/doc/resume">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/vedtægter">
+          <Menu.Item key="">
             <Link to="/doc/vedtægter">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/budget">
+          <Menu.Item key="">
             <Link to="/doc/budget">{text[number].text}</Link>
           </Menu.Item>
 
         {raiseNumber()}
-          <Menu.Item key="/doc/udbudsmateriale">
+          <Menu.Item key="">
             <Link to="/doc/udbudsmateriale">{text[number].text}</Link>
           </Menu.Item>
         </SubMenu>
         {raiseNumber()}
-        <Menu.Item key="/Calender" icon={<ContactsOutlined />}>
+        <Menu.Item key="" icon={<ContactsOutlined />}>
           <Link to="/Calender">Kalender</Link>
         </Menu.Item>
         {/* {raiseNumber()} */}
-        <Menu.Item key="/kontakt" icon={<MailFilled />}>
+        <Menu.Item key="" icon={<MailFilled />}>
           <Link to="/kontakt">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="/FAQ" icon={<SolutionOutlined />}>
+        <Menu.Item key="" icon={<SolutionOutlined />}>
           <Link to="/FAQ">{text[number].text}</Link>
         </Menu.Item>
         {raiseNumber()}
-        <Menu.Item key="/privacy" icon={<DatabaseOutlined />}>
+        <Menu.Item key="" icon={<DatabaseOutlined />}>
           <Link to="/privacy">{text[number].text}</Link>
         </Menu.Item>        
         {raiseNumber()}
-        <Menu.Item key="/admin" icon={<LoginOutlined />}>
+        <Menu.Item key="" icon={<LoginOutlined />}>
           <Link to="/admin">{text[number].text}</Link>
         </Menu.Item>
         {resetNumber()}

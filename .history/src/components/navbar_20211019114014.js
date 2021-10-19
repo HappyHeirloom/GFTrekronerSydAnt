@@ -86,13 +86,13 @@ function Navbar() {
 
       
       <div className="logo">
-        
+        <Link to="/">
         <img
           src={image}
           alt="GF Trekroner Syd logo"
           className="logoImage"
         />
-        
+        </Link>
       </div>
       <Menu theme="dark" defaultSelectedKeys={test()} mode="inline" id="testingText">
         <Menu.Item key="/" icon={<HomeOutlined />}>

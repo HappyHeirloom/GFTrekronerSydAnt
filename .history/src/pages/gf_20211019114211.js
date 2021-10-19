@@ -3,6 +3,7 @@ import React from "react"
 import { withRouter} from "react-router-dom";
 import changeLanguage from "../components/languageComponent";
 import {gfText} from '../objectText/gfText';
+import {MiscText} from '../objectText/miscText';
 import { Col, Row, Image } from 'antd';
 import sitePlanTrekroner from '../images/sitePlanTrekroner.jpg'
 
@@ -14,7 +15,8 @@ function Gf() {
   var text = "";
   var number = 0;
   if(changeLanguage() ? text = gfText.gfText_EN  : text = gfText.gfText_DK);  
-
+  if(changeLanguage() ? sideText = MiscText.ButtonGFSideText_EN  : sideText = MiscText.ButtonGFSideText_DK);  
+  if(changeLanguage() ? buttonText = MiscText.ButtonText_EN  : buttonText = MiscText.ButtonText_DK);  
 
   function raiseNumber(){
     number++;
