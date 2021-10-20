@@ -29,10 +29,6 @@ function Contact() {
   return (
     <div className="contactWrapper">
       <div className="contactContainer">
-          <div className="content email">
-            <h1 className="title"> Smid os en email </h1>
-            <EmailForm/>
-          </div>
           <div className="content information">
             <h1 className="title">
             {text[0].header}
@@ -43,6 +39,10 @@ function Contact() {
             <p className="text">
             {text[0].text1}
             </p>
+          </div>
+          <div className="content email">
+            <h1 className="title"> Smid os en email </h1>
+            <EmailForm/>
           </div>
       </div>
     </div>
