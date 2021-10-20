@@ -88,6 +88,7 @@ class Edit extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
+            id: "",
             title: "",
             allDay: "",
             startDate: "",
@@ -127,6 +128,7 @@ class Edit extends Component {
           .get("https://gftrekronersydrestapi.azurewebsites.net/api/event/" + this.props.match.params.id)
           .then((response) => {
             this.setState({
+                id: response.data.id,
                 title: response.data.title,
                 allDay: String(response.data.allDay),
                 start: response.data.start,
@@ -140,8 +142,6 @@ class Edit extends Component {
           .catch(function (error) {
             console.log(error);
           });
-
-          console.log(this.state.start);
       }
 
     //#region Functions
@@ -207,16 +207,17 @@ class Edit extends Component {
             this.onChangeEnd();
             // When post request is sent to the create url, axios will add a new record(newperson) to the database.
             const newEditedEvent = {
+                id: this.state.id,
                 title: this.state.title,
                 allDay: this.state.allDay,
                 start: this.state.start,
                 end: this.state.end,
             };
         
-            console.log({newEditedEvent});
+            console.log(newEditedEvent);
             axios
-            .post(
-              "https://gftrekronersydrestapi.azurewebsites.net/api/event/" + this.props.match.params.id,
+            .put(
+              "https://gftrekronersydrestapi.azurewebsites.net/api/event/",
               newEditedEvent
             )
             .then((res) => console.log(res.data));
@@ -285,12 +286,12 @@ class Edit extends Component {
                     </Form.Item>
 
                     <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
-                        Tilføj
-                    </Button>
-                    <Button htmlType="button" onClick={this.onReset}>
-                        Nulstil
-                    </Button>
+                        <Button type="primary" htmlType="submit">
+                            Tilføj
+                        </Button>
+                        <Button htmlType="button" onClick={this.onReset}>
+                            Nulstil
+                        </Button>
                     </Form.Item>
                 </Form>
             </div>

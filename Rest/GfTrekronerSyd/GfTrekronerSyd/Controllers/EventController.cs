@@ -44,17 +44,17 @@ namespace GfTrekronerSyd.Controllers
             return CreatedAtRoute("GetEvent", new { id = events.Id.ToString() }, events);
         }
 
-        [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, Event eventIn)
+        [HttpPut]
+        public IActionResult Update(Event eventIn)
         {
-            var events = _eventService.Get(id);
+            var events = _eventService.Get(eventIn.Id);
 
             if (events == null)
             {
                 return NotFound();
             }
 
-            _eventService.Update(id, eventIn);
+            _eventService.Update(eventIn.Id, eventIn);
 
             return NoContent();
         }
