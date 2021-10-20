@@ -8,8 +8,7 @@ import EmailForm from "../components/emailForm";
 import changeLanguage from "../components/languageComponent";
 import {kontaktText} from '../objectText/kontaktText';
 
-
-import "../styles/App.css";
+import '../styles/contact.css';
 
 //#endregion
 
@@ -28,26 +27,23 @@ function Contact() {
   //#region Html code
 
   return (
-    <div className="row">
-      <div className="">
-        <div className="text-center">
-          <h1 style={{fontSize: 24}}>
+    <div className="contactWrapper">
+      <div className="contactContainer">
+          <div className="content email">
+            <h1 className="title"> Smid os en email </h1>
+            <EmailForm/>
+          </div>
+          <div className="content information">
+            <h1 className="title">
             {text[0].header}
-          </h1>
-          <p>
+            </h1>
+            <p className="text">
             {text[0].text}
-          </p>
-          <p>
+            </p>
+            <p className="text">
             {text[0].text1}
-          </p>
-        </div>
-      </div>
-
-      {/* Submit emails form */}
-      <div className="">
-        <div className="email">
-          <EmailForm/>
-        </div>
+            </p>
+          </div>
       </div>
     </div>
   );

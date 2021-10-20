@@ -1,13 +1,12 @@
 import { React, useState } from "react";
 import { send } from 'emailjs-com';
+import { Input } from 'antd';
 import {kontaktText} from '../objectText/kontaktText';
 import changeLanguage from './languageComponent';
 
-
-
-
 import '../styles/contact.css'
 
+const { TextArea } = Input;
 var pHolder = "";
 var number = 0;
 
@@ -76,9 +75,9 @@ function EmailForm() {
   
     return (
       <form onSubmit={onSubmit}>
-          <div className="forminput">
+          <div className="forminput input-effect">
             <input
-              className=""
+              className="effect-16"
               id="emailName"
               type="text"
               name="from_name"
@@ -86,11 +85,12 @@ function EmailForm() {
               value={toSend.from_name}
               onChange={handleChange}
             />
+            <span class="focus-border"></span>
           </div>
-          <div className="forminput">
+          <div className="forminput input-effect">
             {raiseNumber()}
             <input
-              className=""
+              className="effect-16"
               id="emailMail"
               type="text"
               name="reply_to"
@@ -98,12 +98,12 @@ function EmailForm() {
               value={toSend.reply_to}
               onChange={handleChange}
             />
-
+            <span class="focus-border"></span>
             {raiseNumber()}
           </div>
-          <div className="forminput">
+          <div className="forminput input-effect">
             <input
-              className="emailinput"
+              className="effect-16"
               id="emailSubject"
               type="text"
               name="subject"
@@ -111,10 +111,12 @@ function EmailForm() {
               value={toSend.subject}
               onChange={handleChange}
             />
+            <span class="focus-border"></span>
             {raiseNumber()}
           </div>
-          <div className="forminput">
-            <textarea
+          <div className="forminput input-effect">
+            <TextArea
+              className="effect-16"
               id="emailMessage"
               type="text"
               name="message"
@@ -122,6 +124,7 @@ function EmailForm() {
               placeholder={pHolder[number].text}
               value={toSend.message}
               onChange={handleChange}
+              autoSize={true}
             />
             {raiseNumber()}
             <br />

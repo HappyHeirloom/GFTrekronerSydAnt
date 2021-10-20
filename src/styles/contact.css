@@ -1,4 +1,209 @@
-.forminput{
-    padding:10px   
+.forminput {
+    position: relative;
+    margin: 5px;
 }
 
+.contactWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 89vh;
+}
+
+.contactContainer {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(59, 43, 43, 0.651);
+    overflow: hidden;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 22px;
+}
+
+.information {
+    background-color: #00e88e;
+}
+
+.email {
+    background-color: transparent;
+}
+
+input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%; box-sizing: border-box; letter-spacing: 1px;}
+
+:focus{outline: none;}
+
+.effect-16 {
+    border: 0; 
+    padding: 4px 0; 
+    border-bottom: 1px solid #ccc; 
+    background-color: transparent;
+}
+.effect-16 ~ .focus-border {
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #4caf50; 
+    transition: 0.4s;
+}
+.effect-16:focus ~ .focus-border,
+.has-content.effect-16 ~ .focus-border {
+    width: 100%; 
+    transition: 0.4s;
+}
+.effect-16 ~ label {
+    position: absolute; 
+    left: 0; 
+    width: 100%; 
+    top: 9px; 
+    color: #aaa; 
+    transition: 0.3s; 
+    z-index: -1; 
+    letter-spacing: 0.5px;
+}
+.effect-16:focus ~ label, .has-content.effect-16 ~ label {
+    top: -16px; 
+    font-size: 12px; 
+    color: #4caf50; 
+    transition: 0.3s;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contactContainer{
+        display: block;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .contactContainer{
+        display: block;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 12px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .contactContainer{
+        display: block;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .text {
+        font-size: 12px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .contactContainer{
+        display: block;
+    }
+    .title {
+        font-size: 35px;
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .contactContainer{
+        display: flex;
+        width: 80%;
+    }    
+    .title {
+        font-size: 40px;
+    }
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .contactContainer{
+        display: flex;
+        width: 70%;
+    }
+    .title {
+        font-size: 45px;
+    }
+    .text {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .contactContainer{
+        display: flex;
+        width:70%;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .text {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .contactContainer{
+        display: flex;
+        width:65%;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .text {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .contactContainer{
+        display: flex;
+        width:60%;
+    }
+    .title {
+        font-size: 55px;
+    }
+    .text {
+        font-size: 22px;
+    }
+}
