@@ -157,7 +157,7 @@ function Navbar() {
           <Link to="/privacy">{text[number].text}</Link>
         </Menu.Item>        
         {raiseNumber()}
-        <Menu.Item key="/admin" icon={<LoginOutlined />}>
+        <Menu.Item key="/admin" icon={<LoginOutlined />} style={{ position: 'absolute', bottom: 48 }}>
           <Link to="/admin">{text[number].text}</Link>
         </Menu.Item>
         {resetNumber()}

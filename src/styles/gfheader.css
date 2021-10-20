@@ -1,32 +1,41 @@
 .gfHeader{
-   color: white;
-            font-size: 40px;
-            text-shadow: -1px 1px 0 #000,
-                          1px 1px 0 #000,
-                         1px -1px 0 #000,
-                        -1px -1px 0 #000;
-
+  color: white;
+  font-weight: bold; 
+  letter-spacing: 3px; 
+  font-size: 20px;
+   /* color: white;
+      font-size: 40px;
+      text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000; */
 }
 
+.ant-layout-header {
+  background: #001529!important;
+  /* background: rgb(0,21,41) !important;
+  background: linear-gradient(90deg, rgba(0,21,41,1) 0%, rgba(0,21,41,0.9220063025210083) 16%, 
+  rgba(0,21,41,0.8267682072829132) 28%, 
+  rgba(0,21,41,0.7203256302521008) 41%, 
+  rgba(0,21,41,0.6194852941176471) 51%, 
+  rgba(0,21,41,0.5102415966386555) 67%, 
+  rgba(0,21,41,0.3617822128851541) 82%, 
+  rgba(0,21,41,0.30015756302521013) 91%) !important; */
+}
 
-@media screen and (max-width: 775px) {
-  .gfHeader {
-    font-size:27px
-  }
+.langbutton {
+  background: transparent;
+  padding: 0px;
+  border-radius: 10px;
 }
-@media screen and (max-width: 735px) {
-  .gfHeader {
-    font-size:20px
+
+.flag{
+  width: 38px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .gfHeader{
+    font-size: 16px;
+    letter-spacing: -1px;
   }
 }
 
-@media screen and (max-width: 700px) {
-  .gfHeader {
-    font-size:15px;
-    margin:auto !important;
-  }
-  .langbutton{
-      transform:scale(0.7)
-      
-  }
-}
