@@ -45,17 +45,17 @@ namespace GfTrekronerSyd.Controllers
             return CreatedAtRoute("GetNews", new { id = news.Id.ToString() }, news);
         }
 
-        [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, News newsIn)
+        [HttpPut]
+        public IActionResult Update(News newsIn)
         {
-            var news = _newsService.Get(id);
+            var news = _newsService.Get(newsIn.Id);
 
             if (news == null)
             {
                 return NotFound();
             }
 
-            _newsService.Update(id, newsIn);
+            _newsService.Update(newsIn.Id, newsIn);
 
             return NoContent();
         }

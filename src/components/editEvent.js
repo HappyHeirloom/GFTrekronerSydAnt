@@ -213,8 +213,6 @@ class Edit extends Component {
                 start: this.state.start,
                 end: this.state.end,
             };
-        
-            console.log(newEditedEvent);
             axios
             .put(
               "https://gftrekronersydrestapi.azurewebsites.net/api/event/",

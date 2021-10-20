@@ -31,6 +31,7 @@ class Edit extends Component {
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
+            id: "",
             title: "",
             image: "",
             tag: "",
@@ -43,6 +44,7 @@ class Edit extends Component {
           .get("https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id)
           .then((response) => {
             this.setState({
+                id: response.data.id,
                 title: response.data.title,
                 image: response.data.image,
                 tag: response.data.tag,
@@ -84,6 +86,7 @@ class Edit extends Component {
     onSubmit() {
         // When post request is sent to the create url, axios will add a new record(newperson) to the database.
         const newEditedNews = {
+            id: this.state.id,
             title: this.state.title,
             image: this.state.image,
             tag: this.state.tag,
@@ -91,8 +94,8 @@ class Edit extends Component {
         };
 
         axios
-        .post(
-          "https://gftrekronersydrestapi.azurewebsites.net/api/news/" + this.props.match.params.id,
+        .put(
+          "https://gftrekronersydrestapi.azurewebsites.net/api/news/",
           newEditedNews
         )
         .then((res) => console.log(res.data));
@@ -124,7 +127,7 @@ class Edit extends Component {
                             allowClear
                         >
                             <Option value="Parking">Parkering</Option>
-                            <Option value="Rules">Reglement</Option>
+                            <Option value="Important">Vigtigt</Option>
                             <Option value="Other">Andet</Option>
                         </Select>
                     </Form.Item>

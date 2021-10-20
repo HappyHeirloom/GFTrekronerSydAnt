@@ -31,8 +31,15 @@ namespace GfTrekronerSyd.Services
             return news;
         }
 
-        public void Update(string id, News newsIn) =>
-            _news.ReplaceOne(news => news.Id == id, newsIn);
+        public ReplaceOneResult Update(string id, News newsIn)
+        {
+            var filter = Builders<News>.Filter.Eq(x => x.Id, id);
+            var result = _news.ReplaceOne(filter, newsIn);
+
+            return result;
+            //_news.ReplaceOne(news => news.Id == id, newsIn);
+        }
+            
 
         public void Remove(News newsIn) =>
             _news.DeleteOne(news => news.Id == newsIn.Id);
