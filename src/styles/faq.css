@@ -1,0 +1,70 @@
+.faqWrapper {
+    background-color: rgb(160, 159, 157);
+    min-height: 89vh;
+    color: rgb(255, 254, 254);
+}
+
+/* TOP */
+.topLeft, .topRight {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60vh;
+    max-height: 60vh;
+    background-color: #00e88e;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+.faqTextTopLeft  {
+    margin-top: 10%;
+    width: 50%;
+}
+.faqTextTopRight {
+    margin-top: 10%;
+    width: 75%;
+}
+
+.faqTextTopLeft > h1, .faqTextTopRight > h1 {
+    font-size: 72px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid black;
+}
+
+/* BOTH */
+.topLeft, .topRight, .botLeft, .botMid, .botRight {
+    display: flex;
+    flex-direction: column;
+}
+
+/* BOTTOM */
+.botLeft, .botMid, .botRight {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 29vh;
+    max-height: 29vh;
+    font-size: 16px;
+}
+
+.faqTextBotLeft, .faqTextBotMid, .faqTextBotRight {
+    margin-top: 10%;
+    width: 75%;
+}
+
+.faqTextBotLeft > h1, .faqTextBotMid > h1, .faqTextBotRight > h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: white;
+    border-bottom: 1px solid #00e88e;
+}
+
+.botLeft{
+    background-color: #333333;
+}
+.botMid{
+    background-color: #292929;
+}
+.botRight{
+    background-color: #252525;
+}
