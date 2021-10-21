@@ -34,7 +34,7 @@ function FAQ() {
 
   return (
         <div className="faqWrapper">
-          <Row type="flex">
+          <Row type="flex" className="faqTop">
             <Col span={12}>
               <div className="topLeft">
                 <div className="faqTextTopLeft">
@@ -52,7 +52,7 @@ function FAQ() {
               </div>
             </Col>
           </Row>
-          <Row type="flex">
+          <Row type="flex" className="faqBot">
             <Col span={8}>
               <div className="botLeft">
                 <div className="faqTextBotLeft">
