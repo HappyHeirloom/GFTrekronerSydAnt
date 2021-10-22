@@ -1,4 +1,6 @@
-const pic = "https://drive.google.com/uc?export=view&id=1zqfmmZpMIZsYh8piaOt0oHMxmfPkA-xn"
+// const pic = "https://drive.google.com/uc?export=view&id=1zqfmmZpMIZsYh8piaOt0oHMxmfPkA-xn"
+import user from "../images/user.png";
+const pic = user;
 export var managagementObjectList = {
   managementObjects: [
     {
