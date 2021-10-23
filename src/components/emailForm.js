@@ -127,7 +127,7 @@ function EmailForm() {
             />
             {raiseNumber()}
             <br />
-            <button className="forminput button" id="submitButton" type="submit" disabled={dis}>
+            <button className="forminput buttonContact" id="submitButton" type="submit" disabled={dis}>
               {pHolder[number].text}
             </button>
             {resetNumber()}

@@ -1,6 +1,6 @@
 //#region Imports
 import React from 'react';
-import { Collapse, Col, Row } from 'antd';
+import { Col, Row } from 'antd';
 
 import '../styles/faq.css';
 

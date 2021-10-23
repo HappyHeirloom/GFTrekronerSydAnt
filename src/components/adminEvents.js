@@ -69,6 +69,7 @@ export default class eventsList extends Component {
     }
 
     newDataList(){
+        console.log(this.eventList());
         this.eventList().forEach(element => {
             list.push(element.props.event);
         });
@@ -109,7 +110,13 @@ export default class eventsList extends Component {
                     >
                         <List.Item.Meta
                         title={item.title}
-                        description={item.message}
+                        description={"Hele dagen: " + item.allDay}
+                        />
+                         <List.Item.Meta
+                        description={"Start dato/tid: " + item.start}
+                        />
+                         <List.Item.Meta
+                        description={"Slut dato/tid: " + item.end}
                         />
                     </List.Item>
                     )}

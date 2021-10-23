@@ -209,7 +209,7 @@ input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%;
     }
 }
 
-.button {
+.buttonContact {
     margin-top: 20px;
     width: 140px;
     height: 45px;
@@ -227,7 +227,7 @@ input[type="text"]{font: 15px/24px 'Muli', sans-serif; color: #333; width: 100%;
     outline: none;
     }
   
-  .button:hover {
+  .buttonContact:hover {
     background-color: #00e88e;
     box-shadow: 0px 15px 20px rgba(0, 232, 142, 0.4);
     color: #fff;
