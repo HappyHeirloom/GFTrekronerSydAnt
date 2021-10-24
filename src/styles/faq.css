@@ -1,13 +1,19 @@
 .faqWrapper {
     min-height: 89vh;
     color: rgb(255, 254, 254);
-    background-image: url("../images/Test.png");
+    background-image: url("../images/Test2.png");
     background-size: cover;
+}
+
+.faqContainer {
+    padding: 10px;
 }
 
 /* TOP */
 .faqTop {
     background-color: #00e88f8f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .topLeft, .topRight {
@@ -49,6 +55,8 @@
 .faqBot {
     background: rgb(51,51,51);
     background: linear-gradient(90deg, rgba(51,51,51,0.95) 0%, rgba(41,41,41,0.95) 50%, rgba(37,37,37,0.95) 100%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .botLeft, .botMid, .botRight {

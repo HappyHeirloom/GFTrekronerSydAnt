@@ -24,12 +24,12 @@ import CalendarPage from './pages/calendar';
 
 
 //TESTS MONGODB
-import CreateNews from './components/createNews';
-import EditNews from './components/editNews';
-import CreateEvent from './components/createEvent';
-import EditEvent from './components/editEvent';
-import AdminNewsfeed from './components/adminNewsList';
-import AdminEventFeed from "./components/adminEvents"
+import CreateNews from './pages/createNews';
+import EditNews from './pages/editNews';
+import CreateEvent from './pages/createEvent';
+import EditEvent from './pages/editEvent';
+import AdminNewsfeed from './pages/adminNewsList';
+import AdminEventFeed from "./pages/adminEvents"
 
 
 // Google analytics

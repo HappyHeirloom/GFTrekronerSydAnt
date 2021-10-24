@@ -45,15 +45,17 @@ class CalendarComp extends Component {
 
   render() {
     return (
-        <Calendar
-        className="calendar"
-        localizer={localizer}
-        events={this.state.events}
-        popup={true}
-        views={['month', 'week', 'day', 'agenda']}
-        startAccessor="start"
-        endAccessor="end"
-      />
+      <div className="calendarWrapper">
+          <Calendar
+          className="calendar"
+          localizer={localizer}
+          events={this.state.events}
+          popup={true}
+          views={['month', 'week', 'day', 'agenda']}
+          startAccessor="start"
+          endAccessor="end"
+          />
+      </div>
     )
   }
 }

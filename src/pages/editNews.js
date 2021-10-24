@@ -5,14 +5,11 @@ import { Form, Input, Button, Select } from 'antd';
 import axios from 'axios';
 import { withRouter } from "react-router";
 
+import "../styles/adminNewsEdit.css";
 
 //#region form antd
 const { Option } = Select;
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
 const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
@@ -109,58 +106,60 @@ class Edit extends Component {
 
     render() {
         return (
-            <div>
-                <h3>Opdatér nyhed</h3>
-                <Form {...layout} ref={this.formRef} name="control-ref" onFinish={this.onSubmit}>
-                    <Form.Item name="title" label="Titel" rules={[{ required: true }]}>
-                        <Input 
-                        placeholder={this.state.title}
-                        value={this.state.title}
-                        onChange={this.onChangeTitle}
-                        />
-                    </Form.Item>
+            <div className="adminNewsEditWrapper">
+                <div className="adminNewsEditContainer">
+                    <h3>Opdatér nyhed</h3>
+                    <Form ref={this.formRef} name="control-ref" onFinish={this.onSubmit}>
+                        <Form.Item name="title" label="Titel" rules={[{ required: true }]}>
+                            <Input 
+                            placeholder={this.state.title}
+                            value={this.state.title}
+                            onChange={this.onChangeTitle}
+                            />
+                        </Form.Item>
 
-                    <Form.Item name="picture" label="Billede" rules={[{ required: true }]}>
-                        <Select
-                            placeholder={this.state.image}
-                            onChange={this.onChangeImage}
-                            allowClear
-                        >
-                            <Option value="Parking">Parkering</Option>
-                            <Option value="Important">Vigtigt</Option>
-                            <Option value="Other">Andet</Option>
-                        </Select>
-                    </Form.Item>
+                        <Form.Item name="picture" label="Billede" rules={[{ required: true }]}>
+                            <Select
+                                placeholder={this.state.image}
+                                onChange={this.onChangeImage}
+                                allowClear
+                            >
+                                <Option value="Parking">Parkering</Option>
+                                <Option value="Important">Vigtigt</Option>
+                                <Option value="Other">Andet</Option>
+                            </Select>
+                        </Form.Item>
 
-                    <Form.Item name="tag" label="Farve" rules={[{ required: true }]}>
-                        <Select
-                            placeholder={this.state.tag}
-                            onChange={this.onChangeTag}
-                            allowClear
-                        >
-                            <Option value="Red">Rød</Option>
-                            <Option value="Yellow">Gul</Option>
-                            <Option value="Green">Grøn</Option>
-                        </Select>
-                    </Form.Item>
+                        <Form.Item name="tag" label="Farve" rules={[{ required: true }]}>
+                            <Select
+                                placeholder={this.state.tag}
+                                onChange={this.onChangeTag}
+                                allowClear
+                            >
+                                <Option value="Red">Rød</Option>
+                                <Option value="Yellow">Gul</Option>
+                                <Option value="Green">Grøn</Option>
+                            </Select>
+                        </Form.Item>
 
-                    <Form.Item name="message" label="Tekst" rules={[{ required: true }]}>
-                        <Input
-                        placeholder={this.state.message}
-                        value={this.state.message}
-                        onChange={this.onChangeMessage}
-                        />
-                    </Form.Item>
+                        <Form.Item name="message" label="Tekst" rules={[{ required: true }]}>
+                            <Input
+                            placeholder={this.state.message}
+                            value={this.state.message}
+                            onChange={this.onChangeMessage}
+                            />
+                        </Form.Item>
 
-                    <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
-                        Tilføj
-                    </Button>
-                    <Button htmlType="button" onClick={this.onReset}>
-                        Nulstil
-                    </Button>
-                    </Form.Item>
-                </Form>
+                        <Form.Item {...tailLayout}>
+                        <Button type="primary" htmlType="submit">
+                            Tilføj
+                        </Button>
+                        <Button htmlType="button" onClick={this.onReset}>
+                            Nulstil
+                        </Button>
+                        </Form.Item>
+                    </Form>
+                </div>
             </div>
         )
     }

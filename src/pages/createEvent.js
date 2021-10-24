@@ -5,6 +5,8 @@ import { Form, Input, Button, Select, DatePicker, TimePicker, message } from 'an
 // This will require to npm install axios
 import axios from 'axios';
 
+import "../styles/adminEventCreate.css";
+
 function returnMonth(month){
     switch(month){
         case "Jan":
@@ -65,10 +67,6 @@ function fixArray(arrayToFix, date){
 const { Option } = Select;
 const format = 'HH:mm:ss';
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
 const tailLayout = {
   wrapperCol: { offset: 8, span: 16 },
 };
@@ -197,65 +195,67 @@ export default class Create extends Component {
 
     render() {
         return (
-            <div>
-                <h3>Opret et event</h3>
-                <Form {...layout} ref={this.formRef} name="control-ref" onFinish={this.onSubmit}>
-                    <Form.Item name="title" label="Title" rules={[{ required: true }]}>
-                        <Input 
-                        placeholder="Enter a title"
-                        value={this.state.title}
-                        onChange={this.onChangeTitle}
-                        />
-                    </Form.Item>
+            <div className="adminEventCreateWrapper">
+                <div className="adminEventCreateContainer">
+                    <h3>Opret et event</h3>
+                    <Form ref={this.formRef} name="control-ref" onFinish={this.onSubmit}>
+                        <Form.Item name="title" label="Title" rules={[{ required: true }]}>
+                            <Input 
+                            placeholder="Enter a title"
+                            value={this.state.title}
+                            onChange={this.onChangeTitle}
+                            />
+                        </Form.Item>
 
-                    <Form.Item name="allDay" label="allDay" rules={[{ required: true }]}>
-                        <Select
-                            placeholder="Is it an all day event?"
-                            onChange={this.onChangeAllDay}
-                            allowClear
-                        >
-                            <Option value="true">True</Option>
-                            <Option value="false">False</Option>
-                        </Select>
-                    </Form.Item>
+                        <Form.Item name="allDay" label="allDay" rules={[{ required: true }]}>
+                            <Select
+                                placeholder="Is it an all day event?"
+                                onChange={this.onChangeAllDay}
+                                allowClear
+                            >
+                                <Option value="true">True</Option>
+                                <Option value="false">False</Option>
+                            </Select>
+                        </Form.Item>
 
-                    <Form.Item name="start" label="Start" >
+                        <Form.Item name="start" label="Start" >
+                            <DatePicker
+                                placeholder="Start date"
+                                onChange={this.onChangeStartDate}
+                                allowClear
+                            />
+                            <TimePicker
+                                placeholder="Start time"
+                                format={format}
+                                onChange={this.onChangeStartTime}
+                                allowClear
+                            />
+                        </Form.Item>
+
+                        <Form.Item name="end" label="End">
                         <DatePicker
-                            placeholder="Start date"
-                            onChange={this.onChangeStartDate}
-                            allowClear
-                        />
-                        <TimePicker
-                            placeholder="Start time"
-                            format={format}
-                            onChange={this.onChangeStartTime}
-                            allowClear
-                        />
-                    </Form.Item>
+                                placeholder="End date"
+                                onChange={this.onChangeEndDate}
+                                allowClear
+                            />
+                            <TimePicker
+                                placeholder="End time"
+                                format={format}
+                                onChange={this.onChangeEndTime}
+                                allowClear
+                            />
+                        </Form.Item>
 
-                    <Form.Item name="end" label="End">
-                    <DatePicker
-                            placeholder="End date"
-                            onChange={this.onChangeEndDate}
-                            allowClear
-                        />
-                        <TimePicker
-                            placeholder="End time"
-                            format={format}
-                            onChange={this.onChangeEndTime}
-                            allowClear
-                        />
-                    </Form.Item>
-
-                    <Form.Item {...tailLayout}>
-                    <Button type="primary" htmlType="submit">
-                        Tilføj
-                    </Button>
-                    <Button htmlType="button" onClick={this.onReset}>
-                        Nulstil
-                    </Button>
-                    </Form.Item>
-                </Form>
+                        <Form.Item {...tailLayout}>
+                        <Button type="primary" htmlType="submit">
+                            Tilføj
+                        </Button>
+                        <Button htmlType="button" onClick={this.onReset}>
+                            Nulstil
+                        </Button>
+                        </Form.Item>
+                    </Form>
+                </div>
             </div>
         )
     }

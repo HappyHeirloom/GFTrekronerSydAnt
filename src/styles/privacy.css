@@ -1,3 +1,8 @@
+.privacyWrapper {
+    min-height: 89vh;
+    display: flex;
+}
+
 h1, h3{
     text-align: center !important;
 }

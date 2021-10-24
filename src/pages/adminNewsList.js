@@ -7,6 +7,8 @@ import { Card, Avatar } from 'antd';
 import { List } from 'antd';
 import { Link } from "react-router-dom";
 
+import "../styles/adminNews.css"
+
 //oneNews = 1 news, news = more
 const { Meta } = Card;
 var list = [];
@@ -106,40 +108,42 @@ export default class newsList extends Component {
 
     render() {
         return (
-            <div>
-                <h3> Overblik over nyheder </h3>
-                {this.newDataList()}
-                <List
-                    header="News"
-                    itemLayout="vertical"
-                    size="large"
-                    bordered="true"
-                    pagination={{
-                    onChange: page => {
-                        
-                    },
-                    pageSize: 3,
-                    }}
-                    dataSource={list}
-                    // footer={
-                    // }
-                    renderItem={item => (
-                    <List.Item
-                        key={item.id}
-                        actions={[
-                            <Link to={"/editNews/" + item.id}>Rediger</Link>,
-                            <Link onClick={ () => {this.deleteOneNews(item.id)} } to="/adminnewsfeed" > Slet </Link>
-                          ]}
-                    >
-                        <List.Item.Meta
-                        avatar={<Avatar src={returnImage(item.image)} style={{backgroundColor: returnColor(item.tag), padding: 5}} />}
-                        title={item.title}
-                        description={item.message}
-                        />
-                    </List.Item>
-                    )}
-                />,
-                {this.emptyArray()}
+            <div className="adminNewsWrapper">
+                <div className="adminNewsContainer">
+                    <h3> Overblik over nyheder </h3>
+                    {this.newDataList()}
+                    <List
+                        header="News"
+                        itemLayout="vertical"
+                        size="large"
+                        bordered="true"
+                        pagination={{
+                            onChange: page => {
+                                
+                            },
+                            pageSize: 3,
+                        }}
+                        dataSource={list}
+                        // footer={
+                            // }
+                            renderItem={item => (
+                                <List.Item
+                                key={item.id}
+                                actions={[
+                                    <Link to={"/editNews/" + item.id}>Rediger</Link>,
+                                    <Link onClick={ () => {this.deleteOneNews(item.id)} } to="/adminnewsfeed" > Slet </Link>
+                                ]}
+                                >
+                            <List.Item.Meta
+                            avatar={<Avatar src={returnImage(item.image)} style={{backgroundColor: returnColor(item.tag), padding: 5}} />}
+                            title={item.title}
+                            description={item.message}
+                            />
+                        </List.Item>
+                        )}
+                        />,
+                    {this.emptyArray()}
+                </div>
             </div>
         );
     }

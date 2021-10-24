@@ -34,50 +34,52 @@ function FAQ() {
 
   return (
         <div className="faqWrapper">
-          <Row type="flex" className="faqTop">
-            <Col span={12}>
-              <div className="topLeft">
-                <div className="faqTextTopLeft">
-                  <h1> Affaldsortering </h1>
-                  <p> {text3} </p>
+          <div className="faqContainer">
+            <Row type="flex" className="faqTop">
+              <Col span={12}>
+                <div className="topLeft">
+                  <div className="faqTextTopLeft">
+                    <h1> Affaldsortering </h1>
+                    <p> {text3} </p>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col span={12}>
-              <div className="topRight">
-                <div className="faqTextTopRight">
-                  <h1> Gæste parkering </h1>
-                  <p> {text2} </p>
+              </Col>
+              <Col span={12}>
+                <div className="topRight">
+                  <div className="faqTextTopRight">
+                    <h1> Gæste parkering </h1>
+                    <p> {text2} </p>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
-          <Row type="flex" className="faqBot">
-            <Col span={8}>
-              <div className="botLeft">
-                <div className="faqTextBotLeft">
-                  <h1> Parkering som beboer </h1>
-                  <p> {text} </p>
+              </Col>
+            </Row>
+            <Row type="flex" className="faqBot">
+              <Col span={8}>
+                <div className="botLeft">
+                  <div className="faqTextBotLeft">
+                    <h1> Parkering som beboer </h1>
+                    <p> {text} </p>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="botMid">
-                <div className="faqTextBotMid">
-                  <h1> Hvem må benytte legepladserne </h1>
-                  <p> {text4} </p>
+              </Col>
+              <Col span={8}>
+                <div className="botMid">
+                  <div className="faqTextBotMid">
+                    <h1> Hvem må benytte legepladserne </h1>
+                    <p> {text4} </p>
+                  </div>
                 </div>
-              </div>
-            </Col>
-            <Col span={8}>
-              <div className="botRight">
-                <div className="faqTextBotRight">
-                  <h1> Hvor skal jeg melde hvis noget går i stykker </h1>
-                  <p> {text5} </p>
+              </Col>
+              <Col span={8}>
+                <div className="botRight">
+                  <div className="faqTextBotRight">
+                    <h1> Hvor skal jeg melde hvis noget går i stykker </h1>
+                    <p> {text5} </p>
+                  </div>
                 </div>
-              </div>
-            </Col>
-          </Row>
+              </Col>
+            </Row>
+          </div>
         </div>
 
 

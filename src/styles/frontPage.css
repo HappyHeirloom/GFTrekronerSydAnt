@@ -1,3 +1,7 @@
+.frontPageWrapper {
+    min-height: 89vh;
+}
+
 .center {
     margin: auto;
 }
