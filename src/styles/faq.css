@@ -21,14 +21,12 @@
     align-items: center;
     width: 100%;
     min-height: 60vh;
-    max-height: 60vh;
     color: rgb(0, 0, 0);
-    font-size: 22px;
 }
 
 .faqTextTopLeft  {
     margin-top: 10%;
-    width: 50%;
+    width: 75%;
 }
 .faqTextTopRight {
     margin-top: 10%;
@@ -36,14 +34,13 @@
 }
 
 .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-    font-size: 72px;
     letter-spacing: 2px;
     border-bottom: 1px solid black;
 }
 
-.faqTextTopLeft > p, .faqTextTopRight > p {
+/* .faqTextTopLeft > p, .faqTextTopRight > p {
     text-shadow: #000000 0.1px 0.1px 1px;
-}
+} */
 
 /* BOTH */
 .topLeft, .topRight, .botLeft, .botMid, .botRight {
@@ -64,7 +61,6 @@
     align-items: center;
     width: 100%;
     min-height: 29vh;
-    max-height: 29vh;
     font-size: 16px;
 }
 
@@ -80,12 +76,170 @@
     border-bottom: 1px solid #00e88e;
 }
 
-/* .botLeft{
-    background-color: #333333f1;
-} */
-/* .botMid{
-    background-color: #292929f1;
-} */
-/* .botRight{
-    background-color: #252525f1;
-} */
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 30px;
+    }
+    .topLeft, .topRight {
+        font-size: 16px;
+        min-height: unset;
+    }
+    .faqContainer {
+        word-wrap: break-word;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: unset;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 30px;
+    }
+    .topLeft, .topRight {
+        font-size: 16px;
+        min-height: unset;
+    }
+    .faqContainer {
+        word-wrap: break-word;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: unset;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 35px;
+    }
+    .topLeft, .topRight {
+        font-size: 16px;
+        min-height: unset;
+    }
+    .faqContainer {
+        word-wrap: break-word;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: unset;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 40px;
+    }
+    .topLeft, .topRight {
+        font-size: 16px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 45px;
+    }
+    .topLeft, .topRight {
+        font-size: 18px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 50px;
+    }
+    .topLeft, .topRight {
+        font-size: 18px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 55px;
+    }
+    .topLeft, .topRight {
+        font-size: 20px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+@media only screen and (min-width: 1700px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 60px;
+    }
+    .topLeft, .topRight {
+        font-size: 20px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 70px;
+    }
+    .topLeft, .topRight {
+        font-size: 22px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .faqTextTopLeft > h1, .faqTextTopRight > h1 {
+        font-size: 72px;
+    }
+    .topLeft, .topRight {
+        font-size: 22px;
+        min-height: 60vh;
+    }
+    .faqContainer {
+        word-wrap: unset;
+    }
+    .botLeft, .botMid, .botRight {
+        min-height: 29vh;
+    }
+}

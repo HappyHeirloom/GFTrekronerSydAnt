@@ -36,15 +36,15 @@ function FAQ() {
         <div className="faqWrapper">
           <div className="faqContainer">
             <Row type="flex" className="faqTop">
-              <Col span={12}>
+              <Col xl={12} lg={12} md={24} sm={24} xs={24}>
                 <div className="topLeft">
                   <div className="faqTextTopLeft">
-                    <h1> Affaldsortering </h1>
+                    <h1> Affaldssortering </h1>
                     <p> {text3} </p>
                   </div>
                 </div>
               </Col>
-              <Col span={12}>
+              <Col xl={12} lg={12} md={24} sm={24} xs={24}>
                 <div className="topRight">
                   <div className="faqTextTopRight">
                     <h1> Gæste parkering </h1>
@@ -54,7 +54,7 @@ function FAQ() {
               </Col>
             </Row>
             <Row type="flex" className="faqBot">
-              <Col span={8}>
+              <Col xl={8} lg={8} md={24} sm={24} xs={24}>
                 <div className="botLeft">
                   <div className="faqTextBotLeft">
                     <h1> Parkering som beboer </h1>
@@ -62,7 +62,7 @@ function FAQ() {
                   </div>
                 </div>
               </Col>
-              <Col span={8}>
+              <Col xl={8} lg={8} md={24} sm={24} xs={24}>
                 <div className="botMid">
                   <div className="faqTextBotMid">
                     <h1> Hvem må benytte legepladserne </h1>
@@ -70,7 +70,7 @@ function FAQ() {
                   </div>
                 </div>
               </Col>
-              <Col span={8}>
+              <Col xl={8} lg={8} md={24} sm={24} xs={24}>
                 <div className="botRight">
                   <div className="faqTextBotRight">
                     <h1> Hvor skal jeg melde hvis noget går i stykker </h1>
