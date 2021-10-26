@@ -71,6 +71,7 @@ function Navbar() {
         height: '100vh',
         position: 'sticky',
         top: 0,
+        overflow: "auto",
       }} id="" collapsible collapsed={collapsed} onCollapse={onCollapse} breakpoint="sm">
 
       
@@ -101,44 +102,47 @@ function Navbar() {
         </Menu.Item>
         {raiseNumber()}
         <SubMenu key="sub1" icon={<FileWordOutlined />} title={text[number].text}>
-        {raiseNumber()}
-          <Menu.Item key="/dokumenter">
-            <Link to="/dokumenter">{text[number].text}</Link>
-          </Menu.Item>
-        {raiseNumber()}
-          <Menu.Item key="/doc/parkering">
-            <Link to="/doc/parkering">{text[number].text}</Link>
-          </Menu.Item>
+          <SubMenu key="dude" title="DUDEE" />
+          <SubMenu key="pdf" title="PDFs">
+          {raiseNumber()}
+            <Menu.Item key="/dokumenter">
+              <Link to="/dokumenter">{text[number].text}</Link>
+            </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/parkering">
+              <Link to="/doc/parkering">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/reglement">
-            <Link to="/doc/reglement">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/reglement">
+              <Link to="/doc/reglement">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/plejebeskrivelse">
-            <Link to="/doc/plejebeskrivelse">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/plejebeskrivelse">
+              <Link to="/doc/plejebeskrivelse">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/resume">
-            <Link to="/doc/resume">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/resume">
+              <Link to="/doc/resume">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/vedtægter">
-            <Link to="/doc/vedtægter">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/vedtægter">
+              <Link to="/doc/vedtægter">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/budget">
-            <Link to="/doc/budget">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/budget">
+              <Link to="/doc/budget">{text[number].text}</Link>
+            </Menu.Item>
 
-        {raiseNumber()}
-          <Menu.Item key="/doc/udbudsmateriale">
-            <Link to="/doc/udbudsmateriale">{text[number].text}</Link>
-          </Menu.Item>
+          {raiseNumber()}
+            <Menu.Item key="/doc/udbudsmateriale">
+              <Link to="/doc/udbudsmateriale">{text[number].text}</Link>
+            </Menu.Item>
+          </SubMenu>
         </SubMenu>
         {raiseNumber()}
         <Menu.Item key="/Calender" icon={<ContactsOutlined />}>
@@ -157,7 +161,7 @@ function Navbar() {
           <Link to="/privacy">{text[number].text}</Link>
         </Menu.Item>        
         {raiseNumber()}
-        <Menu.Item key="/admin" icon={<LoginOutlined />} style={{ position: 'absolute', bottom: 48 }}>
+        <Menu.Item key="/admin" icon={<LoginOutlined />}>
           <Link to="/admin">{text[number].text}</Link>
         </Menu.Item>
         {resetNumber()}
