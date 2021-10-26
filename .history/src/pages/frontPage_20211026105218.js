@@ -20,12 +20,9 @@ function FrontPage() {
                         <NewsList/>
                     </div>
                 </Col>
-                <Col span={24}>
+                <Col>
                     <div>
                         CVR: 33223420
-                    </div>
-                    <div>
-                        Adresse: Trekroner Centervej 50-73
                     </div>
                 </Col>
             </Row>

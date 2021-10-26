@@ -1,0 +1,38 @@
+Button > a {
+    color: black;
+}
+
+.pdfHeader{
+    text-align: center;
+}
+
+.display{
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.pdftext{
+    padding: 0.2rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .pdfLink{
+        display: none;
+    }
+    .pdfViewer{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .pdfLink{
+        display: block;
+    }
+    .pdfViewer{
+        display: none;
+    }
+}

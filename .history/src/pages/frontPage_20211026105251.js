@@ -20,7 +20,7 @@ function FrontPage() {
                         <NewsList/>
                     </div>
                 </Col>
-                <Col span={24}>
+                <Col>
                     <div>
                         CVR: 33223420
                     </div>
