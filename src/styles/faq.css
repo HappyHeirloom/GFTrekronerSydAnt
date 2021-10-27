@@ -1,17 +1,34 @@
 .faqWrapper {
+    display: flex;
     min-height: 89vh;
     color: rgb(255, 254, 254);
     background-image: url("../images/Test2.png");
     background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
 
+
+/* BOTH */
 .faqContainer {
+    width: 100%;
+    max-height: 50%;
     padding: 10px;
+    background-image: radial-gradient(circle at 100% 100%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to right, #00c478, #00c478), radial-gradient(circle at 0% 100%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to bottom, #00c478, #001529), radial-gradient(circle at 0% 0%, transparent 27px, #001529 27px, #001529 32px, transparent 32px), linear-gradient(to left, #001529, #001529), radial-gradient(circle at 100% 0%, transparent 27px, #001529 27px, #001529 32px, transparent 32px), linear-gradient(to top, #001529, #00c478);
+    background-size: 32px 32px, calc(100% - 64px) 5px, 32px 32px, 5px calc(100% - 64px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+
+.topLeft, .topRight, .botLeft, .botMid, .botRight {
+    display: flex;
+    flex-direction: column;
 }
 
 /* TOP */
 .faqTop {
-    background-color: #00e88f8f;
+    background: rgb(0,232,142);
+    background: linear-gradient(90deg, rgba(0,232,142,1) 0%, rgba(0,212,130,1) 50%, rgba(0,185,113,1) 100%);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -35,23 +52,21 @@
 
 .faqTextTopLeft > h1, .faqTextTopRight > h1 {
     letter-spacing: 2px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #001529;
 }
 
 /* .faqTextTopLeft > p, .faqTextTopRight > p {
     text-shadow: #000000 0.1px 0.1px 1px;
 } */
 
-/* BOTH */
-.topLeft, .topRight, .botLeft, .botMid, .botRight {
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* BOTTOM */
 .faqBot {
-    background: rgb(51,51,51);
-    background: linear-gradient(90deg, rgba(51,51,51,0.95) 0%, rgba(41,41,41,0.95) 50%, rgba(37,37,37,0.95) 100%);
+    /* background: rgb(51,51,51);
+    background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(41,41,41,1) 50%, rgba(37,37,37,1) 100%); */
+    background: rgb(0,28,54);
+    background: linear-gradient(90deg, rgba(0,28,54,1) 0%, rgba(0,21,41,1) 50%, rgba(0,16,31,1) 100%);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -82,10 +97,10 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .topLeft, .topRight {
-        font-size: 16px;
+        font-size: 14px;
         min-height: unset;
     }
     .faqContainer {
@@ -99,10 +114,10 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .topLeft, .topRight {
-        font-size: 16px;
+        font-size: 14px;
         min-height: unset;
     }
     .faqContainer {
@@ -116,10 +131,10 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
     .topLeft, .topRight {
-        font-size: 16px;
+        font-size: 14px;
         min-height: unset;
     }
     .faqContainer {
@@ -133,14 +148,15 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 40px;
+        font-size: 20px;
     }
     .topLeft, .topRight {
-        font-size: 16px;
+        font-size: 14px;
         min-height: 60vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 90%;
     }
     .botLeft, .botMid, .botRight {
         min-height: 29vh;
@@ -150,14 +166,15 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 45px;
+        font-size: 25px;
     }
     .topLeft, .topRight {
-        font-size: 18px;
+        font-size: 16px;
         min-height: 60vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 85%;
     }
     .botLeft, .botMid, .botRight {
         min-height: 29vh;
@@ -166,14 +183,15 @@
 
 @media only screen and (min-width: 1350px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 50px;
+        font-size: 30px;
     }
     .topLeft, .topRight {
-        font-size: 18px;
+        font-size: 16px;
         min-height: 60vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 80%;
     }
     .botLeft, .botMid, .botRight {
         min-height: 29vh;
@@ -182,14 +200,15 @@
 
 @media only screen and (min-width: 1500px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 55px;
+        font-size: 35px;
     }
     .topLeft, .topRight {
-        font-size: 20px;
+        font-size: 16px;
         min-height: 60vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 75%;
     }
     .botLeft, .botMid, .botRight {
         min-height: 29vh;
@@ -198,14 +217,15 @@
 
 @media only screen and (min-width: 1700px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
     .topLeft, .topRight {
-        font-size: 20px;
+        font-size: 16px;
         min-height: 60vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 70%;
     }
     .botLeft, .botMid, .botRight {
         min-height: 29vh;
@@ -214,32 +234,34 @@
 
 @media only screen and (min-width: 1800px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 70px;
+        font-size: 45px;
     }
     .topLeft, .topRight {
-        font-size: 22px;
-        min-height: 60vh;
+        font-size: 18px;
+        min-height: 20vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 65%;
     }
     .botLeft, .botMid, .botRight {
-        min-height: 29vh;
+        min-height: 24vh;
     }
 }
 
 @media only screen and (min-width: 1900px) {
     .faqTextTopLeft > h1, .faqTextTopRight > h1 {
-        font-size: 72px;
+        font-size: 45px;
     }
     .topLeft, .topRight {
-        font-size: 22px;
-        min-height: 60vh;
+        font-size: 18px;
+        min-height: 20vh;
     }
     .faqContainer {
         word-wrap: unset;
+        width: 60%;
     }
     .botLeft, .botMid, .botRight {
-        min-height: 29vh;
+        min-height: 23vh;
     }
 }

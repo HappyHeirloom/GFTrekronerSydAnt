@@ -57,7 +57,7 @@ function FAQ() {
               <Col xl={8} lg={8} md={24} sm={24} xs={24}>
                 <div className="botLeft">
                   <div className="faqTextBotLeft">
-                    <h1> Parkering som beboer </h1>
+                    <h1> Parkering som beboer i området </h1>
                     <p> {text} </p>
                   </div>
                 </div>
