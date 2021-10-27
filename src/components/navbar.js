@@ -102,8 +102,6 @@ function Navbar() {
         </Menu.Item>
         {raiseNumber()}
         <SubMenu key="sub1" icon={<FileWordOutlined />} title={text[number].text}>
-          <SubMenu key="dude" title="DUDEE" />
-          <SubMenu key="pdf" title="PDFs">
           {raiseNumber()}
             <Menu.Item key="/dokumenter">
               <Link to="/dokumenter">{text[number].text}</Link>
@@ -142,13 +140,12 @@ function Navbar() {
             <Menu.Item key="/doc/udbudsmateriale">
               <Link to="/doc/udbudsmateriale">{text[number].text}</Link>
             </Menu.Item>
-          </SubMenu>
         </SubMenu>
         {raiseNumber()}
         <Menu.Item key="/Calender" icon={<ContactsOutlined />}>
-          <Link to="/Calender">Kalender</Link>
+          <Link to="/Calender">{text[number].text}</Link>
         </Menu.Item>
-        {/* {raiseNumber()} */}
+        {raiseNumber()}
         <Menu.Item key="/kontakt" icon={<MailFilled />}>
           <Link to="/kontakt">{text[number].text}</Link>
         </Menu.Item>

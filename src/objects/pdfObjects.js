@@ -1,4 +1,14 @@
 import { pdfOverviewText } from "../objectText/pdfOverviewText";
+import parking from "../images/parking1.png";
+import rules from "../images/rules1.png";
+import areaCaretaking from "../images/areaofcaretaking1.png";
+import resume from "../images/resume1.png";
+import aoa from "../images/aoa1.png";
+import budget from "../images/budget1.png";
+import tender from "../images/tender1.png";
+
+
+
 
 var number = 0;
 
@@ -17,7 +27,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://image.shutterstock.com/image-vector/blue-parking-sign-isolated-vector-600w-1191536209.jpg",
+            img: parking,
         },
         {
             title_dk: textDK[number].header,
@@ -25,7 +35,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://soshace.com/wp-content/uploads/2016/01/rule.png"
+            img: rules,
         },
         {
             title_dk: textDK[number].header,
@@ -33,7 +43,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://da.hoboetc.com/images/domashnij-uyut/gortenziya-anabel-posadka-i-uhod-opisanie-sorta.jpg"
+            img: areaCaretaking,
         },
         {
             title_dk: textDK[number].header,
@@ -41,7 +51,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://www.moltobene.dk/images/restaurants/large/20de47d2b13a1df9fc7d4990a3d75e36.jpg"
+            img: resume,
         },
         {
             title_dk: textDK[number].header,
@@ -49,7 +59,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://i2.wp.com/www.ommersysselrideklub.dk/wp-content/uploads/2018/03/Billede-vedt%C3%A6gter.jpg?resize=500%2C145&ssl=1"
+            img: aoa,
         },
         {
             title_dk: textDK[number].header,
@@ -57,7 +67,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://img.huffingtonpost.com/asset/5d8bf2c91e000058007256ab.jpeg?ops=scalefit_720_noupscale"
+            img: budget,
         },
         {
             title_dk: textDK[number].header,
@@ -65,7 +75,7 @@ export var pdfObjectList = {
             content_dk: textDK[number].text,
             content_en: textEN[number].text, 
             raiseNumber: raiseNumber(),
-            img: "https://www.frederikshavn.dk/media/11505/vignet_hoeringssvar_aeldreraadet_groen.jpg?anchor=center&mode=crop&width=900&height=360&rnd=132473342002930000"
+            img: tender,
         },
     ]
 }

@@ -53,10 +53,13 @@ export var navtext = {
         text: "Udbudsmateriale",
        },
        {
+        name: "Kalender",
+        text: "Kalender",
+       },
+       {
         name: "kontaktOs",
         text: "Kontakt os",
        },
-     
        {
          name: "FAQ",
          text: "FAQ"
@@ -81,6 +84,14 @@ export var navtext = {
        {
         name: "omGF_EN",
         text: "About us",
+       },
+       {
+        name: "EjerforeningText",
+        text: "Owners associations",
+       },
+       {
+        name: "bestyrelseText",
+        text: "Management",
        },
        {
         name: "DokumenttextText_EN",
@@ -119,24 +130,20 @@ export var navtext = {
         text: "Tender material",
        },
        {
-        name: "bestyrelseText_EN",
-        text: "Board of Directors",
+        name: "Calendar",
+        text: "Calendar",
        },
        {
         name: "kontaktOs_EN",
-        text: "Contakt Us",
-       },
-       {
-        name: "EjerforeningText_EN",
-        text: "Associations",
-       },
-       {
-        name: "Privacy_EN",
-        text: "Privacy",
+        text: "Contakt us",
        },
        {
         name: "FAQ",
         text: "FAQ"
+        },
+        {
+        name: "Privacy_EN",
+        text: "Privacy",
         },
         {
           name: "admin",

@@ -1,4 +1,5 @@
 import {pdfText} from '../objectText/pdfText';
+import {Divider} from "antd";
 
 var number = 0;
 var oldNum = 0;
@@ -47,11 +48,11 @@ export var pdftext = {
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             {raiseNumber()}
             {resetNumber()}
@@ -69,11 +70,11 @@ export var pdftext = {
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             {raiseNumber()}
             {resetNumber()}
@@ -175,35 +176,35 @@ export var pdftext = {
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_dk[number].header}</h3>
+            <Divider>{text_dk[number].header}</Divider>
             {text_dk[number].text}
             {raiseNumber()}
             {resetNumber()}
@@ -215,35 +216,35 @@ export var pdftext = {
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             <br/>
             {raiseNumber()}
-            <h3>{text_en[number].header}</h3>
+            <Divider>{text_en[number].header}</Divider>
             {text_en[number].text}
             {raiseNumber()}
             {resetNumber()}

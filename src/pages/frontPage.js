@@ -5,11 +5,13 @@ import Carousel from "../components/carousel";
 import NewsList from '../pages/newsList';
 
 import "../styles/frontPage.css"
+import "../styles/animatedBorder/css/animated-border/animated-border.min.css";
+
 
 function FrontPage() {
     return (
         <div className="frontPageWrapper">
-            <Row gutter={[16, 16]}>
+            <Row gutter={[16, 16]} align="middle" className="fillPage">
                 <Col xl={12} md={24} sm={24} xs={24}>
                     <div className="carousel">
                         <Carousel/>
@@ -20,13 +22,13 @@ function FrontPage() {
                         <NewsList/>
                     </div>
                 </Col>
-                <Col span={24}>
-                    <div>
+                <Col span={24} >
+                    <p>
                         CVR: 33223420
-                    </div>
-                    <div>
+                    </p>
+                    <p>
                         Adresse: Trekroner Centervej 50-73
-                    </div>
+                    </p>
                 </Col>
             </Row>
         </div>

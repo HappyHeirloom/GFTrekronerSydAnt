@@ -5,3 +5,7 @@
 .center {
     margin: auto;
 }
+
+.fillPage {
+    min-height: 89vh;
+}

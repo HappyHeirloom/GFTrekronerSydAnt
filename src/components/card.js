@@ -16,11 +16,11 @@ import Typography from "@material-ui/core/Typography";
 
 const styles = {
   card: {
-    maxWidth: 345
+    maxWidth: 345,
   },
   media: {
     height: 200,
-    paddingTop: "45%" // 16:9
+    paddingTop: "42.85%", // 21:9
   }
 };
 
@@ -34,12 +34,18 @@ export default function PdfCard(prop) {
   //#region HTML code
   return (
     <Card className="root cardtext">
-      <CardActionArea>  
-        <CardMedia
-          style={styles.media}
-          image={prop.prop.img}
-          title="Contemplative Reptile"
-        />
+      <CardActionArea>
+        <div className="">  
+          <CardMedia
+            style={styles.media}
+            image={prop.prop.img}
+            title="Contemplative Reptile"
+            className="ui-box bottom-stay"
+          >
+            <span className="ui-border-element">
+            </span>
+          </CardMedia>
+        </div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}

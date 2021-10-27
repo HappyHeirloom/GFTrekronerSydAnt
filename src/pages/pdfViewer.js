@@ -1,10 +1,11 @@
 //#region Imports
 import React, { useState, useEffect } from "react";
 import { withRouter, Link } from "react-router-dom";
-import {Col, Row} from 'antd';
+import {Col, Row, Tabs, Divider} from 'antd';
 import changeLanguage from "../components/languageComponent";
 import {MiscText} from '../objectText/miscText';
 import {pdfOverviewText} from '../objectText/pdfOverviewText';
+
 
 
 // Objects
@@ -18,7 +19,7 @@ import "../styles/pdfViewer.css";
 //#endregion
 
 
-
+const { TabPane } = Tabs;
 
 function PdfViewer(embedURL) {
   //#region React hooks and variables
@@ -129,179 +130,179 @@ function PdfViewer(embedURL) {
 
 //#region HTML code
   return (
-    <div className="">
-      <Row gutter={[16,16]}>       
-      <Col span={24}>
-        <div className="buttonsSubject">
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => {
-              checkPdf(listOfPdf[0]);
-            }}
-          >
-            {" "}
-            <Link to="/doc/parkering">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="small"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[1])}
-          >
-            {" "}
-            <Link to="/doc/reglement">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[2])}
-          >
-            {" "}
-            <Link to="/doc/plejebeskrivelse">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[3])}
-          >
-            {" "}
-            <Link to="/doc/resume">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[8])}
-          >
-            {" "}
-            <Link to="/doc/vedtægter">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[9])}
-          >
-            {" "}
-            <Link to="/doc/budget">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-            {raiseNumber()}
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            onClick={() => checkPdf(listOfPdf[14])}
-          >
-            {" "}
-            <Link to="/doc/udbudsmateriale">
-              {pdfButtonText[number].header}{" "}
-            </Link>
-          </button>
-        </div>
-      </Col>
-
-      <Col span={24}>
-        <div className="buttonsYear hidden" id="buttonsYear">
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            id="21"
-            onClick={() => checkYear(prop, 21)}
-          >
-            2021
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            id="20"
-            onClick={() => checkYear(prop, 20)}
-          >
-            2020
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            id="19"
-            onClick={() => checkYear(prop, 19)}
-          >
-            2019
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"
-            id="18"
-            onClick={() => checkYear(prop, 18)}
-          >
-            2018
-          </button>
-          <button
-            variant="contained"
-            size="large"
-            className="buttonPdfViewer"  
-            id="17"
-            onClick={() => checkYear(prop, 17)}
-          >
-            2017
-          </button>
-        </div>
-      </Col>
-
-      <Col span={24}>
-        
-      </Col>
-
-      <Col span={24}>
-        {/* Alle buttons og buttonstext ligger under /objectText/miscText.js */}
-          <div className="container pdfViewer" id="pdfViewer">
-            <iframe title="PDF" src={prop.embedURL} width="100%" height="800" />
-          </div>
-          <div className="pdfLink" id="pdfLink">
-            <p>
-              {" "}
-              {sideText[0].text} {currentPdf} {" "}
-            </p>
-              <a href={prop.embedURL} target="_blank" rel="noreferrer">
-              {" "}
-              <button variant="contained">{buttonText[0].text}</button>{" "}
-            </a>
-          </div>
-        </Col>
+    <div className="pdfViewerWrapper">
+      <Row gutter={[16,16]}>   
         <Col span={24}>
-          <div id="pdftextdiv" className="p-3">
-            <h4>
-              {header}
-            </h4>
-            <div className="pdftext p-1">
-              {text}
-            </div>
-            
+          <div className="buttonsSubject">
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => {
+                checkPdf(listOfPdf[0]);
+              }}
+            >
+              {" "}
+              <Link to="/doc/parkering">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="small"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[1])}
+            >
+              {" "}
+              <Link to="/doc/reglement">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[2])}
+            >
+              {" "}
+              <Link to="/doc/plejebeskrivelse">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[3])}
+            >
+              {" "}
+              <Link to="/doc/resume">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[8])}
+            >
+              {" "}
+              <Link to="/doc/vedtægter">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[9])}
+            >
+              {" "}
+              <Link to="/doc/budget">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+              {raiseNumber()}
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              onClick={() => checkPdf(listOfPdf[14])}
+            >
+              {" "}
+              <Link to="/doc/udbudsmateriale">
+                {pdfButtonText[number].header}{" "}
+              </Link>
+            </button>
           </div>
         </Col>
+
+        <Col span={24}>
+          <div className="buttonsYear hidden" id="buttonsYear">
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              id="21"
+              onClick={() => checkYear(prop, 21)}
+            >
+              2021
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              id="20"
+              onClick={() => checkYear(prop, 20)}
+            >
+              2020
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              id="19"
+              onClick={() => checkYear(prop, 19)}
+            >
+              2019
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"
+              id="18"
+              onClick={() => checkYear(prop, 18)}
+            >
+              2018
+            </button>
+            <button
+              variant="contained"
+              size="large"
+              className="buttonPdfViewer"  
+              id="17"
+              onClick={() => checkYear(prop, 17)}
+            >
+              2017
+            </button>
+          </div>
+        </Col>
+
+        <Col xl={3} lg={2} md={0} sm={0} xs={0} />
+
+        <Col xl={18} lg={20} md={24} sm={24} xs={24}>
+          <Tabs tabPosition="top" size="large" className="tabsPdfViewer">
+            <TabPane tab="Se pdf" key="1">
+              <div className="container pdfViewer" id="pdfViewer">
+                <iframe title="PDF" src={prop.embedURL} width="100%" height="950" />
+              </div>
+              <div className="pdfLink" id="pdfLink">
+                <p>
+                  {sideText[0].text} {currentPdf}
+                </p>
+                  <a href={prop.embedURL} target="_blank" rel="noreferrer">
+                  <button variant="contained">{buttonText[0].text}</button>
+                </a>
+              </div>
+            </TabPane>
+            <TabPane tab="Referat af pdf" key="2">
+              <div id="pdftextdiv" className="">
+                <Divider>
+                  {header}
+                </Divider>
+                <div className="pdftext">
+                  {text}
+                </div>
+              </div>
+            </TabPane>
+          </Tabs>
+        </Col>
+        <Col xl={3} lg={2} md={0} sm={0} xs={0} />
+
       </Row>
     </div>
   );

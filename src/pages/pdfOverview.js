@@ -11,7 +11,7 @@ function pdfOverview() {
     //#region HTML code
     return ( 
         <div>
-            <Row gutter={[48, 48]}>
+            <Row gutter={[48, 48]} align="center">
                 <Col xs={24} xl={12}>
                     <Link to="/doc/parkering">
                         <Card prop={pdfObjectList.pdfObjects[0]}></Card>
@@ -42,7 +42,7 @@ function pdfOverview() {
                         <Card prop={pdfObjectList.pdfObjects[5]}></Card>
                     </Link>
                 </Col>
-                <Col span={24}>
+                <Col xs={24} xl={12}>
                     <Link to="/doc/udbudsmateriale">
                         <Card prop={pdfObjectList.pdfObjects[6]}></Card>
                     </Link>  
