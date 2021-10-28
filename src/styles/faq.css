@@ -14,7 +14,7 @@
     width: 100%;
     max-height: 50%;
     padding: 10px;
-    background-image: radial-gradient(circle at 100% 100%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to right, #00c478, #00c478), radial-gradient(circle at 0% 100%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to bottom, #00c478, #001529), radial-gradient(circle at 0% 0%, transparent 27px, #001529 27px, #001529 32px, transparent 32px), linear-gradient(to left, #001529, #001529), radial-gradient(circle at 100% 0%, transparent 27px, #001529 27px, #001529 32px, transparent 32px), linear-gradient(to top, #001529, #00c478);
+    background-image: radial-gradient(circle at 100% 100%, transparent 27px, #001528 27px, #001528 32px, transparent 32px), linear-gradient(to right, #001528, #001528), radial-gradient(circle at 0% 100%, transparent 27px, #001528 27px, #001528 32px, transparent 32px), linear-gradient(to bottom, #001528, #00c478), radial-gradient(circle at 0% 0%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to left, #00c478, #00c478), radial-gradient(circle at 100% 0%, transparent 27px, #00c478 27px, #00c478 32px, transparent 32px), linear-gradient(to top, #00c478, #001528);
     background-size: 32px 32px, calc(100% - 64px) 5px, 32px 32px, 5px calc(100% - 64px);
     background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
     background-repeat: no-repeat;
