@@ -27,7 +27,7 @@ function FrontPage() {
                         CVR: 33223420
                     </p>
                     <p>
-                        Adresse: Trekroner Centervej 50-73
+                        Adresse: Trekroner Centervej
                     </p>
                 </Col>
             </Row>

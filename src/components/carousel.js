@@ -18,7 +18,7 @@ const centerStuff = {
 
 export default function carousel() {
     return (
-        <Carousel autoplay speed="1500" autoplaySpeed="5000">
+        <Carousel autoplay speed="1500" autoplaySpeed="50">
             <div>
                 <img
                     src={pic1}
