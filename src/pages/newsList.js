@@ -103,29 +103,17 @@ export default class newsList extends Component {
         return (
             <div>
                 {this.newDataList()}
-                <List
-                    header="News"
-                    itemLayout="vertical"
-                    size="large"
-                    bordered="true"
-                    pagination={{
-                    onChange: page => {
-                        
-                    },
-                    pageSize: 5,
-                    }}
+                <List header="News" itemLayout="vertical" size="large" bordered="true" pagination={{onChange: page => {}, pageSize: 5, }}
                     dataSource={list}
-                    // footer={
-                    // }
                     renderItem={item => (
                     <List.Item
                         key={item.id}
                     >
-                        <List.Item.Meta
+                    <List.Item.Meta
                         avatar={<Avatar src={returnImage(item.image)} style={{backgroundColor: returnColor(item.tag), padding: 5}} />}
                         title={item.title}
                         description={item.message}
-                        />
+                    />
                     </List.Item>
                     )}
                 />,

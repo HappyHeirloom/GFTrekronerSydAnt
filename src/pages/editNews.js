@@ -81,7 +81,7 @@ class Edit extends Component {
 
     // This function will handle the submission.
     onSubmit() {
-        // When post request is sent to the create url, axios will add a new record(newperson) to the database.
+        // When put request is sent to the create url, axios will add a new entry to the database.
         const newEditedNews = {
             id: this.state.id,
             title: this.state.title,

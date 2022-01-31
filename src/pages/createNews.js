@@ -63,7 +63,7 @@ export default class Create extends Component {
 
     // This function will handle the submission.
     onSubmit() {
-        // When post request is sent to the create url, axios will add a new record(newperson) to the database.
+        // When post request is sent to the create url, axios will add a new entry to the database.
         const newNews = {
             title: this.state.title,
             image: this.state.image,
